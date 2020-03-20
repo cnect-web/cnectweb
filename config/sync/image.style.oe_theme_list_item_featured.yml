@@ -1,0 +1,17 @@
+uuid: 4a7cf40d-294f-42c3-8849-c89749d86fba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gRJ8PGy6h71xW3vZkiPccOZ2lIl0tGns5bVO3guJtYg
+name: oe_theme_list_item_featured
+label: 'List Item Featured'
+effects:
+  3359e576-8ccf-4efa-b923-10cc1521149d:
+    uuid: 3359e576-8ccf-4efa-b923-10cc1521149d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      anchor: center-center
