@@ -62,16 +62,6 @@ commands:
     cmd: |
       ahoy runphp bash
 
-  install-clean:
-    usage: Install site.
-    cmd: |
-      ahoy composer install
-      ahoy runner toolkit:build-dev
-      ahoy runner toolkit:install-clean
-      ahoy runner futurium:setup-extra
-      ahoy theme-build
-      ahoy drush en kint devel devel_php stage_file_proxy -y
-
   install:
     usage: Install site.
     cmd: |
