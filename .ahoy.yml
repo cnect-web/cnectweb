@@ -1,0 +1,137 @@
+ahoyapi: v2
+commands:
+
+  up:
+    usage: Start the docker containers.
+    cmd: |
+      if [ ! -d "data/db/mysql" ]; then
+        mkdir -p data/db/mysql
+      fi
+      if [ -f "docker-compose.override" ] && [ ! -f "docker-compose.override.yml" ]; then
+        cp docker-compose.override docker-compose.override.yml
+      fi
+      if [ -f "docker-compose.local.yml" ]; then
+        rm -rf docker-compose.override.yml
+        docker-compose -f docker-compose.local.yml up -d
+      else
+        docker-compose up -d
+      fi
+  down:
+    usage: Stop the docker containers.
+    cmd: |
+      docker-compose down
+
+  reboot:
+    usage: Stop and start the containers.
+    cmd: |
+      ahoy down && ahoy up
+
+  logs:
+    usage: Check the docker container logs.
+    cmd: |
+      docker-compose logs -f
+
+  composer:
+    usage: Run a Composer command.
+    cmd: |
+      ahoy runphp composer $@
+
+  drupal:
+    usage: Run a Drupal Console command.
+    cmd: |
+      ahoy runphp vendor/bin/drupal $@
+
+  dre:
+    usage: Reinstall module.
+    cmd:
+      ahoy drush pmu $1 && ahoy drush en $1
+
+  drush:
+    usage: Run a Drush command.
+    cmd: |
+      . .env
+      ahoy runphp vendor/bin/drush --uri=$DRUPAL_BASE_URL $@
+
+  runner:
+    usage: Run a Robo command.
+    cmd: |
+      ahoy runphp vendor/bin/run $@
+
+  sh:
+    usage: Start a shell on the web container.
+    cmd: |
+      ahoy runphp bash
+
+  install-clean:
+    usage: Install site.
+    cmd: |
+      ahoy composer install
+      ahoy runner toolkit:build-dev
+      ahoy runner toolkit:install-clean
+      ahoy runner futurium:setup-extra
+      ahoy theme-build
+      ahoy drush en kint devel devel_php stage_file_proxy -y
+
+  install:
+    usage: Install site.
+    cmd: |
+      ahoy composer install
+      ahoy runner toolkit:build-dev
+      ahoy runner toolkit:install-clean
+      ahoy runner toolkit:import-config
+
+  dump:
+    usage: Dump remote database
+    cmd: |
+      ahoy runner toolkit:download-dump
+
+  runcmd:
+    usage: Run a command in a ephemeral php container.
+    cmd: |
+      docker run --rm -i -v $(pwd):/var/www/html fpfis/httpd-php-dev:7.1 $@
+
+  runphp:
+    usage: Run a command inside a running php container.
+    cmd: |
+      if [ -f "docker-compose.local.yml" ]; then
+        docker-compose -f docker-compose.local.yml exec web $@
+      else
+        docker-compose exec web $@
+      fi
+
+  mode:
+    usage: Change site mode. Use dev or prod as argument.
+    cmd: |
+      ahoy drupal site:mode $1
+
+  behat:
+    usage: Run behat tests.
+    cmd: |
+      ahoy runner toolkit:test-behat
+
+  behatthis:
+    usage: Run behat tests.
+    cmd: |
+      ahoy runphp vendor/bin/behat --tags "@this"
+
+  phpcs:
+    usage: Run phpcs.
+    cmd: |
+      ahoy runner toolkit:test-phpcs
+
+  phpcbf:
+    usage: Run phpcbf.
+    cmd: |
+      ahoy runner futurium:setup-phpcbf
+      ahoy runner futurium:test-phpcbf
+
+  xdebug:
+    usage: Enable/disable xdebug.
+    cmd: |
+      ahoy runner futurium:swap-xdebug
+      ahoy reboot
+
+  cr:
+    usage: Runs drush cache rebuild.
+    cmd: |
+      ahoy drush cr
