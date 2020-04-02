@@ -2,22 +2,49 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  ckeditor: 0
   config: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity_browser: 0
+  entity_browser_entity_form: 0
   field: 0
   file: 0
   filter: 0
   image: 0
+  inline_entity_form: 0
   link: 0
+  linkit: 0
+  maxlength: 0
+  media: 0
+  media_avportal: 0
   node: 0
+  oe_content: 0
+  oe_content_news: 0
+  oe_content_page: 0
+  oe_content_persistent: 0
+  oe_content_policy: 0
+  oe_content_publication: 0
+  oe_content_timeline_field: 0
+  oe_corporate_blocks: 0
+  oe_media: 0
+  oe_media_avportal: 0
+  oe_media_embed: 0
+  oe_theme_content_news: 0
+  oe_theme_content_page: 0
+  oe_theme_content_policy: 0
+  oe_theme_content_publication: 0
   oe_theme_helper: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  rdf_entity: 0
+  rdf_skos: 0
+  remote_stream_wrapper: 0
   responsive_image: 0
   smart_trim: 0
   system: 0
