@@ -1,7 +1,7 @@
 # DSM prototype installation.
 For the sake of installaton of the PoC of DSM we will temporairly use this steps for configuration and installation:
-- Copy paste and comment the settings.override.php.dist file to the web/sites/default/ folder
-- I took out of the .gitignore the runner.php file just to not to configure it everytime you build the project.
+- Copy paste settings.override.php.dist file to the web/sites/default/ folder and remove .dist suffix.
+- I took out of the .gitignore the runner.php file just to not to configure it every time you install the project from scatch.
 
 Run docker:
 ```bash
@@ -22,6 +22,7 @@ platform-build, install-clone and stuff like that.
 `After the Poc is done:`
 - Remove settings.override.php.dist from root folder
 - Put back runner.yml file in .gitignore
+
 `Remove everything starting from here and all the way up after the PoC is done. `
 
 # OpenEuropa Drupal project.
