@@ -1,3 +1,22 @@
+# DSM prototype installation.
+For the sake of installaton of the PoC of DSM we will temporairly use this steps for configuration and istallation:
+- Copy paste the settings.override.php file to the web/sites/default/ folder
+- I took out of the .gitignore the runner.php file just to not to configure it everytime you build the project.
+
+```bash
+ahoy up
+```
+Check if the containers are up
+```bash
+ahoy poc
+```
+This command will run just a site-install commannd and then it will replace the site uuid with the proper one from the configuration.
+After that it will run the config import to bring the current configuration.
+
+`NOTE:`
+WE do the insallation like this because we don't have a full configured and approved by devops website that can go through normal website build procedure like:
+platform-build, install-clone and stuff like that.
+
 # OpenEuropa Drupal project.
 
 This project starter kit will create a website using
