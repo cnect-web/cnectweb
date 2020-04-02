@@ -1,6 +1,6 @@
 # DSM prototype installation.
 For the sake of installaton of the PoC of DSM we will temporairly use this steps for configuration and installation:
-- Copy paste the settings.override.php file to the web/sites/default/ folder
+- Copy paste and comment the settings.override.php.dist file to the web/sites/default/ folder
 - I took out of the .gitignore the runner.php file just to not to configure it everytime you build the project.
 
 Run docker:
@@ -16,10 +16,13 @@ This command will run just a site-install command and then it will replace the s
 After that it will run the config import to bring the current configuration.
 
 `NOTE:`
-We do the insallation like this because we don't have a fully configured and approved by devops website that can go through normal website build procedure like:
+We do the installation like this because we don't have a fully configured and approved by devops website that can go through normal website build procedure like:
 platform-build, install-clone and stuff like that.
 
-REMOVE EVEYTHING STARTING FROM HERE AND ABOVE AFTER THE POC IS DONE.
+`After the Poc is done:`
+- Remove settings.override.php.dist from root folder
+- Put back runner.yml file in .gitignore
+`Remove everything starting from here and all the way up after the PoC is done. `
 
 # OpenEuropa Drupal project.
 
