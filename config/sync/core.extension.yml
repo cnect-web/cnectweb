@@ -11,11 +11,8 @@ module:
   file: 0
   filter: 0
   image: 0
-  language: 0
   link: 0
-  menu_ui: 0
   node: 0
-  oe_corporate_blocks: 0
   oe_theme_helper: 0
   options: 0
   page_cache: 0
@@ -31,7 +28,6 @@ module:
   ui_patterns_library: 0
   update: 0
   user: 0
-  views_ui: 0
   menu_link_content: 1
   views: 10
   oe_profile: 1000
