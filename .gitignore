@@ -14,5 +14,7 @@
 # Ignore local configuration files.
 /behat.yml
 /grumphp.yml
-/runner.yml
+# For the sake of building DSM prototype easily we need to have customized runner.yml
+#UNCOMMENT IT AFTER DSM prototyping is done.
+#/runner.yml
 /docker-compose.*.yml
