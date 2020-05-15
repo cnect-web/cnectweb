@@ -28,6 +28,19 @@ selenium:
   port: "4444"
   browser: "chrome"
 
+environment:
+  databases:
+    default:
+      default:
+        database: cnectweb
+        username: root
+        password: ''
+        prefix: ''
+        host: mysql
+        port: 3306
+        namespace: 'Drupal\Core\Database\Driver\mysql'
+        driver: mysql
+
 toolkit:
   build:
     dist:

@@ -65,9 +65,13 @@ commands:
   poc:
     usage: Install clean. Change uuid to match confing. Import config.
     cmd: |
-      ahoy runphp vendor/bin/run drupal:site-install
+      ahoy composer install
+      ahoy runner toolkit:build-dev
+      ahoy runner toolkit:install-clean
       ahoy drush config-set "system.site" uuid "5375ab0a-2c6c-4807-b553-cd8d1400c181" -y
+      ahoy drush config-set system.theme default oe_theme -y
       ahoy drush cim -y
+  
   install:
     usage: Install site.
     cmd: |
