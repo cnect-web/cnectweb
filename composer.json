@@ -69,7 +69,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "OpenEuropa\\Site\\Tests\\": "./tests/"
+            "OpenEuropa\\Site\\Tests\\": "./tests/",
+            "Dsm\\": "./src/"
         }
     },
     "conflict": {
