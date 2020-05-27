@@ -1,0 +1,13 @@
+uuid: ad0d2f3d-0885-4306-b3d0-2f3ffbf9cd2f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cugX0ZiloPymRdbF8XSasbOavNiCqT8IqMwgTM7S8rI
+name: Publication
+type: oe_publication
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false
