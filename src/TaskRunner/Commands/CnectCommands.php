@@ -1,5 +1,5 @@
 <?php
-namespace Dsm\TaskRunner\Commands;
+namespace Cnect\TaskRunner\Commands;
 
 use Drupal\Core\Site\Settings;
 use Drupal\Core\DrupalKernel;
@@ -10,16 +10,16 @@ use Symfony\Component\HttpFoundation\Request;
 use Webmozart\PathUtil\Path;
 
 /**
- * Class DsmCommands.
+ * Class CnectCommands.
  *
- * @package Dsm\TaskRunner\Commands
+ * @package Cnect\TaskRunner\Commands
  */
-class DsmCommands extends AbstractCommands {
+class CnectCommands extends AbstractCommands {
 
   /**
    * Setup additional environment config.
    *
-   * @command dsm:setup-extra
+   * @command cnect:setup-extra
    */
   public function extraConfig($target_file = 'settings.override.php') {
     $fs = new Filesystem();

@@ -74,7 +74,7 @@ commands:
       ahoy composer install
       ahoy runner toolkit:build-dev
       ahoy runner toolkit:install-clean
-      ahoy runner dsm:setup-extra
+      ahoy runner cnect:setup-extra
       ahoy runner toolkit:import-config
 
   dump:
