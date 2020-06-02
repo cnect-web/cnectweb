@@ -1,0 +1,61 @@
+uuid: 1d9b89ba-c27f-482f-8753-a06dfd4aef4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.oe_venue.oe_default.oe_address
+    - field.field.oe_venue.oe_default.oe_capacity
+    - field.field.oe_venue.oe_default.oe_room
+    - oe_content_entity_venue.oe_venue_type.oe_default
+  module:
+    - address
+_core:
+  default_config_hash: krJ4ORvOVKF8zGmaRyB1MIOOdsyk1bLSSuFguA5WIjo
+id: oe_venue.oe_default.default
+targetEntityType: oe_venue
+bundle: oe_default
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  name:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  oe_address:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  oe_capacity:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  oe_room:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  status: true

@@ -70,6 +70,8 @@ commands:
       ahoy runner toolkit:install-clean
       ahoy drush config-set "system.site" uuid "5375ab0a-2c6c-4807-b553-cd8d1400c181" -y
       ahoy drush config-set system.theme default oe_theme -y
+      ahoy runphp vendor/bin/run drupal:site-install
+      ahoy drush config-set "system.site" uuid "48f74337-d009-417c-9d47-62c7e834e90c" -y
       ahoy drush cim -y
   
   install:
@@ -78,6 +80,7 @@ commands:
       ahoy composer install
       ahoy runner toolkit:build-dev
       ahoy runner toolkit:install-clean
+      ahoy runner cnect:setup-extra
       ahoy runner toolkit:import-config
 
   dump:

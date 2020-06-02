@@ -27,6 +27,12 @@ entity_types:
     -
       name: europa_digital_thesaurus
       uri: 'http://data.europa.eu/uxp'
+    -
+      name: country
+      uri: 'http://publications.europa.eu/resource/authority/country'
+    -
+      name: language
+      uri: 'http://publications.europa.eu/resource/authority/language'
   skos_concept:
     -
       name: corporate_body
@@ -55,3 +61,9 @@ entity_types:
     -
       name: europa_digital_thesaurus
       uri: 'http://data.europa.eu/uxp'
+    -
+      name: country
+      uri: 'http://publications.europa.eu/resource/authority/country'
+    -
+      name: language
+      uri: 'http://publications.europa.eu/resource/authority/language'
