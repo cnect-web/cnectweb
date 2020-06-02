@@ -7,6 +7,8 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -49,6 +51,8 @@ module:
   path_alias: 0
   rdf_entity: 0
   rdf_skos: 0
+  realistic_dummy_content: 0
+  realistic_dummy_content_api: 0
   remote_stream_wrapper: 0
   responsive_image: 0
   smart_trim: 0
