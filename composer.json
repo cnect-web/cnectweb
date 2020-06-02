@@ -12,8 +12,6 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "^1.8",
         "drupal/core": "^8.7",
-        "drupal/geocoder": "^2.10",
-        "drupal/geofield": "^1.10",
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/field_group": "^3.0",
         "drupal/typed_link": "^1.0",
