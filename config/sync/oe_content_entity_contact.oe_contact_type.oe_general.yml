@@ -1,0 +1,9 @@
+uuid: d2839965-4ee3-43eb-b4ca-efff93b7d651
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XqJAqIPKkkR-kTJWjxvM5eCc8NqCMilH8XoHpDMc9wA
+id: oe_general
+label: General
+description: 'Provides the general contact type bundle.'

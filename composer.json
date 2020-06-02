@@ -16,8 +16,11 @@
         "drupal/field_group": "^3.0",
         "drupal/typed_link": "^1.0",
         "drush/drush": "^9.0",
+        "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
         "openeuropa/composer-artifacts": "~0.1",
-        "openeuropa/oe_corporate_blocks": "^2.3",
+        "openeuropa/oe_content": "^1.8",
+        "openeuropa/oe_corporate_blocks": "^2.4",
+        "openeuropa/oe_corporate_countries": "^1.0@beta",
         "openeuropa/oe_profile": "^0.4",
         "openeuropa/oe_theme": "^2.0",
         "openeuropa/oe_webtools": "^1.5",
@@ -71,7 +74,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "OpenEuropa\\Site\\Tests\\": "./tests/"
+            "OpenEuropa\\Site\\Tests\\": "./tests/",
+            "Cnect\\": "./src/"
         }
     },
     "conflict": {
