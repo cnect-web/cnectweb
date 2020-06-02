@@ -14,6 +14,8 @@
         "drupal/core": "^8.7",
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/field_group": "^3.0",
+        "drupal/geocoder": "^2.10",
+        "drupal/geofield": "^1.10",
         "drupal/typed_link": "^1.0",
         "drush/drush": "^9.0",
         "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
