@@ -1,0 +1,9 @@
+uuid: 8c2c3272-076c-4fae-9c1c-73a3475d0823
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZLEaD7wudYlcqwaRrqCZDX9M-Z6mrvq9giXMTzrySmU
+id: oe_default
+label: Default
+description: 'Provides the default corporate Venue type.'
