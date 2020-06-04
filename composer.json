@@ -17,6 +17,9 @@
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/field_group": "^3.0",
         "drupal/realistic_dummy_content": "^2.0",
+        "drupal/geocoder": "^3.2",
+        "drupal/geocoder_geofield": "^3.2",
+        "drupal/geofield": "^1.13",
         "drupal/typed_link": "^1.0",
         "drush/drush": "^9.0",
         "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
@@ -26,6 +29,7 @@
         "openeuropa/oe_corporate_countries": "^1.0@beta",
         "openeuropa/oe_profile": "^0.4",
         "openeuropa/oe_theme": "^2.0",
+        "openeuropa/oe_webtools": "^1.6",
         "webflo/drupal-finder": "^1.0",
         "webmozart/path-util": "^2.3"
     },
