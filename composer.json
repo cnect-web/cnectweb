@@ -12,8 +12,12 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "^1.8",
         "drupal/core": "^8.7",
+        "drupal/devel": "^2.1",
+        "drupal/devel_generate": "^2.1",
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/field_group": "^3.0",
+        "drupal/json_field": "^1.0@RC",
+        "drupal/realistic_dummy_content": "^2.0",
         "drupal/geocoder": "^3.2",
         "drupal/geocoder_geofield": "^3.2",
         "drupal/geofield": "^1.13",
@@ -57,6 +61,11 @@
         },
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
+        "patches": {
+            "drupal/typed_link" : {
+                "Typed_link module issue with devel_geenrate module" : "https://www.drupal.org/files/issues/2020-06-19/typed_link-devel-generate-issue-with-typed-link-null-3153336-1.patch"
+            }
+        },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"

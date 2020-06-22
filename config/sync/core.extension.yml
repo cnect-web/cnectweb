@@ -7,6 +7,8 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -16,11 +18,6 @@ module:
   field_group: 0
   file: 0
   filter: 0
-  geocoder: 0
-  geocoder_address: 0
-  geocoder_field: 0
-  geocoder_geofield: 0
-  geofield: 0
   image: 0
   inline_entity_form: 0
   link: 0
@@ -48,15 +45,14 @@ module:
   oe_media: 0
   oe_media_avportal: 0
   oe_theme_helper: 0
-  oe_webtools: 0
-  oe_webtools_geocoding: 0
-  oe_webtools_maps: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
   rdf_entity: 0
   rdf_skos: 0
+  realistic_dummy_content: 0
+  realistic_dummy_content_api: 0
   remote_stream_wrapper: 0
   responsive_image: 0
   smart_trim: 0
