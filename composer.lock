@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6db741d5a502e3ae65f65c416aea5efb",
+    "content-hash": "8c7c0b7119d72162e32dccfb0d73cc69",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2238,6 +2238,105 @@
             "homepage": "http://drupal.org/project/address",
             "support": {
                 "source": "https://git.drupalcode.org/project/address"
+            }
+        },
+        {
+            "name": "drupal/composite_reference",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/composite_reference.git",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/composite_reference-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "1d720d6e38b882bf6743af3eec90df0d59be3e81"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "composer/installers": "^1.5",
+                "drupal-composer/drupal-scaffold": "^2.2",
+                "drupal/config_devel": "^1.2",
+                "drupal/drupal-extension": "^4.0",
+                "drupal/entity_reference_revisions": "~1.3",
+                "drush/drush": "~9.0@stable",
+                "guzzlehttp/guzzle": "^6.3",
+                "openeuropa/code-review": "^1.3.0",
+                "openeuropa/drupal-core-require-dev": "~8.8.0",
+                "openeuropa/task-runner": "~1.0.0-beta6",
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1592301966",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "composer-exit-on-patch-failure": true,
+                "enable-patching": true,
+                "installer-paths": {
+                    "build/core": [
+                        "type:drupal-core"
+                    ],
+                    "build/profiles/contrib/{$name}": [
+                        "type:drupal-profile"
+                    ],
+                    "build/modules/contrib/{$name}": [
+                        "type:drupal-module"
+                    ],
+                    "build/themes/contrib/{$name}": [
+                        "type:drupal-theme"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\composite_reference\\": "./src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Drupal\\Tests\\composite_reference\\": "./tests/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "drupal-scaffold": [
+                    "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+                ],
+                "post-install-cmd": [
+                    "./vendor/bin/run drupal:site-setup"
+                ],
+                "post-update-cmd": [
+                    "./vendor/bin/run drupal:site-setup"
+                ]
+            },
+            "license": [
+                "EUPL-1.2"
+            ],
+            "authors": [
+                {
+                    "name": "Upchuk",
+                    "homepage": "https://www.drupal.org/user/1885838"
+                },
+                {
+                    "name": "ieguskiza",
+                    "homepage": "https://www.drupal.org/user/2652665"
+                }
+            ],
+            "description": "Marks references as composite.",
+            "homepage": "https://www.drupal.org/project/composite_reference",
+            "support": {
+                "source": "https://git.drupalcode.org/project/composite_reference"
             }
         },
         {
@@ -13434,6 +13533,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/composite_reference": 15,
         "drupal/json_field": 5,
         "openeuropa/oe_corporate_countries": 10
     },
