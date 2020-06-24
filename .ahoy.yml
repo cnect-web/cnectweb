@@ -62,12 +62,6 @@ commands:
     cmd: |
       ahoy runphp bash
 
-  poc:
-    usage: Install clean. Change uuid to match confing. Import config.
-    cmd: |
-      ahoy runphp vendor/bin/run drupal:site-install
-      ahoy drush config-set "system.site" uuid "48f74337-d009-417c-9d47-62c7e834e90c" -y
-      ahoy drush cim -y
   install:
     usage: Install site.
     cmd: |
@@ -76,6 +70,11 @@ commands:
       ahoy runner toolkit:install-clean
       ahoy runner cnect:setup-extra
       ahoy runner toolkit:import-config
+      ahoy drush genc --types oe_event 5
+      ahoy drush genc --types oe_news 5
+      ahoy drush genc --types oe_page 5
+      ahoy drush genc --types oe_policy 5
+      ahoy drush genc --types oe_publication 5
 
   dump:
     usage: Dump remote database
