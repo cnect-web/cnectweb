@@ -3,8 +3,8 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
-  config: 0
   composite_reference: 0
+  config: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
@@ -45,8 +45,11 @@ module:
   oe_corporate_countries_address: 0
   oe_media: 0
   oe_media_avportal: 0
-  oe_time_caching: 0
   oe_theme_helper: 0
+  oe_time_caching: 0
+  oe_webtools: 0
+  oe_webtools_cookie_consent: 0
+  oe_webtools_globan: 0
   options: 0
   page_cache: 0
   path: 0
