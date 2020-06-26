@@ -70,11 +70,6 @@ commands:
       ahoy runner toolkit:install-clean
       ahoy runner cnect:setup-extra
       ahoy runner toolkit:import-config
-      ahoy drush genc --types oe_event 5
-      ahoy drush genc --types oe_news 5
-      ahoy drush genc --types oe_page 5
-      ahoy drush genc --types oe_policy 5
-      ahoy drush genc --types oe_publication 5
 
   dump:
     usage: Dump remote database
