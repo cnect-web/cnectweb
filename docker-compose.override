@@ -1,0 +1,8 @@
+version: '2'
+services:
+  web:
+    ports:
+      - 80:80
+    environment:
+      DOCUMENT_ROOT: /var/www/html/web
+      HTTP_PORT: 80
