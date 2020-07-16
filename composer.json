@@ -13,8 +13,6 @@
         "drupal/address": "^1.8",
         "drupal/composite_reference": "^1.0@alpha",
         "drupal/core": "^8.7",
-        "drupal/devel": "^2.1",
-        "drupal/devel_generate": "^2.1",
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/field_group": "^3.0",
         "drupal/geocoder": "^3.2",
@@ -35,9 +33,11 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
+        "drupal/core-dev": "^8.7",
+        "drupal/devel": "^4.0",
+        "drupal/devel_generate": "^4.0",
         "drupal/drupal-extension": "~4.0",
-        "ec-europa/toolkit": "~4.0.0-beta7",
-        "drupal/core-dev": "^8.7"
+        "ec-europa/toolkit": "~4.0.0-beta7"
     },
     "scripts": {
         "post-install-cmd": [
