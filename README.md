@@ -1,30 +1,3 @@
-# DSM prototype installation.
-For the sake of installaton of the PoC of DSM we will temporairly use this steps for configuration and installation:
-- Copy paste settings.override.php.dist file to the web/sites/default/ folder and remove .dist suffix.
-- I took out of the .gitignore the runner.php file just to not to configure it every time you install the project from scatch.
-
-Run docker:
-```bash
-ahoy up
-```
-
-Run install:
-```bash
-ahoy poc
-```
-This command will run just a site-install command and then it will replace the site uuid with the proper one from the configuration.
-After that it will run the config import to bring the current configuration.
-
-`NOTE:`
-We do the installation like this because we don't have a fully configured and approved by devops website that can go through normal website build procedure like:
-platform-build, install-clone and stuff like that.
-
-`After the Poc is done:`
-- Remove settings.override.php.dist from root folder
-- Put back runner.yml file in .gitignore
-
-`Remove everything starting from here and all the way up after the PoC is done. `
-
 # OpenEuropa Drupal project.
 
 This project starter kit will create a website using
