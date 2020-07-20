@@ -54,7 +54,6 @@ module:
   path_alias: 0
   rdf_entity: 0
   rdf_skos: 0
-  realistic_dummy_content_api: 0
   remote_stream_wrapper: 0
   responsive_image: 0
   smart_trim: 0
