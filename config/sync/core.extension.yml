@@ -30,12 +30,7 @@ module:
   oe_content_entity_contact: 0
   oe_content_entity_organisation: 0
   oe_content_entity_venue: 0
-  oe_content_event: 0
-  oe_content_news: 0
-  oe_content_page: 0
   oe_content_persistent: 0
-  oe_content_policy: 0
-  oe_content_publication: 0
   oe_content_social_media_links_field: 0
   oe_content_timeline_field: 0
   oe_corporate_blocks: 0
