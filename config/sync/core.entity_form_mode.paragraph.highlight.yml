@@ -1,0 +1,12 @@
+uuid: 47f4268f-75f4-4eeb-a219-6b8934247c97
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: oYQ2AnZSQW8rtbiFg_d_6WKzilw-SAQC7PlEDaBsqIU
+id: paragraph.highlight
+label: Highlight
+targetEntityType: paragraph
+cache: true

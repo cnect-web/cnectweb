@@ -1,0 +1,25 @@
+uuid: 8514f94e-59fa-4e57-b4e2-b7b2d7d0ba41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_social_media_links
+    - paragraphs.paragraphs_type.oe_social_media_follow
+  module:
+    - typed_link
+_core:
+  default_config_hash: YdMws7BfGc9GGDg3NDCsZHm7xg038kCamd2n1LHQ3eU
+id: paragraph.oe_social_media_follow.field_oe_social_media_links
+field_name: field_oe_social_media_links
+entity_type: paragraph
+bundle: oe_social_media_follow
+label: 'Social media links'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: typed_link
