@@ -1,0 +1,10 @@
+uuid: 690f0122-9a44-4a41-b954-1065c4050b86
+langcode: en
+status: true
+dependencies: {  }
+id: oe_links_block
+label: 'Links block'
+icon_uuid: null
+icon_default: null
+description: 'A set of links with an optional title. This component should be placed in the sidebar only.'
+behavior_plugins: {  }

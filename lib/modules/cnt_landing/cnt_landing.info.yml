@@ -1,0 +1,5 @@
+name: 'Landing'
+type: module
+description: 'Cnect Landing page'
+core: 8.x
+package: 'Cnect'

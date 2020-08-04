@@ -1,0 +1,36 @@
+uuid: ee5009d6-c8d3-4e5c-a955-3eb721635c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cnt_landing.body
+    - field.field.node.cnt_landing.field_cnt_content_blocks
+    - node.type.cnt_landing
+  module:
+    - text
+    - user
+id: node.cnt_landing.teaser
+targetEntityType: node
+bundle: cnt_landing
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cnt_content_blocks: true
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true

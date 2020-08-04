@@ -1,0 +1,11 @@
+uuid: e4905c0f-e35a-4b64-866e-749ba76d8707
+langcode: en
+status: true
+dependencies: {  }
+name: Landing
+type: cnt_landing
+description: 'Cnect Landing page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
