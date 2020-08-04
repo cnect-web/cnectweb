@@ -1,5 +1,6 @@
 module:
   address: 0
+  allowed_formats: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -38,6 +39,7 @@ module:
   oe_corporate_countries_address: 0
   oe_media: 0
   oe_media_avportal: 0
+  oe_paragraphs: 0
   oe_theme_helper: 0
   oe_time_caching: 0
   oe_webtools: 0
@@ -63,6 +65,7 @@ module:
   user: 0
   menu_link_content: 1
   views: 10
+  paragraphs: 11
   oe_profile: 1000
 theme:
   stable: 0

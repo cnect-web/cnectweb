@@ -1,0 +1,23 @@
+uuid: facc016e-e257-40d8-bca1-04aa0148e734
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_icon
+    - paragraphs.paragraphs_type.oe_fact
+  module:
+    - options
+_core:
+  default_config_hash: zhmc3Jac8O_vPoUZye9sZYFszhc7q3_FcG6NzZxplpc
+id: paragraph.oe_fact.field_oe_icon
+field_name: field_oe_icon
+entity_type: paragraph
+bundle: oe_fact
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
