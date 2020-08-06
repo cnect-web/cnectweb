@@ -12,6 +12,8 @@ dependencies:
     - path
     - rdf_skos
     - text
+_core:
+  default_config_hash: ILWmUcM-xG1zP0alDt4WOjjAWpdJlDRj1UcMDI7sPLk
 id: node.cnt_landing.default
 targetEntityType: node
 bundle: cnt_landing
