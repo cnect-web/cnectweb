@@ -1,3 +1,4 @@
+uuid: dad06472-aaac-4c19-965b-b9cc5c96ad00
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.cnt_landing
   module:
     - text
+_core:
+  default_config_hash: YbnvpDi6e31r4BQms3H4Q3iyFExGnGVE1KQ0_bChNQg
 id: node.cnt_landing.body
 field_name: body
 entity_type: node

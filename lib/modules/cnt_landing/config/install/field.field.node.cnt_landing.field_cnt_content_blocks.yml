@@ -23,6 +23,8 @@ dependencies:
 third_party_settings:
   composite_reference:
     composite: false
+_core:
+  default_config_hash: rP8WOLELiyJP3h4Relq3MOaejzCprkSVKLJrSbtT4_k
 id: node.cnt_landing.field_cnt_content_blocks
 field_name: field_cnt_content_blocks
 entity_type: node
