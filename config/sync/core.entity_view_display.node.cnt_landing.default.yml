@@ -1,0 +1,55 @@
+uuid: d468b6c0-43ec-4644-bb5d-ded21bacc3ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cnt_landing.body
+    - field.field.node.cnt_landing.field_cnt_content_blocks
+    - node.type.cnt_landing
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+    - user
+id: node.cnt_landing.default
+targetEntityType: node
+bundle: cnt_landing
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_cnt_content_blocks:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  oe_content_legacy_link:
+    type: link
+    weight: 2
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  oe_content_content_owner: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true
