@@ -5,6 +5,7 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  cnt_landing: 0
   composite_reference: 0
   config: 0
   datetime: 0
