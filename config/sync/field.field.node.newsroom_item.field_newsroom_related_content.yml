@@ -1,0 +1,29 @@
+uuid: 4492715f-0b14-45d5-b5c3-1d157d2381b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsroom_related_content
+    - node.type.newsroom_item
+_core:
+  default_config_hash: SPq_bGFwiFPVmF1nP-j6B8m-q5sJ0V7gpAVEqbPQ76g
+id: node.newsroom_item.field_newsroom_related_content
+field_name: field_newsroom_related_content
+entity_type: node
+bundle: newsroom_item
+label: 'Related content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      newsroom_item: newsroom_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

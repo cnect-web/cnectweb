@@ -1,0 +1,26 @@
+uuid: ba7b18ee-4ff2-4064-a85b-3215505acb39
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_item
+  module:
+    - node
+_core:
+  default_config_hash: KyNn0sOMJltiJcPA6Yyb7OCj-V_L2sRQjT3fVIvoxEo
+id: node.field_newsroom_pr_coordinator
+field_name: field_newsroom_pr_coordinator
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

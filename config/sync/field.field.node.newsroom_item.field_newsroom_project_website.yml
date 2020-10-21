@@ -1,0 +1,25 @@
+uuid: b531ac88-a26b-4831-947b-ce85feae641f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsroom_project_website
+    - node.type.newsroom_item
+  module:
+    - link
+_core:
+  default_config_hash: ceLgbVrrU3XxnauuExsQl2x7NbLVyP1D7pqTn_KB7Ws
+id: node.newsroom_item.field_newsroom_project_website
+field_name: field_newsroom_project_website
+entity_type: node
+bundle: newsroom_item
+label: 'Project website'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

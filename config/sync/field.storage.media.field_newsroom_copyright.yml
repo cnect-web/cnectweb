@@ -1,0 +1,26 @@
+uuid: 160cdadd-059f-4773-b64d-803871cbb6d2
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_media
+  module:
+    - media
+_core:
+  default_config_hash: g8tEu8TFCfr7BlLlRGOIcF3iBS6bNFQwAz1ZivO5H7I
+id: media.field_newsroom_copyright
+field_name: field_newsroom_copyright
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

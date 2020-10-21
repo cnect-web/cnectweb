@@ -1,0 +1,21 @@
+uuid: 2f77c6e7-35c9-41c6-a27d-00e8cfd24e3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_newsroom_topic_type
+    - taxonomy.vocabulary.newsroom_topic
+_core:
+  default_config_hash: WJJCSgKmYsZvggbp1pTi8_bTzLYiBKThAswE18PGB2c
+id: taxonomy_term.newsroom_topic.field_newsroom_topic_type
+field_name: field_newsroom_topic_type
+entity_type: taxonomy_term
+bundle: newsroom_topic
+label: 'Topic type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
