@@ -19,9 +19,12 @@
         "drupal/geocoder_geofield": "^3.2",
         "drupal/geofield": "^1.13",
         "drupal/json_field": "^1.0@RC",
+        "drupal/migrate_plus": "^5.1",
+        "drupal/migrate_tools": "^5.0",
         "drupal/typed_link": "^1.0",
         "drush/drush": "^9.0",
         "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
+        "lobsterr/newsroom_connector": "dev-master",
         "openeuropa/composer-artifacts": "~0.1",
         "openeuropa/oe_content": "^1.8",
         "openeuropa/oe_corporate_blocks": "^2.4",
@@ -39,7 +42,6 @@
         "drupal/devel_generate": "^4.0",
         "drupal/drupal-extension": "~4.0",
         "ec-europa/toolkit": "~4.0.0-beta7",
-        "drupal/core-dev": "^8.7",
         "drupal/console": "~1.0"
     },
     "scripts": {
@@ -47,12 +49,16 @@
             "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
         ]
     },
-    "repositories": {
-        "drupal": {
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/LOBsTerr/newsroom_connector.git"
         }
-    },
+    ],
     "extra": {
         "artifacts": {
             "openeuropa/oe_theme": {

@@ -1,0 +1,23 @@
+uuid: dd25c32e-f2b4-4b53-b2e2-01fcdfbb9bfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsroom_quote_box
+    - node.type.newsroom_item
+  module:
+    - text
+_core:
+  default_config_hash: O8LiO3dj5hx1G0WWu5YWjv8SDY65mPDRgBH02WrcBB4
+id: node.newsroom_item.field_newsroom_quote_box
+field_name: field_newsroom_quote_box
+entity_type: node
+bundle: newsroom_item
+label: 'Quote box'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

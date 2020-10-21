@@ -1,0 +1,22 @@
+uuid: 9288b098-c408-4515-9e3c-ce2fcac56cf3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_item
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: ccOn7bccGgV6bwQhRcE5e1QHQjApMYeKmpu38L4rp7I
+name: 'Newsroom item'
+type: newsroom_item
+description: 'Newsroom connector item'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

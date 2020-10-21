@@ -1,0 +1,26 @@
+uuid: 6ed497c8-60ca-477e-aedd-553f0358f0ed
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_item
+  module:
+    - node
+_core:
+  default_config_hash: pMJ3NMlu_r1nRF_Yn1zma_qUO9cVs8EUVBjf5Y-Zmk8
+id: node.field_newsroom_project_acronym
+field_name: field_newsroom_project_acronym
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

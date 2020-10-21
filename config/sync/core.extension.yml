@@ -22,6 +22,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  geofield: 0
   image: 0
   inline_entity_form: 0
   link: 0
@@ -30,6 +31,14 @@ module:
   media: 0
   media_avportal: 0
   menu_ui: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  newsroom_connector: 0
+  newsroom_connector_item: 0
+  newsroom_connector_media: 0
+  newsroom_connector_topic: 0
+  newsroom_connector_type: 0
   node: 0
   oe_content: 0
   oe_content_entity: 0
