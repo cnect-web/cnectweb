@@ -6,52 +6,66 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.1",
+        "php": "^7.3",
         "composer/installers": "^1.5",
-        "cweagans/composer-patches": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.5",
+        "cweagans/composer-patches": "^1.7",
         "drupal/address": "^1.8",
-        "drupal/composite_reference": "^1.0@alpha",
-        "drupal/core": "^8.7",
-        "drupal/devel": "^2.1",
-        "drupal/devel_generate": "^2.1",
-        "drupal/entity_reference_revisions": "^1.8",
-        "drupal/field_group": "^3.0",
-        "drupal/geocoder": "^3.2",
-        "drupal/geocoder_geofield": "^3.2",
-        "drupal/geofield": "^1.13",
-        "drupal/json_field": "^1.0@RC",
-        "drupal/realistic_dummy_content": "^2.0",
-        "drupal/typed_link": "^1.0",
+        "drupal/admin_toolbar": "^2.3",
+        "drupal/adminimal_theme": "^1.5",
+        "drupal/core": "^8.9",
+        "drupal/core-composer-scaffold": "^8.9.6",
+        "drupal/realistic_dummy_content": "^3.0.0",
         "drush/drush": "^9.0",
+        "drupal/field_group": "~3.0",
+        "drupal/composite_reference": "^1.0@alpha",
         "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
+        "lobsterr/newsroom_connector": "dev-master",
+        "lobsterr/oe_newsroom_connector": "dev-master",
         "openeuropa/composer-artifacts": "~0.1",
-        "openeuropa/oe_content": "^1.8",
+        "openeuropa/oe_content": "^1.11",
         "openeuropa/oe_corporate_blocks": "^2.4",
         "openeuropa/oe_corporate_countries": "^1.0@beta",
+        "openeuropa/oe_editorial": "^1.8",
+        "openeuropa/oe_paragraphs": "^1.6",
         "openeuropa/oe_profile": "^0.4",
-        "openeuropa/oe_theme": "^2.0",
-        "openeuropa/oe_webtools": "^1.6",
-        "webflo/drupal-finder": "^1.0",
+        "openeuropa/oe_theme": "^2.10",
+        "openeuropa/oe_webtools": "^1.8",
+        "webflo/drupal-finder": "^1.2",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "drupal/drupal-extension": "~4.0",
-        "ec-europa/toolkit": "~4.0.0-beta7",
-        "drupal/core-dev": "^8.7"
+        "ec-europa/toolkit": "~4.0.6",
+        "drupal/console": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [
             "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
         ]
     },
-    "repositories": {
-        "drupal": {
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/LOBsTerr/newsroom_connector.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/LOBsTerr/oe_newsroom_connector.git"
         }
-    },
+    ],
     "extra": {
+        "drupal-scaffold": {
+            "allowed-packages": [
+                "drupal/core"
+            ],
+            "locations": {
+                "web-root": "./web"
+            },
+            "overwrite": true
+        },
         "artifacts": {
             "openeuropa/oe_theme": {
                 "dist": {
@@ -83,6 +97,13 @@
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ]
+        },
+        "patches-ignore": {
+            "openeuropa/oe_content": {
+                "drupal/inline_entity_form": {
+                    "https://www.drupal.org/project/inline_entity_form/issues/3162384": "https://www.drupal.org/files/issues/2020-08-13/fixed_duplicate_rows-3162384-16.patch"
+                }
+            }
         }
     },
     "autoload-dev": {
