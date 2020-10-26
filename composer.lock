@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec171e924914cb7118074455e7d46bf8",
+    "content-hash": "340062d408f7578357ef2ba2d3426bf3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1307,16 +1307,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "88fb6fb1dae011de24dd6b632811c1ff5c2928f5"
+                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/88fb6fb1dae011de24dd6b632811c1ff5c2928f5",
-                "reference": "88fb6fb1dae011de24dd6b632811c1ff5c2928f5",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
+                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
                 "shasum": ""
             },
             "require": {
@@ -1374,7 +1374,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2020-10-17T22:05:33+00:00"
+            "time": "2020-10-26T10:28:16+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -2100,6 +2100,7 @@
                     }
                 },
                 "patches_applied": {
+                    "https://www.drupal.org/project/address/issues/2723917#comment-13844025": "https://www.drupal.org/files/issues/2020-10-02/address-multiple_value-2723917-13.patch",
                     "https://www.drupal.org/project/address/issues/3144823": "https://www.drupal.org/files/issues/2020-06-02/address_content_language-3144823-3.patch"
                 }
             },
@@ -3081,7 +3082,8 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
-                }
+                },
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3711,17 +3713,17 @@
         },
         {
             "name": "drupal/realistic_dummy_content",
-            "version": "3.0.0-rc1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/realistic_dummy_content.git",
-                "reference": "3.0.0-rc1"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/realistic_dummy_content-3.0.0-rc1.zip",
-                "reference": "3.0.0-rc1",
-                "shasum": "89701ace40d80744c577991524385422feaf4357"
+                "url": "https://ftp.drupal.org/files/projects/realistic_dummy_content-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "6b6b2546c876cb48769ff6bdb735d2a28f5d1526"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -3733,11 +3735,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-rc1",
-                    "datestamp": "1602465232",
+                    "version": "3.0.0",
+                    "datestamp": "1603747805",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -3759,7 +3761,7 @@
         },
         {
             "name": "drupal/realistic_dummy_content_api",
-            "version": "3.0.0-rc1",
+            "version": "3.0.0",
             "require": {
                 "drupal/core": "^8 || ^9",
                 "drupal/realistic_dummy_content": "self.version"
@@ -3770,11 +3772,11 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-rc1",
-                    "datestamp": "1602465232",
+                    "version": "3.0.0",
+                    "datestamp": "1603747805",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -5069,13 +5071,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LOBsTerr/newsroom_connector.git",
-                "reference": "1651646e0ac8691c69440981823e42ec87c81721"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LOBsTerr/newsroom_connector/zipball/1651646e0ac8691c69440981823e42ec87c81721",
-                "reference": "1651646e0ac8691c69440981823e42ec87c81721",
-                "shasum": ""
+                "reference": "a81cdd92e8b3ea8abb3332b409a6d0939704647f"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -5100,7 +5096,7 @@
                 "issues": "https://github.com/LOBsTerr/newsroom_connector/issues",
                 "source": "https://github.com/LOBsTerr/newsroom_connector"
             },
-            "time": "2020-10-22T11:15:25+00:00"
+            "time": "2020-10-26T13:08:30+00:00"
         },
         {
             "name": "lobsterr/oe_newsroom_connector",
@@ -12095,6 +12091,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/composite_reference": 15,
+        "drupal/inline_entity_form": 15,
         "lobsterr/newsroom_connector": 20,
         "lobsterr/oe_newsroom_connector": 20,
         "openeuropa/oe_corporate_countries": 10

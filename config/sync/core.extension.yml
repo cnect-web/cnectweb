@@ -3,8 +3,8 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
-  config: 0
   composite_reference: 0
+  config: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
@@ -19,6 +19,7 @@ module:
   field_group: 0
   file: 0
   filter: 0
+  geofield: 0
   image: 0
   inline_entity_form: 0
   link: 0
@@ -26,6 +27,14 @@ module:
   maxlength: 0
   media: 0
   media_avportal: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  newsroom_connector: 0
+  newsroom_connector_item: 0
+  newsroom_connector_media: 0
+  newsroom_connector_topic: 0
+  newsroom_connector_type: 0
   node: 0
   oe_content: 0
   oe_content_documents_field: 0
@@ -68,8 +77,8 @@ module:
   taxonomy: 0
   text: 0
   toolbar: 0
-  typed_link: 0
   twig_field_value: 0
+  typed_link: 0
   ui_patterns: 0
   ui_patterns_library: 0
   update: 0
