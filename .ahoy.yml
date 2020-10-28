@@ -63,7 +63,12 @@ commands:
       ahoy runphp bash
 
   install:
-    usage: Install site.
+    usage: Istall site.
+    cmd: |
+      ahoy composer install
+      ahoy runner toolkit:install-clean
+  forceinstall:
+    usage: Install site using all commands separately.
     cmd: |
       ahoy composer install
       ahoy runner toolkit:build-dev

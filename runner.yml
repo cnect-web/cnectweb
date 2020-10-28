@@ -8,18 +8,13 @@ drupal:
   account:
     name: ${env.DRUPAL_ACCOUNT_USERNAME}
     password: ${env.DRUPAL_ACCOUNT_PASSWORD}
-  sparql:
-    host: "sparql"
-    port: "8890"
-  settings:
-    databases:
-      sparql_default:
-        default:
-          prefix: ""
-          host: ${drupal.sparql.host}
-          port: ${drupal.sparql.port}
-          namespace: 'Drupal\Driver\Database\sparql'
-          driver: 'sparql'
+  additional_settings: |
+    $databases['sparql_default']['default'] = [
+    'prefix' => '',
+    'host' => getenv('DRUPAL_SPARQL_HOSTNAME'),
+    'port' => getenv('DRUPAL_SPARQL_PORT'),
+    'namespace' => 'Drupal\\Driver\\Database\\sparql',
+    'driver' => 'sparql',];
 behat:
   tags: "~@wip"
 
