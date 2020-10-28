@@ -1,0 +1,16 @@
+uuid: bfd72b7c-acf4-4292-95ac-005b2bb07011
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - cnt_landing
+_core:
+  default_config_hash: xedIspSZ3WYUmuG6RhHBAbkPpX0ulBlVA9bIKat18FY
+name: Landing
+type: cnt_landing
+description: 'Cnect Landing page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

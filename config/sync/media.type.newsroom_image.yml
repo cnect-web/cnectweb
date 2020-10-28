@@ -1,0 +1,19 @@
+uuid: a52a9488-f201-4bdd-b52f-d34a1b35425a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_media
+_core:
+  default_config_hash: '-eQKs7P41L0VPShn9CCtl2nhh1NY7EldG9loI28rJHE'
+id: newsroom_image
+label: 'Newsroom image'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_newsroom
+field_map:
+  name: name

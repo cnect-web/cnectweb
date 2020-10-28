@@ -1,15 +1,17 @@
 module:
   address: 0
+  allowed_formats: 0
   block: 0
   block_content: 0
   breakpoint: 0
+  ckeditor: 0
+  cnt_landing: 0
+  cnt_page: 0
   composite_reference: 0
   config: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
-  devel: 0
-  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -17,6 +19,7 @@ module:
   entity_reference_revisions: 0
   field: 0
   field_group: 0
+  field_ui: 0
   file: 0
   filter: 0
   geofield: 0
@@ -27,6 +30,7 @@ module:
   maxlength: 0
   media: 0
   media_avportal: 0
+  menu_ui: 0
   migrate: 0
   migrate_plus: 0
   migrate_tools: 0
@@ -50,6 +54,7 @@ module:
   oe_content_policy: 0
   oe_content_publication: 0
   oe_content_reference_code_field: 0
+  oe_content_persistent: 0
   oe_content_social_media_links_field: 0
   oe_content_timeline_field: 0
   oe_corporate_blocks: 0
@@ -57,6 +62,7 @@ module:
   oe_corporate_countries_address: 0
   oe_media: 0
   oe_media_avportal: 0
+  oe_paragraphs: 0
   oe_theme_helper: 0
   oe_time_caching: 0
   oe_webtools: 0
@@ -68,8 +74,6 @@ module:
   path_alias: 0
   rdf_entity: 0
   rdf_skos: 0
-  realistic_dummy_content: 0
-  realistic_dummy_content_api: 0
   remote_stream_wrapper: 0
   responsive_image: 0
   smart_trim: 0
@@ -83,8 +87,10 @@ module:
   ui_patterns_library: 0
   update: 0
   user: 0
+  views_ui: 0
   menu_link_content: 1
   views: 10
+  paragraphs: 11
   oe_profile: 1000
 theme:
   stable: 0

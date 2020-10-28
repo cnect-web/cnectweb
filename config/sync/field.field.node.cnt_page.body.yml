@@ -1,0 +1,25 @@
+uuid: 858b7353-29c6-4210-b360-a431cb232bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.cnt_page
+  module:
+    - text
+_core:
+  default_config_hash: QKa6z2SmeqRA9prA-T0O3sBmEwWWe9p2wOEfnE92zVE
+id: node.cnt_page.body
+field_name: body
+entity_type: node
+bundle: cnt_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

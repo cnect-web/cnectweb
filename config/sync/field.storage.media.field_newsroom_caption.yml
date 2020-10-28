@@ -1,0 +1,26 @@
+uuid: 64f23b05-27bf-4582-a6dc-51ac14bf5d17
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_media
+  module:
+    - media
+_core:
+  default_config_hash: 14bKjVCy1MUd-I5cRlNkovKEXo3n4N8MlWC5vok3wjo
+id: media.field_newsroom_caption
+field_name: field_newsroom_caption
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

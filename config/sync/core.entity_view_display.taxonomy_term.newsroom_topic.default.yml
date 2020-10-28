@@ -1,0 +1,38 @@
+uuid: 84944094-4a08-4e1d-a9b2-3b6620e65fcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.newsroom_topic.field_newsroom_id
+    - field.field.taxonomy_term.newsroom_topic.field_newsroom_topic_type
+    - taxonomy.vocabulary.newsroom_topic
+  enforced:
+    module:
+      - newsroom_connector_topic
+  module:
+    - text
+_core:
+  default_config_hash: gfu3l4j76iNWXAwmimFVfFY2VgdimVUo0yM9Bxm46f0
+id: taxonomy_term.newsroom_topic.default
+targetEntityType: taxonomy_term
+bundle: newsroom_topic
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_newsroom_id:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  field_newsroom_topic_type: true
