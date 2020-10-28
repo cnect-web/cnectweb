@@ -1,0 +1,21 @@
+uuid: b4694a73-842c-4ae3-b1fd-25dafc2adf8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsroom_speaker
+    - node.type.newsroom_item
+_core:
+  default_config_hash: vuTn1lu-D8dFiKQJ4jpKPtD1Ze8PQfqmIUmcF5sJEns
+id: node.newsroom_item.field_newsroom_speaker
+field_name: field_newsroom_speaker
+entity_type: node
+bundle: newsroom_item
+label: Speaker
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

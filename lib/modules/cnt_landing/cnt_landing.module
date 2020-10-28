@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains cnt_landing.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cnt_landing_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cnt_landing module.
+    case 'help.page.cnt_landing':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Cnect Landing page') . '</p>';
+      return $output;
+
+    default:
+  }
+}

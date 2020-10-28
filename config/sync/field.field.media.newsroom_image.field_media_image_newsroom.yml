@@ -1,0 +1,40 @@
+uuid: 4bea8ce2-97d6-43a2-b0c7-19b5a9f31062
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image_newsroom
+    - media.type.newsroom_image
+  module:
+    - image
+_core:
+  default_config_hash: srXMkVq_pae6TxZ9tjs_3oeI_51d9v4UFvzKp-2h7w0
+id: media.newsroom_image.field_media_image_newsroom
+field_name: field_media_image_newsroom
+entity_type: media
+bundle: newsroom_image
+label: Image
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,92 @@
+uuid: d2a2f162-8b2a-43ce-8ddf-0b77d23f058c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cnt_content_blocks
+    - node.type.cnt_landing
+    - paragraphs.paragraphs_type.oe_accordion
+    - paragraphs.paragraphs_type.oe_accordion_item
+    - paragraphs.paragraphs_type.oe_content_row
+    - paragraphs.paragraphs_type.oe_contextual_navigation
+    - paragraphs.paragraphs_type.oe_fact
+    - paragraphs.paragraphs_type.oe_facts_figures
+    - paragraphs.paragraphs_type.oe_links_block
+    - paragraphs.paragraphs_type.oe_list_item
+    - paragraphs.paragraphs_type.oe_list_item_block
+    - paragraphs.paragraphs_type.oe_quote
+    - paragraphs.paragraphs_type.oe_rich_text
+    - paragraphs.paragraphs_type.oe_social_media_follow
+  module:
+    - composite_reference
+    - entity_reference_revisions
+third_party_settings:
+  composite_reference:
+    composite: false
+_core:
+  default_config_hash: tEGotdJFqEesxB9Vs_iq1dIiPYGGKqWGYTklbnkOX1c
+id: node.cnt_landing.field_cnt_content_blocks
+field_name: field_cnt_content_blocks
+entity_type: node
+bundle: cnt_landing
+label: 'Content blocks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      oe_accordion: oe_accordion
+      oe_accordion_item: oe_accordion_item
+      oe_content_row: oe_content_row
+      oe_contextual_navigation: oe_contextual_navigation
+      oe_fact: oe_fact
+      oe_facts_figures: oe_facts_figures
+      oe_links_block: oe_links_block
+      oe_list_item: oe_list_item
+      oe_list_item_block: oe_list_item_block
+      oe_quote: oe_quote
+      oe_rich_text: oe_rich_text
+      oe_social_media_follow: oe_social_media_follow
+    target_bundles_drag_drop:
+      oe_accordion:
+        enabled: true
+        weight: 13
+      oe_accordion_item:
+        enabled: true
+        weight: 14
+      oe_content_row:
+        enabled: true
+        weight: 15
+      oe_contextual_navigation:
+        enabled: true
+        weight: 16
+      oe_fact:
+        enabled: true
+        weight: 17
+      oe_facts_figures:
+        enabled: true
+        weight: 18
+      oe_links_block:
+        enabled: true
+        weight: 19
+      oe_list_item:
+        enabled: true
+        weight: 20
+      oe_list_item_block:
+        enabled: true
+        weight: 21
+      oe_quote:
+        enabled: true
+        weight: 22
+      oe_rich_text:
+        enabled: true
+        weight: 23
+      oe_social_media_follow:
+        enabled: true
+        weight: 24
+field_type: entity_reference_revisions

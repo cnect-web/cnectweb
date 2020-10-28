@@ -1,0 +1,21 @@
+uuid: 3d90af61-556d-49ea-af9a-f3b1e97e81c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_newsroom_copyright
+    - media.type.newsroom_image
+_core:
+  default_config_hash: ajqsyZiSdV9QQc8fICpSVU0HkROW-cw8_Wk_TYOKSzg
+id: media.newsroom_image.field_newsroom_copyright
+field_name: field_newsroom_copyright
+entity_type: media
+bundle: newsroom_image
+label: Copyright
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

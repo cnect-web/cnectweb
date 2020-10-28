@@ -1,0 +1,21 @@
+uuid: 594ce4bf-580e-453a-b539-9ef489d7ce85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsroom_project_name
+    - node.type.newsroom_item
+_core:
+  default_config_hash: OxuhVOWF146YUjwoq6IrUkUUM41ak6mVHEHJ8C6M2dY
+id: node.newsroom_item.field_newsroom_project_name
+field_name: field_newsroom_project_name
+entity_type: node
+bundle: newsroom_item
+label: 'Project name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

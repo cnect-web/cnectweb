@@ -1,0 +1,21 @@
+uuid: b2b77f41-eac9-41e6-b3ff-235737852444
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsroom_pr_coordinator
+    - node.type.newsroom_item
+_core:
+  default_config_hash: LOGgUs3kI65nSbmwcsytH017I1mCGmFiWSOO8VXcC3g
+id: node.newsroom_item.field_newsroom_pr_coordinator
+field_name: field_newsroom_pr_coordinator
+entity_type: node
+bundle: newsroom_item
+label: 'Project coordinator'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

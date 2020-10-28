@@ -1,0 +1,15 @@
+uuid: f28fd039-d053-4325-abed-a02e6bec55d3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector
+_core:
+  default_config_hash: CaG6KlNHltIevWbYwxOuB5s-_iSVm2TIvPZW1JIzMKs
+id: newsroom
+label: Newsroom
+description: 'Newsroom migrations.'
+source_type: XML
+module: null
+shared_configuration: null
