@@ -42,10 +42,19 @@ module:
   newsroom_connector_type: 0
   node: 0
   oe_content: 0
+  oe_content_documents_field: 0
   oe_content_entity: 0
   oe_content_entity_contact: 0
   oe_content_entity_organisation: 0
   oe_content_entity_venue: 0
+  oe_content_event: 0
+  oe_content_featured_media_field: 0
+  oe_content_news: 0
+  oe_content_page: 0
+  oe_content_persistent: 0
+  oe_content_policy: 0
+  oe_content_publication: 0
+  oe_content_reference_code_field: 0
   oe_content_persistent: 0
   oe_content_social_media_links_field: 0
   oe_content_timeline_field: 0
@@ -75,6 +84,7 @@ module:
   taxonomy: 0
   text: 0
   toolbar: 0
+  twig_field_value: 0
   typed_link: 0
   ui_patterns: 0
   ui_patterns_library: 0
