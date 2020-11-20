@@ -6,16 +6,17 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
+        "drupal/address": "^1.8",
         "php": "^7.3",
         "composer/installers": "^1.5",
         "cweagans/composer-patches": "^1.7",
         "drupal/address": "^1.8",
-        "drupal/admin_toolbar": "^2.3",
+        "drupal/admin_toolbar": "^2.4",
+        "drupal/composite_reference": "^1.0@alpha",
         "drupal/adminimal_theme": "^1.5",
         "drupal/core": "^8.9",
         "drupal/core-composer-scaffold": "^8.9.6",
         "drupal/realistic_dummy_content": "^3.0.0",
-        "drupal/composite_reference": "^1.0@alpha",
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/entity_version": "^1.0@beta",
         "drupal/entity_version_workflows": "^1.0@beta",
@@ -45,12 +46,17 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "ec-europa/toolkit": "~4.0.6",
-        "drupal/core-dev": "^8.7",
+        "drupal/config_devel": "^1.7",
+        "drupal/devel": "^2.1",
+        "drupal/drupal-extension": "dev-master",
+        "drupal/maillog": "1.x-dev",
+        "drupal/stage_file_proxy": "^1.0",
         "drupal/devel": "^4.0",
         "drupal/devel_generate": "^4.0",
         "drupal/drupal-extension": "~4.0",
-        "drupal/console": "~1.0"
+        "ec-europa/toolkit": "~4.0.0-beta7",
+        "drupal/console": "~1.0",
+        "symfony/browser-kit": "4.4 as 3.4"
     },
     "scripts": {
         "post-install-cmd": [

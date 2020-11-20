@@ -1,12 +1,13 @@
-uuid: 170a7a1b-7810-4417-9cd9-da33fecd2fd9
+uuid: a0ef1f73-0292-4e75-ab96-28eeba250aa9
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_newsroom_type
     - node.type.newsroom_item
+    - taxonomy.vocabulary.newsroom_type
 _core:
-  default_config_hash: Sbj8aKY3NscTMbWlLvvTC3BpYe0w3zEoEJkwc3bdrAA
+  default_config_hash: 8PY70_QKwtAgLWdD39QlWWMDeZHGieBhxkJA_EIIQwc
 id: node.newsroom_item.field_newsroom_type
 field_name: field_newsroom_type
 entity_type: node
@@ -20,7 +21,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      newsroom_type: newsroom_type
     sort:
       field: name
       direction: asc

@@ -1,12 +1,13 @@
-uuid: 4a55b13c-b19b-469b-873e-ba5fe8de3705
+uuid: 2ec95b76-6403-4c0c-89ca-b37c5de2f0fc
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_newsroom_hl_topics
     - node.type.newsroom_item
+    - taxonomy.vocabulary.newsroom_topic
 _core:
-  default_config_hash: L1iKsw66QhRNeRBQj91LMHjCxq-j0yzs6P8Rmvxxwhc
+  default_config_hash: 44nqXKDEWDU_OcFWw8GdK2yYu-CGIXJjbxwW-URvhFg
 id: node.newsroom_item.field_newsroom_hl_topics
 field_name: field_newsroom_hl_topics
 entity_type: node
@@ -20,7 +21,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      newsroom_topic: newsroom_topic
     sort:
       field: name
       direction: asc
