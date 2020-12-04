@@ -8,6 +8,7 @@ module:
   ckeditor: 0
   cnt_landing: 0
   cnt_page: 0
+  cnt_core: 0
   composite_reference: 0
   config: 0
   datetime: 0
