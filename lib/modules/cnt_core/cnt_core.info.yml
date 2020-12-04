@@ -1,0 +1,6 @@
+name: Core
+type: module
+description: The core module to CNECT website
+package: Cnect
+core: 8.x
+core_version_requirement: ^8

@@ -1,0 +1,4 @@
+administer cnt_core configuration:
+  title: 'Administer cnt_core configuration'
+  description: 'Optional description.'
+  restrict access: true
