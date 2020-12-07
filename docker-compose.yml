@@ -7,7 +7,7 @@ services:
       - 80:80
     volumes:
       - ${PWD}:${PWD} # Non Mac users.
-      # if you need to enable mailhog and mssendmail use these settings
+      # if you need to enable mailhog and mhsendmail use these settings
       #- ${PWD}/dev/mhsendmail:/usr/local/bin/mhsendmail
       #- ${PWD}/dev/mailhog.ini:/etc/php/7.3/cli/conf.d/mailhog.ini
       #- ${PWD}/dev/mailhog.ini:/etc/php/7.3/fpm/conf.d/mailhog.ini
