@@ -17,11 +17,13 @@ module:
   editor: 0
   entity_browser: 0
   entity_browser_entity_form: 0
+  entity_reference: 0
   entity_reference_revisions: 0
   field: 0
   field_group: 0
   field_ui: 0
   file: 0
+  file_link: 0
   filter: 0
   geofield: 0
   image: 0
@@ -55,6 +57,7 @@ module:
   oe_corporate_blocks: 0
   oe_corporate_countries: 0
   oe_corporate_countries_address: 0
+  oe_corporate_site_info: 0
   oe_media: 0
   oe_media_avportal: 0
   oe_paragraphs: 0

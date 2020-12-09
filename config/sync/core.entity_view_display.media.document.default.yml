@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.media.document.oe_media_file
+    - field.field.media.document.oe_media_file_type
+    - field.field.media.document.oe_media_remote_file
     - media.type.document
   module:
     - file
@@ -25,5 +27,7 @@ content:
 hidden:
   created: true
   name: true
+  oe_media_file_type: true
+  oe_media_remote_file: true
   thumbnail: true
   uid: true
