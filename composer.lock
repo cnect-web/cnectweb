@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "511cd6fee1070940721fa1826d60e140",
+    "content-hash": "2106ba81064293e67df7d7398580051d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3221,7 +3221,7 @@
                     }
                 },
                 "patches_applied": {
-                    "https://www.drupal.org/project/field_group/issues/2787179#comment-13467953": "https://www.drupal.org/files/issues/2020-02-17/2787179-highlight-html5-validation-45.patch"
+                    "https://www.drupal.org/project/field_group/issues/2787179": "https://www.drupal.org/files/issues/2020-05-19/2787179-highlight-html5-validation-52.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6341,20 +6341,22 @@
         },
         {
             "name": "openeuropa/oe_corporate_blocks",
-            "version": "2.4.0",
+            "version": "3.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openeuropa/oe_corporate_blocks.git",
-                "reference": "3baa12aab7ccbca829a3d46938d5597db5c7ce3d"
+                "reference": "0e77cd4aa6f61842fb2cd7535cec65fadb2f90a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openeuropa/oe_corporate_blocks/zipball/3baa12aab7ccbca829a3d46938d5597db5c7ce3d",
-                "reference": "3baa12aab7ccbca829a3d46938d5597db5c7ce3d",
+                "url": "https://api.github.com/repos/openeuropa/oe_corporate_blocks/zipball/0e77cd4aa6f61842fb2cd7535cec65fadb2f90a5",
+                "reference": "0e77cd4aa6f61842fb2cd7535cec65fadb2f90a5",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^8.7",
+                "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
+                "openeuropa/oe_corporate_site_info": "~0.1.0",
                 "php": ">=7.2"
             },
             "require-dev": {
@@ -6365,7 +6367,7 @@
                 "drush/drush": "~9.0",
                 "guzzlehttp/guzzle": "~6.3",
                 "openeuropa/behat-transformation-context": "~0.1",
-                "openeuropa/code-review": "~1.0",
+                "openeuropa/code-review": "~1.5",
                 "openeuropa/drupal-core-require-dev": "^8.7",
                 "openeuropa/oe_multilingual": "dev-master",
                 "openeuropa/task-runner": "~1.0-beta5",
@@ -6401,7 +6403,7 @@
                 "EUPL-1.2"
             ],
             "description": "OpenEuropa Corporate Blocks.",
-            "time": "2020-04-08T10:16:10+00:00"
+            "time": "2020-12-09T13:07:06+00:00"
         },
         {
             "name": "openeuropa/oe_corporate_countries",
@@ -6466,6 +6468,69 @@
             ],
             "description": "OpenEuropa Drupal module template.",
             "time": "2020-12-03T14:31:59+00:00"
+        },
+        {
+            "name": "openeuropa/oe_corporate_site_info",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openeuropa/oe_corporate_site_info.git",
+                "reference": "97a3f18b6fe4ff870082460afc2eeed4ace37c9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/openeuropa/oe_corporate_site_info/zipball/97a3f18b6fe4ff870082460afc2eeed4ace37c9a",
+                "reference": "97a3f18b6fe4ff870082460afc2eeed4ace37c9a",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^8.8",
+                "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
+                "openeuropa/rdf_skos": "~0.11",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "composer/installers": "~1.5",
+                "drupal-composer/drupal-scaffold": "~2.2",
+                "drupal/config_devel": "~1.2",
+                "drupal/drupal-extension": "~4.0",
+                "drush/drush": "~9.0@stable",
+                "guzzlehttp/guzzle": "~6.3",
+                "openeuropa/code-review": "~1.5.0",
+                "openeuropa/drupal-core-require-dev": "^8.8",
+                "openeuropa/task-runner": "~1.0@beta",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "composer-exit-on-patch-failure": true,
+                "enable-patching": true,
+                "installer-paths": {
+                    "build/core": [
+                        "type:drupal-core"
+                    ],
+                    "build/profiles/contrib/{$name}": [
+                        "type:drupal-profile"
+                    ],
+                    "build/modules/contrib/{$name}": [
+                        "type:drupal-module"
+                    ],
+                    "build/themes/contrib/{$name}": [
+                        "type:drupal-theme"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\oe_corporate_site_info\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "OpenEuropa Corporate Site Information.",
+            "time": "2020-12-03T14:34:11+00:00"
         },
         {
             "name": "openeuropa/oe_editorial",
@@ -6766,11 +6831,11 @@
         },
         {
             "name": "openeuropa/oe_theme",
-            "version": "2.12.0",
+            "version": "2.12.1",
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/openeuropa/oe_theme/releases/download/2.12.0/oe_theme-2.12.0.tar.gz",
-                "reference": "e1cb9f4c4a6e252874b418938c371b8b8e908abc",
+                "url": "https://github.com/openeuropa/oe_theme/releases/download/2.12.1/oe_theme-2.12.1.tar.gz",
+                "reference": "cbe90e39dbe3ab1b6ab59e48d603ba2393a3f18f",
                 "shasum": ""
             },
             "require": {
@@ -6866,7 +6931,7 @@
                 "EUPL-1.2"
             ],
             "description": "OpenEuropa base theme.",
-            "time": "2020-12-04T12:59:05+00:00"
+            "time": "2020-12-09T13:29:43+00:00"
         },
         {
             "name": "openeuropa/oe_time_caching",
