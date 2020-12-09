@@ -10,6 +10,7 @@ module:
   cnt_page: 0
   composite_reference: 0
   config: 0
+  ctools: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
@@ -78,6 +79,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   twig_field_value: 0
   typed_link: 0
@@ -87,6 +89,7 @@ module:
   user: 0
   views_ui: 0
   menu_link_content: 1
+  pathauto: 1
   views: 10
   paragraphs: 11
   oe_profile: 1000
