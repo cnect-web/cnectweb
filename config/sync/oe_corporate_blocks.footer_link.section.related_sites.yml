@@ -1,0 +1,9 @@
+uuid: 7004cf18-e7a3-460e-9921-ae07f29a11cd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8ch6fiQPpczf0cqHyQIkywOCEw_NELDrTh-MJiVM-LQ
+id: related_sites
+label: 'Related sites'
+weight: -8

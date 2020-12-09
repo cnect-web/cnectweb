@@ -57,6 +57,7 @@ module:
   oe_corporate_blocks: 0
   oe_corporate_countries: 0
   oe_corporate_countries_address: 0
+  oe_corporate_site_info: 0
   oe_media: 0
   oe_media_avportal: 0
   oe_paragraphs: 0
