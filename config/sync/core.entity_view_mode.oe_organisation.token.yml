@@ -1,0 +1,10 @@
+uuid: 840afc6f-28e2-4c49-8392-f8da4658fc47
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_content_entity_organisation
+id: oe_organisation.token
+label: Token
+targetEntityType: oe_organisation
+cache: true
