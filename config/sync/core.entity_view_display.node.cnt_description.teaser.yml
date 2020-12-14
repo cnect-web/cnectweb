@@ -1,0 +1,24 @@
+uuid: 2473efa9-5e59-4c50-b146-5f2ca8c23ce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.cnt_description
+  module:
+    - user
+id: node.cnt_description.teaser
+targetEntityType: node
+bundle: cnt_description
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true
