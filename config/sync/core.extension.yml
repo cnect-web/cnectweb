@@ -10,6 +10,7 @@ module:
   cnt_landing: 0
   cnt_page: 0
   composite_reference: 0
+  conditional_fields: 0
   config: 0
   ctools: 0
   datetime: 0
