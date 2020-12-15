@@ -1,0 +1,21 @@
+uuid: 05251931-5b5e-4f82-aae9-1489d2c50a79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_lst_txt_content_type
+    - node.type.cnt_description
+  module:
+    - options
+id: node.cnt_description.cnt_lst_txt_content_type
+field_name: cnt_lst_txt_content_type
+entity_type: node
+bundle: cnt_description
+label: Type
+description: 'Select the content type.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

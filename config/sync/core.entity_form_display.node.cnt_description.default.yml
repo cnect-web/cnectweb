@@ -3,104 +3,52 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.cnt_description.cnt_lst_txt_content_type
     - node.type.cnt_description
   module:
-    - link
     - path
-    - rdf_skos
 id: node.cnt_description.default
 targetEntityType: node
 bundle: cnt_description
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
+  cnt_lst_txt_content_type:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
-  oe_content_content_owner:
-    type: skos_concept_entity_reference_autocomplete
-    weight: 0
+    type: options_select
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  oe_content_legacy_link:
-    type: link_default
-    weight: 0
+  created:
+    type: datetime_timestamp
+    weight: 2
     region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-  oe_content_navigation_title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  oe_content_short_title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 3
     region: content
     settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 120
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

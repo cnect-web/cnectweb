@@ -3,14 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.cnt_description.cnt_lst_txt_content_type
     - node.type.cnt_description
   module:
+    - options
     - user
 id: node.cnt_description.default
 targetEntityType: node
 bundle: cnt_description
 mode: default
 content:
+  cnt_lst_txt_content_type:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   links:
     weight: 100
     settings: {  }
