@@ -13,6 +13,7 @@
         "drupal/admin_toolbar": "^2.4",
         "drupal/adminimal_theme": "^1.5",
         "drupal/composite_reference": "^1.0@alpha",
+        "drupal/conditional_fields": "^1.0@alpha",
         "drupal/core": "^8.9",
         "drupal/core-composer-scaffold": "^8.9.6",
         "drupal/entity_reference_revisions": "^1.8",
