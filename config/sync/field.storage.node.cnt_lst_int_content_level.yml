@@ -1,0 +1,30 @@
+uuid: 98f34750-2af0-4bf5-967b-42a3c432d251
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.cnt_lst_int_content_level
+field_name: cnt_lst_int_content_level
+entity_type: node
+type: list_float
+settings:
+  allowed_values:
+    -
+      value: !!float 1
+      label: 'Level 1'
+    -
+      value: !!float 2
+      label: 'Level 2'
+    -
+      value: !!float 3
+      label: 'Level 3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
