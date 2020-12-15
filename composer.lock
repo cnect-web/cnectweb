@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55c3dc8b5286fbccba78dc851e05bf7e",
+    "content-hash": "34a3f89ceaef5e3d3713631aad829033",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2530,6 +2530,78 @@
             }
         },
         {
+            "name": "drupal/conditional_fields",
+            "version": "1.0.0-alpha9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/conditional_fields.git",
+                "reference": "8.x-1.0-alpha9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/conditional_fields-8.x-1.0-alpha9.zip",
+                "reference": "8.x-1.0-alpha9",
+                "shasum": "74448f9fbd7a2ac83bea49fec75736b4932c8fc4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha9",
+                    "datestamp": "1596049134",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Adyax",
+                    "homepage": "https://www.adyax.com/"
+                },
+                {
+                    "name": "OlgaRabodzei",
+                    "homepage": "https://www.drupal.org/user/3389198"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "ergonlogic",
+                    "homepage": "https://www.drupal.org/user/368613"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "itsekhmistro",
+                    "homepage": "https://www.drupal.org/user/928152"
+                },
+                {
+                    "name": "peterpoe",
+                    "homepage": "https://www.drupal.org/user/55674"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                }
+            ],
+            "description": "Conditional fields",
+            "homepage": "https://www.drupal.org/project/conditional_fields",
+            "support": {
+                "source": "https://git.drupalcode.org/project/conditional_fields"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "8.9.11",
             "source": {
@@ -4676,6 +4748,58 @@
             }
         },
         {
+            "name": "drupal/redirect",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/redirect.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "f848e001deac8425ae57d4b9397087c491d37294"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1589312204",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                }
+            ],
+            "description": "Allows users to redirect from old URLs to new URLs.",
+            "homepage": "https://www.drupal.org/project/redirect",
+            "support": {
+                "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
             "name": "drupal/remote_stream_wrapper",
             "version": "1.5.0",
             "source": {
@@ -4798,26 +4922,26 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token.git",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "c7e3a3757282e4c94e3c1fff08d01e22155cb853"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "f8e3b8f897817969324d88019438066b533bfe42"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1589314266",
+                    "version": "8.x-1.8",
+                    "datestamp": "1607552423",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4831,7 +4955,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6470,16 +6594,16 @@
         },
         {
             "name": "openeuropa/oe_content",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openeuropa/oe_content.git",
-                "reference": "23db0b944aa0bf63a56d6b8ccb11619b698d09a1"
+                "reference": "4d48ffc5c2bc272ffe2181ceb2dedcd7b83a2b81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openeuropa/oe_content/zipball/23db0b944aa0bf63a56d6b8ccb11619b698d09a1",
-                "reference": "23db0b944aa0bf63a56d6b8ccb11619b698d09a1",
+                "url": "https://api.github.com/repos/openeuropa/oe_content/zipball/4d48ffc5c2bc272ffe2181ceb2dedcd7b83a2b81",
+                "reference": "4d48ffc5c2bc272ffe2181ceb2dedcd7b83a2b81",
                 "shasum": ""
             },
             "require": {
@@ -6551,6 +6675,9 @@
                     },
                     "drupal/entity_browser": {
                         "https://www.drupal.org/project/entity_browser/issues/2851580": "https://www.drupal.org/files/issues/2020-10-05/entity_browser-remove_button_2851580-92.patch"
+                    },
+                    "drupal/inline_entity_form": {
+                        "https://www.drupal.org/project/inline_entity_form/issues/2875716": "https://www.drupal.org/files/issues/2020-11-05/ief_removed_references_2875716-89.patch"
                     }
                 }
             },
@@ -6564,20 +6691,20 @@
                 "EUPL-1.2"
             ],
             "description": "OpenEuropa Drupal module that contains the EC corporate entity types.",
-            "time": "2020-12-04T13:00:24+00:00"
+            "time": "2020-12-10T12:38:33+00:00"
         },
         {
             "name": "openeuropa/oe_corporate_blocks",
-            "version": "3.0.0-beta3",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openeuropa/oe_corporate_blocks.git",
-                "reference": "0e77cd4aa6f61842fb2cd7535cec65fadb2f90a5"
+                "reference": "53aabd82080baf7c77c2bc0733eacad82033f284"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openeuropa/oe_corporate_blocks/zipball/0e77cd4aa6f61842fb2cd7535cec65fadb2f90a5",
-                "reference": "0e77cd4aa6f61842fb2cd7535cec65fadb2f90a5",
+                "url": "https://api.github.com/repos/openeuropa/oe_corporate_blocks/zipball/53aabd82080baf7c77c2bc0733eacad82033f284",
+                "reference": "53aabd82080baf7c77c2bc0733eacad82033f284",
                 "shasum": ""
             },
             "require": {
@@ -6630,7 +6757,7 @@
                 "EUPL-1.2"
             ],
             "description": "OpenEuropa Corporate Blocks.",
-            "time": "2020-12-09T13:07:06+00:00"
+            "time": "2020-12-11T14:44:00+00:00"
         },
         {
             "name": "openeuropa/oe_corporate_countries",
@@ -7058,16 +7185,11 @@
         },
         {
             "name": "openeuropa/oe_theme",
-            "version": "2.12.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/openeuropa/oe_theme.git",
-                "reference": "cbe90e39dbe3ab1b6ab59e48d603ba2393a3f18f"
-            },
+            "version": "2.12.3",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/openeuropa/oe_theme/zipball/cbe90e39dbe3ab1b6ab59e48d603ba2393a3f18f",
-                "reference": "cbe90e39dbe3ab1b6ab59e48d603ba2393a3f18f",
+                "type": "tar",
+                "url": "https://github.com/openeuropa/oe_theme/releases/download/2.12.3/oe_theme-2.12.3.tar.gz",
+                "reference": "cad099d7189e7fdbc0c360911c03630cd8e69c67",
                 "shasum": ""
             },
             "require": {
@@ -7081,7 +7203,7 @@
                 "ralouphie/mimey": "^2.1"
             },
             "conflict": {
-                "openeuropa/oe_corporate_blocks": "<2.1.0"
+                "openeuropa/oe_corporate_blocks": "<3.0.0"
             },
             "require-dev": {
                 "composer/installers": "~1.5",
@@ -7163,7 +7285,7 @@
                 "EUPL-1.2"
             ],
             "description": "OpenEuropa base theme.",
-            "time": "2020-12-09T13:29:43+00:00"
+            "time": "2020-12-11T15:01:15+00:00"
         },
         {
             "name": "openeuropa/oe_time_caching",
@@ -12791,16 +12913,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.25.5",
+            "version": "1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "1817faadd1846cd08be9a49e905dc68823bc38c0"
+                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1817faadd1846cd08be9a49e905dc68823bc38c0",
-                "reference": "1817faadd1846cd08be9a49e905dc68823bc38c0",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
+                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
                 "shasum": ""
             },
             "require": {
@@ -12816,7 +12938,7 @@
                 "graylog2/gelf-php": "~1.0",
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
-                "php-parallel-lint/php-parallel-lint": "^1.0",
+                "phpstan/phpstan": "^0.12.59",
                 "phpunit/phpunit": "~4.5",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "sentry/sentry": "^0.13",
@@ -12836,11 +12958,6 @@
                 "sentry/sentry": "Allow sending log messages to a Sentry server"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Monolog\\": "src/Monolog"
@@ -12874,7 +12991,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-23T08:35:51+00:00"
+            "time": "2020-12-14T12:56:38+00:00"
         },
         {
             "name": "nuvoleweb/robo-config",
@@ -13849,6 +13966,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/composite_reference": 15,
+        "drupal/conditional_fields": 15,
         "drupal/entity_version": 10,
         "drupal/entity_version_workflows": 10,
         "drupal/inline_entity_form": 15,
