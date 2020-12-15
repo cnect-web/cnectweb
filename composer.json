@@ -28,6 +28,7 @@
         "drupal/migrate_tools": "^5.0",
         "drupal/pathauto": "^1.8",
         "drupal/realistic_dummy_content": "^3.0.0",
+        "drupal/redirect": "^1.6",
         "drupal/typed_link": "^1.0",
         "drush/drush": "^9.0",
         "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
