@@ -1,0 +1,23 @@
+uuid: 0e74b402-567e-44ff-94b4-f822187ffcb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cnt_description
+  module:
+    - user
+id: node.cnt_description.default
+targetEntityType: node
+bundle: cnt_description
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true

@@ -1,0 +1,17 @@
+uuid: 51bb8057-24e5-41e8-88b8-ae1033df8e77
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Description
+type: cnt_description
+description: 'A flexible content type that will allow editors and contributors to create pages for policies, activities or any generic page.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
