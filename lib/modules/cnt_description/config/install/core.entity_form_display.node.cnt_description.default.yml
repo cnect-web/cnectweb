@@ -11,34 +11,48 @@ dependencies:
     - field.field.node.cnt_description.cnt_txt_sv_01
     - node.type.cnt_description
   module:
+    - field_group
     - path
     - text
+third_party_settings:
+  field_group:
+    group_general:
+      children:
+        - cnt_lst_txt_content_type
+        - cnt_lst_int_content_level
+        - title
+        - cnt_txt_sv_01
+        - cnt_txt_log_01
+        - cnt_txt_fmt_01
+        - cnt_txt_fmt_02
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: General
 id: node.cnt_description.default
 targetEntityType: node
 bundle: cnt_description
 mode: default
 content:
   cnt_lst_int_content_level:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   cnt_lst_txt_content_type:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   cnt_txt_fmt_01:
-    weight: 5
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  cnt_txt_fmt_02:
     weight: 6
     settings:
       rows: 5
@@ -46,8 +60,16 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  cnt_txt_fmt_02:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   cnt_txt_log_01:
-    weight: 4
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
@@ -55,7 +77,7 @@ content:
     type: string_textarea
     region: content
   cnt_txt_sv_01:
-    weight: 3
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -64,26 +86,26 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 9
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
