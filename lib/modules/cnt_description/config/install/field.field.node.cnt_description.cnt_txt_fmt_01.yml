@@ -10,6 +10,7 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
+    ckeditor: ckeditor
     plain_text: '0'
 id: node.cnt_description.cnt_txt_fmt_01
 field_name: cnt_txt_fmt_01
