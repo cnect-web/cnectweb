@@ -1,0 +1,25 @@
+uuid: a066c6b3-8921-4899-827c-c71d5dbaeb03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_txt_fmt_02
+    - node.type.cnt_description
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: '0'
+id: node.cnt_description.cnt_txt_fmt_02
+field_name: cnt_txt_fmt_02
+entity_type: node
+bundle: cnt_description
+label: 'Secondary Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

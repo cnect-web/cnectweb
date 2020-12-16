@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
     - field.field.node.cnt_description.cnt_txt_fmt_01
+    - field.field.node.cnt_description.cnt_txt_fmt_02
     - field.field.node.cnt_description.cnt_txt_log_01
     - field.field.node.cnt_description.cnt_txt_sv_01
     - node.type.cnt_description
@@ -26,6 +27,7 @@ hidden:
   cnt_lst_int_content_level: true
   cnt_lst_txt_content_type: true
   cnt_txt_fmt_01: true
+  cnt_txt_fmt_02: true
   cnt_txt_log_01: true
   cnt_txt_sv_01: true
   oe_content_content_owner: true
