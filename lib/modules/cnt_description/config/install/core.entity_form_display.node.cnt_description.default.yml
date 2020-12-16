@@ -73,7 +73,23 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        a93e684b-07ca-4a7b-898f-807ca81f9d67:
+          dependee: cnt_lst_txt_content_type
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "activity\r\npolicy"
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: cnt_description
     type: string_textarea
     region: content
   cnt_txt_sv_01:
