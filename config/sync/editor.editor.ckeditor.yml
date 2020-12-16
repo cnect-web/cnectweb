@@ -45,6 +45,8 @@ settings:
             - Format
             - Maximize
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
     drupallink:
