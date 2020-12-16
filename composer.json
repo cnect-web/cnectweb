@@ -19,7 +19,7 @@
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/entity_version": "^1.0@beta",
         "drupal/entity_version_workflows": "^1.0@beta",
-        "drupal/field_group": "^3.0",
+        "drupal/field_group": "^3.1",
         "drupal/geocoder": "^3.2",
         "drupal/geocoder_geofield": "^3.2",
         "drupal/geofield": "^1.13",
