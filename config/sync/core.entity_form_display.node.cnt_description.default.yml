@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.cnt_description.cnt_bol_sv_01
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
     - field.field.node.cnt_description.cnt_txt_fmt_01
@@ -26,6 +27,7 @@ third_party_settings:
         - cnt_txt_log_01
         - cnt_txt_fmt_01
         - cnt_txt_fmt_02
+        - cnt_bol_sv_01
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -41,6 +43,13 @@ targetEntityType: node
 bundle: cnt_description
 mode: default
 content:
+  cnt_bol_sv_01:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   cnt_lst_int_content_level:
     weight: 2
     settings: {  }

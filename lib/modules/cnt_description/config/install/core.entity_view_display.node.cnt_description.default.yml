@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.cnt_description.cnt_bol_sv_01
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
     - field.field.node.cnt_description.cnt_txt_fmt_01
@@ -19,6 +20,16 @@ targetEntityType: node
 bundle: cnt_description
 mode: default
 content:
+  cnt_bol_sv_01:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   cnt_lst_int_content_level:
     weight: 102
     label: above
