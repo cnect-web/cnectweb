@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.cnt_description.cnt_bol_sv_01
+    - field.field.node.cnt_description.cnt_er_parent_content
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
     - field.field.node.cnt_description.cnt_txt_fmt_01
@@ -22,12 +23,13 @@ third_party_settings:
       children:
         - cnt_lst_txt_content_type
         - cnt_lst_int_content_level
+        - cnt_bol_sv_01
         - title
         - cnt_txt_sv_01
         - cnt_txt_log_01
         - cnt_txt_fmt_01
         - cnt_txt_fmt_02
-        - cnt_bol_sv_01
+        - cnt_er_parent_content
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -44,11 +46,39 @@ bundle: cnt_description
 mode: default
 content:
   cnt_bol_sv_01:
-    weight: 8
+    weight: 3
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  cnt_er_parent_content:
+    weight: 9
+    settings:
+      match_operator: STARTS_WITH
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        2749adb3-4866-4a14-86cb-9066cd8b9250:
+          dependee: cnt_lst_int_content_level
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "2\r\n3"
+            value_form:
+              -
+                value: '1'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: cnt_description
+    type: entity_reference_autocomplete
     region: content
   cnt_lst_int_content_level:
     weight: 2
@@ -63,7 +93,7 @@ content:
     type: options_select
     region: content
   cnt_txt_fmt_01:
-    weight: 6
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
@@ -71,7 +101,7 @@ content:
     type: text_textarea
     region: content
   cnt_txt_fmt_02:
-    weight: 7
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
@@ -97,7 +127,7 @@ content:
     type: text_textarea
     region: content
   cnt_txt_log_01:
-    weight: 5
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
@@ -121,7 +151,7 @@ content:
     type: string_textarea
     region: content
   cnt_txt_sv_01:
-    weight: 4
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -142,7 +172,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 3
+    weight: 4
     region: content
     settings:
       size: 60
