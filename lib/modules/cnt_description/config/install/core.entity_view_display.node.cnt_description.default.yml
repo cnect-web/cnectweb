@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
+    - field.field.node.cnt_description.cnt_txt_fmt_01
     - field.field.node.cnt_description.cnt_txt_log_01
     - field.field.node.cnt_description.cnt_txt_sv_01
     - node.type.cnt_description
   module:
     - options
+    - text
     - user
 id: node.cnt_description.default
 targetEntityType: node
@@ -29,6 +31,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  cnt_txt_fmt_01:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   cnt_txt_log_01:
     weight: 104
