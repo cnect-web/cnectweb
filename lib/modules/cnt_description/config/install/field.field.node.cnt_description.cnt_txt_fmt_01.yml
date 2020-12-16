@@ -1,0 +1,26 @@
+uuid: 94d6b6d4-074a-46b1-9f28-a5d0f9fe6351
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_txt_fmt_01
+    - node.type.cnt_description
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    ckeditor: ckeditor
+    plain_text: '0'
+id: node.cnt_description.cnt_txt_fmt_01
+field_name: cnt_txt_fmt_01
+entity_type: node
+bundle: cnt_description
+label: 'Main Body'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

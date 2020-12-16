@@ -4,6 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.cnt_description.cnt_bol_sv_01
+    - field.field.node.cnt_description.cnt_er_parent_content
+    - field.field.node.cnt_description.cnt_lst_int_content_level
+    - field.field.node.cnt_description.cnt_lst_txt_content_type
+    - field.field.node.cnt_description.cnt_txt_fmt_01
+    - field.field.node.cnt_description.cnt_txt_fmt_02
+    - field.field.node.cnt_description.cnt_txt_log_01
+    - field.field.node.cnt_description.cnt_txt_sv_01
     - node.type.cnt_description
   module:
     - user
@@ -18,6 +26,14 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  cnt_bol_sv_01: true
+  cnt_er_parent_content: true
+  cnt_lst_int_content_level: true
+  cnt_lst_txt_content_type: true
+  cnt_txt_fmt_01: true
+  cnt_txt_fmt_02: true
+  cnt_txt_log_01: true
+  cnt_txt_sv_01: true
   oe_content_content_owner: true
   oe_content_legacy_link: true
   oe_content_navigation_title: true

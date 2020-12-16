@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34a3f89ceaef5e3d3713631aad829033",
+    "content-hash": "29c9a44051f1d521a121ce78af10a763",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3895,6 +3895,9 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "https://www.drupal.org/project/inline_entity_form/issues/2875716": "https://www.drupal.org/files/issues/2020-11-05/ief_removed_references_2875716-89.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7186,9 +7189,14 @@
         {
             "name": "openeuropa/oe_theme",
             "version": "2.12.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openeuropa/oe_theme.git",
+                "reference": "cad099d7189e7fdbc0c360911c03630cd8e69c67"
+            },
             "dist": {
-                "type": "tar",
-                "url": "https://github.com/openeuropa/oe_theme/releases/download/2.12.3/oe_theme-2.12.3.tar.gz",
+                "type": "zip",
+                "url": "https://api.github.com/repos/openeuropa/oe_theme/zipball/cad099d7189e7fdbc0c360911c03630cd8e69c67",
                 "reference": "cad099d7189e7fdbc0c360911c03630cd8e69c67",
                 "shasum": ""
             },
