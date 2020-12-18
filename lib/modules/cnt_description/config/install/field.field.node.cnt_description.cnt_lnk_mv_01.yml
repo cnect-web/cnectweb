@@ -1,0 +1,23 @@
+uuid: 1ffee646-21b8-4f28-9157-1f1b0b92c8a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_lnk_mv_01
+    - node.type.cnt_description
+  module:
+    - link
+id: node.cnt_description.cnt_lnk_mv_01
+field_name: cnt_lnk_mv_01
+entity_type: node
+bundle: cnt_description
+label: Links
+description: 'Type the desired link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link
