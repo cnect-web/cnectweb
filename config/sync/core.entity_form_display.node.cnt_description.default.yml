@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_bol_sv_03
     - field.field.node.cnt_description.cnt_bol_sv_04
     - field.field.node.cnt_description.cnt_bol_sv_05
+    - field.field.node.cnt_description.cnt_er_linked_related_content
     - field.field.node.cnt_description.cnt_er_parent_content
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
@@ -16,6 +17,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_txt_log_01
     - field.field.node.cnt_description.cnt_txt_sv_01
     - field.field.node.cnt_description.cnt_txt_sv_02
+    - field.field.node.cnt_description.cnt_txt_sv_03
     - node.type.cnt_description
   module:
     - conditional_fields
@@ -49,7 +51,7 @@ third_party_settings:
       children:
         - cnt_txt_sv_02
       parent_name: ''
-      weight: 2
+      weight: 3
       format_type: details
       region: content
       format_settings:
@@ -76,6 +78,21 @@ third_party_settings:
         open: false
         required_fields: false
       label: 'Featured Content'
+    group_related_content:
+      children:
+        - cnt_txt_sv_03
+        - cnt_er_linked_related_content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: 'Related Content'
 id: node.cnt_description.default
 targetEntityType: node
 bundle: cnt_description
@@ -115,6 +132,16 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  cnt_er_linked_related_content:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   cnt_er_parent_content:
     weight: 9
@@ -230,15 +257,42 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  cnt_txt_sv_03:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ac18b6fc-28df-48ae-b0e6-cca71524f32c:
+          dependee: cnt_er_linked_related_content
+          settings:
+            state: required
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: cnt_description
+    type: string_textfield
+    region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -251,7 +305,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }

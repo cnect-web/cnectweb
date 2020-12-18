@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_bol_sv_03
     - field.field.node.cnt_description.cnt_bol_sv_04
     - field.field.node.cnt_description.cnt_bol_sv_05
+    - field.field.node.cnt_description.cnt_er_linked_related_content
     - field.field.node.cnt_description.cnt_er_parent_content
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
@@ -17,6 +18,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_txt_log_01
     - field.field.node.cnt_description.cnt_txt_sv_01
     - field.field.node.cnt_description.cnt_txt_sv_02
+    - field.field.node.cnt_description.cnt_txt_sv_03
     - node.type.cnt_description
   module:
     - user
@@ -36,6 +38,7 @@ hidden:
   cnt_bol_sv_03: true
   cnt_bol_sv_04: true
   cnt_bol_sv_05: true
+  cnt_er_linked_related_content: true
   cnt_er_parent_content: true
   cnt_lst_int_content_level: true
   cnt_lst_txt_content_type: true
@@ -44,6 +47,7 @@ hidden:
   cnt_txt_log_01: true
   cnt_txt_sv_01: true
   cnt_txt_sv_02: true
+  cnt_txt_sv_03: true
   oe_content_content_owner: true
   oe_content_legacy_link: true
   oe_content_navigation_title: true
