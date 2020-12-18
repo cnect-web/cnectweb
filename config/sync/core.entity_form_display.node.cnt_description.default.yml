@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.cnt_description.cnt_bol_sv_01
+    - field.field.node.cnt_description.cnt_bol_sv_02
+    - field.field.node.cnt_description.cnt_bol_sv_03
+    - field.field.node.cnt_description.cnt_bol_sv_04
+    - field.field.node.cnt_description.cnt_bol_sv_05
     - field.field.node.cnt_description.cnt_er_parent_content
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
@@ -45,7 +49,7 @@ third_party_settings:
       children:
         - cnt_txt_sv_02
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: details
       region: content
       format_settings:
@@ -55,6 +59,23 @@ third_party_settings:
         open: false
         required_fields: false
       label: 'Aside Content'
+    group_featured_content:
+      children:
+        - cnt_bol_sv_04
+        - cnt_bol_sv_03
+        - cnt_bol_sv_02
+        - cnt_bol_sv_05
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: 'Featured Content'
 id: node.cnt_description.default
 targetEntityType: node
 bundle: cnt_description
@@ -62,6 +83,34 @@ mode: default
 content:
   cnt_bol_sv_01:
     weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  cnt_bol_sv_02:
+    weight: 10
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  cnt_bol_sv_03:
+    weight: 9
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  cnt_bol_sv_04:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  cnt_bol_sv_05:
+    weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
@@ -183,13 +232,13 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -202,7 +251,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }

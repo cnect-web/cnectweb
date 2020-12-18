@@ -1,0 +1,23 @@
+uuid: 01c7b49f-4c9c-4616-a44a-7d35ae350bdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_bol_sv_04
+    - node.type.cnt_description
+id: node.cnt_description.cnt_bol_sv_04
+field_name: cnt_bol_sv_04
+entity_type: node
+bundle: cnt_description
+label: 'Display Calls & Consultations'
+description: 'Check this option to display the <em>Calls & Consultations</em> block on the page.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
