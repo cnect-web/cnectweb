@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_bol_sv_05
     - field.field.node.cnt_description.cnt_er_linked_related_content
     - field.field.node.cnt_description.cnt_er_parent_content
+    - field.field.node.cnt_description.cnt_lnk_mv_01
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
     - field.field.node.cnt_description.cnt_txt_fmt_01
@@ -18,8 +19,10 @@ dependencies:
     - field.field.node.cnt_description.cnt_txt_sv_01
     - field.field.node.cnt_description.cnt_txt_sv_02
     - field.field.node.cnt_description.cnt_txt_sv_03
+    - field.field.node.cnt_description.cnt_txt_sv_04
     - node.type.cnt_description
   module:
+    - link
     - options
     - text
     - user
@@ -94,6 +97,18 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  cnt_lnk_mv_01:
+    weight: 117
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   cnt_lst_int_content_level:
     weight: 102
     label: above
@@ -147,6 +162,14 @@ content:
     region: content
   cnt_txt_sv_03:
     weight: 114
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  cnt_txt_sv_04:
+    weight: 116
     label: above
     settings:
       link_to_entity: false

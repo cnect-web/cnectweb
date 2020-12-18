@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_bol_sv_05
     - field.field.node.cnt_description.cnt_er_linked_related_content
     - field.field.node.cnt_description.cnt_er_parent_content
+    - field.field.node.cnt_description.cnt_lnk_mv_01
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
     - field.field.node.cnt_description.cnt_txt_fmt_01
@@ -18,10 +19,12 @@ dependencies:
     - field.field.node.cnt_description.cnt_txt_sv_01
     - field.field.node.cnt_description.cnt_txt_sv_02
     - field.field.node.cnt_description.cnt_txt_sv_03
+    - field.field.node.cnt_description.cnt_txt_sv_04
     - node.type.cnt_description
   module:
     - conditional_fields
     - field_group
+    - link
     - path
     - text
 third_party_settings:
@@ -51,7 +54,7 @@ third_party_settings:
       children:
         - cnt_txt_sv_02
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: details
       region: content
       format_settings:
@@ -83,7 +86,7 @@ third_party_settings:
         - cnt_txt_sv_03
         - cnt_er_linked_related_content
       parent_name: ''
-      weight: 2
+      weight: 3
       format_type: details
       region: content
       format_settings:
@@ -93,6 +96,21 @@ third_party_settings:
         open: false
         required_fields: false
       label: 'Related Content'
+    group_featured_links:
+      children:
+        - cnt_txt_sv_04
+        - cnt_lnk_mv_01
+      parent_name: ''
+      weight: 2
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: 'Featured Links'
 id: node.cnt_description.default
 targetEntityType: node
 bundle: cnt_description
@@ -170,6 +188,14 @@ content:
           entity_type: node
           bundle: cnt_description
     type: entity_reference_autocomplete
+    region: content
+  cnt_lnk_mv_01:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   cnt_lst_int_content_level:
     weight: 2
@@ -284,15 +310,23 @@ content:
           bundle: cnt_description
     type: string_textfield
     region: content
+  cnt_txt_sv_04:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -305,7 +339,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
