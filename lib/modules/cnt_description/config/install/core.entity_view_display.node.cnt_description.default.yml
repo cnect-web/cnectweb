@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.cnt_description.cnt_bol_sv_01
+    - field.field.node.cnt_description.cnt_bol_sv_02
+    - field.field.node.cnt_description.cnt_bol_sv_03
+    - field.field.node.cnt_description.cnt_bol_sv_04
+    - field.field.node.cnt_description.cnt_bol_sv_05
     - field.field.node.cnt_description.cnt_er_parent_content
     - field.field.node.cnt_description.cnt_lst_int_content_level
     - field.field.node.cnt_description.cnt_lst_txt_content_type
@@ -24,6 +28,46 @@ mode: default
 content:
   cnt_bol_sv_01:
     weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  cnt_bol_sv_02:
+    weight: 110
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  cnt_bol_sv_03:
+    weight: 111
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  cnt_bol_sv_04:
+    weight: 112
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  cnt_bol_sv_05:
+    weight: 113
     label: above
     settings:
       format: default

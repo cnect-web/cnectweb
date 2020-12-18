@@ -1,0 +1,18 @@
+uuid: f0434200-bac8-4607-8a34-f4a2fb7b5368
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.cnt_bol_sv_03
+field_name: cnt_bol_sv_03
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
