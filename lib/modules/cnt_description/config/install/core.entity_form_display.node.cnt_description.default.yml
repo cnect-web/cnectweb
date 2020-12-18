@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_txt_fmt_02
     - field.field.node.cnt_description.cnt_txt_log_01
     - field.field.node.cnt_description.cnt_txt_sv_01
+    - field.field.node.cnt_description.cnt_txt_sv_02
     - node.type.cnt_description
   module:
     - conditional_fields
@@ -40,6 +41,20 @@ third_party_settings:
         description: ''
         required_fields: true
       label: General
+    group_aside_content:
+      children:
+        - cnt_txt_sv_02
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: 'Aside Content'
 id: node.cnt_description.default
 targetEntityType: node
 bundle: cnt_description
@@ -151,6 +166,14 @@ content:
     type: string_textarea
     region: content
   cnt_txt_sv_01:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  cnt_txt_sv_02:
     weight: 5
     settings:
       size: 60

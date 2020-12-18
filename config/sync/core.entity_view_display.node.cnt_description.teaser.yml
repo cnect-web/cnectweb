@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.cnt_description.cnt_txt_fmt_02
     - field.field.node.cnt_description.cnt_txt_log_01
     - field.field.node.cnt_description.cnt_txt_sv_01
+    - field.field.node.cnt_description.cnt_txt_sv_02
     - node.type.cnt_description
   module:
     - user
@@ -34,6 +35,7 @@ hidden:
   cnt_txt_fmt_02: true
   cnt_txt_log_01: true
   cnt_txt_sv_01: true
+  cnt_txt_sv_02: true
   oe_content_content_owner: true
   oe_content_legacy_link: true
   oe_content_navigation_title: true
