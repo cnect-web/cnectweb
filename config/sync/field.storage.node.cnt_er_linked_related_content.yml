@@ -1,0 +1,19 @@
+uuid: ab5d51a2-46a5-4e9c-8450-a9099e9c325e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.cnt_er_linked_related_content
+field_name: cnt_er_linked_related_content
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

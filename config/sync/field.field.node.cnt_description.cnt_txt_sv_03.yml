@@ -1,0 +1,21 @@
+uuid: e751eefb-b666-4ca1-ad7f-d6c762070090
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_txt_sv_03
+    - node.type.cnt_description
+id: node.cnt_description.cnt_txt_sv_03
+field_name: cnt_txt_sv_03
+entity_type: node
+bundle: cnt_description
+label: 'Related Content Block Title'
+description: 'Type the title of the <em>Related Content</em> block.'
+required: false
+translatable: false
+default_value:
+  -
+    value: Other
+default_value_callback: ''
+settings: {  }
+field_type: string
