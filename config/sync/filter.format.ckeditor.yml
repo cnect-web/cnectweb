@@ -49,6 +49,12 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  filter_iframe_cck:
+    id: filter_iframe_cck
+    provider: oe_webtools_cookie_consent
+    status: true
+    weight: 0
+    settings: {  }
   media_embed:
     id: media_embed
     provider: media
@@ -58,9 +64,3 @@ filters:
       default_view_mode: default
       allowed_media_types: {  }
       allowed_view_modes: {  }
-  filter_iframe_cck:
-    id: filter_iframe_cck
-    provider: oe_webtools_cookie_consent
-    status: true
-    weight: 0
-    settings: {  }

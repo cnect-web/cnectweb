@@ -1,0 +1,25 @@
+uuid: 5c244278-6bc5-4c14-9866-ca9292a194ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cnt_theme
+_core:
+  default_config_hash: GjIY19Ye6qaEjY-tPThsCJgnbU01lyDRHznNORLxEQE
+id: cnt_theme_site_branding
+theme: cnt_theme
+region: site_header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
