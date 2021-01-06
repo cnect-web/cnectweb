@@ -63,7 +63,6 @@ module:
   oe_corporate_countries: 0
   oe_corporate_countries_address: 0
   oe_corporate_site_info: 0
-  oe_media: 1
   oe_media_avportal: 0
   oe_media_embed: 0
   oe_media_webtools: 0
@@ -98,6 +97,7 @@ module:
   user: 0
   views_ui: 0
   menu_link_content: 1
+  oe_media: 1
   pathauto: 1
   views: 10
   paragraphs: 11
