@@ -1,0 +1,22 @@
+uuid: 58275d18-ebd6-4a68-b33f-e648fbad1b02
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cnt_theme
+_core:
+  default_config_hash: 6CJaYwUFNeOtxlpGOLvx2ncifNsfLKOtw86deh1GWx4
+id: cnt_theme_main_page_content
+theme: cnt_theme
+region: content
+weight: 2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

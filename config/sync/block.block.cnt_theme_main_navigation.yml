@@ -1,0 +1,27 @@
+uuid: ea91bff6-7d51-4ea7-9c05-569dbc0e1ded
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - cnt_theme
+_core:
+  default_config_hash: 8ZIY5H3SvsjwOkDYl6OOTjZCNE5RdIOg8LwplXZgwI4
+id: cnt_theme_main_navigation
+theme: cnt_theme
+region: navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
