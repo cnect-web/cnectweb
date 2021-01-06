@@ -3,7 +3,10 @@ langcode: en
 status: true
 dependencies:
   module:
-    - media
+    - editor
+    - linkit
+    - oe_content_persistent
+    - oe_media_embed
     - oe_webtools_cookie_consent
 name: 'Simple HTML'
 format: ckeditor
@@ -13,54 +16,82 @@ filters:
     id: filter_html
     provider: filter
     status: true
-    weight: -10
+    weight: -50
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid> <p> <h1> <pre>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <h1> <pre> <img src alt data-entity-type data-entity-uuid data-align data-caption> <drupal-media data-entity-type data-entity-uuid> <p data-oembed>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_url:
     id: filter_url
     provider: filter
     status: true
-    weight: 0
+    weight: -46
     settings:
       filter_url_length: 72
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
     status: true
-    weight: 10
+    weight: -44
     settings: {  }
   filter_align:
     id: filter_align
     provider: filter
     status: true
-    weight: 0
+    weight: -49
     settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
     status: true
-    weight: 0
+    weight: -48
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: 0
+    weight: -47
     settings: {  }
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_media_types: {  }
-      allowed_view_modes: {  }
   filter_iframe_cck:
     id: filter_iframe_cck
     provider: oe_webtools_cookie_consent
     status: true
-    weight: 0
+    weight: -45
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: false
+    weight: -41
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -38
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -42
+    settings: {  }
+  linkit:
+    id: linkit
+    provider: linkit
+    status: false
+    weight: -40
+    settings:
+      title: true
+  media_embed:
+    id: media_embed
+    provider: oe_media_embed
+    status: true
+    weight: -43
+    settings: {  }
+  filter_purl:
+    id: filter_purl
+    provider: oe_content_persistent
+    status: false
+    weight: -39
     settings: {  }

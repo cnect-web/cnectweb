@@ -36,6 +36,7 @@ settings:
         -
           name: Media
           items:
+            - media
             - Blockquote
             - DrupalImage
         -
@@ -45,13 +46,13 @@ settings:
             - Format
             - Maximize
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
     drupallink:
       linkit_enabled: false
       linkit_profile: ''
-    language:
-      language_list: un
 image_upload:
   status: false
   scheme: public
