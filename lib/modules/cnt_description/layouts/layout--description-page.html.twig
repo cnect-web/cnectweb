@@ -1,0 +1,86 @@
+{#
+/**
+ * @file
+ * Layout to display a description content.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# Prepare class for main content area depending on page_nav region #}
+{# Make use of twig filters to check if there is content on this layout region #}
+{# since the block with in page nav will always present and will be controlled via cnt_bol_sv_01 field #}
+{% if content.page_nav|render|striptags|trim is empty %}
+    {% set main_content_col = 'ecl-col-12' %}
+{% else %}
+    {% set main_content_col = 'ecl-col-12 ecl-col-lg-9' %}
+{% endif %}
+
+  <div class="ecl-u-type-m">
+    
+    {# TOP #}
+    {% if content.top %}
+      <div class="ecl-row">
+        <div class="ecl-col-12">
+          {{ content.top }}
+        </div>
+      </div>
+    {% endif %}
+    
+    {# INTRO #}
+    <div class="ecl-row">
+      <div class="ecl-col-12 ecl-col-md-7">
+       {% if content.intro_left %}
+          {{ content.intro_left }}
+        {% endif %}
+      </div>
+      <div class="ecl-col-12 ecl-col-md-5">
+        {% if content.intro_right %}
+          {{ content.intro_right }}
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="ecl-row">
+      <div class="ecl-col-12 ecl-col-lg-8">
+        <div class="ecl-row" data-ecl-inpage-navigation-container="true">
+          {% if content.page_nav %}
+            <div class="ecl-col-lg-3">
+              {{ content.page_nav }}
+            </div>
+          {% endif %}
+
+          {# MAIN #}
+          <div {{ attributes.addClass(main_content_col) }}>
+            {% if content.main %}
+              <main>
+                  {{ content.main }}
+              </main>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      {# ASIDE #}
+      <div class="ecl-col-12 ecl-col-lg-4">
+        <aside class="ecl-u-height-100">
+          {% if content.aside %}
+            {{ content.aside }}
+          {% endif %}
+        </aside>
+      </div>
+    </div>
+
+    {# BOTTOM #}
+    <div class="ecl-row">
+      <div class="ecl-col-12">
+          {% if content.bottom %}
+            {{ content.bottom }}
+          {% endif %}
+      </div>
+    </div>
+
+  </div>
