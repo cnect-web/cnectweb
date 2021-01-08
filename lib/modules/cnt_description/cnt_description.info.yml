@@ -4,3 +4,4 @@ description: The description content type is used to create pages for policies, 
 package: Cnect
 core: 8.x
 core_version_requirement: ^8 || ^9
+php: 7.3

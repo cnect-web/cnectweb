@@ -3,5 +3,7 @@ type: module
 description: 'Cnect Page'
 core: 8.x
 package: Cnect
+core_version_requirement: ^8 || ^9
+php: 7.3
 dependencies:
-  - menu_ui
+  - drupal:menu_ui
