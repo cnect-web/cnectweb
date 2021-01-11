@@ -33,9 +33,9 @@ module:
   geofield: 0
   image: 0
   inline_entity_form: 0
+  json_field: 0
   layout_builder: 0
   layout_discovery: 0
-  json_field: 0
   link: 0
   linkit: 0
   maxlength: 0
@@ -78,6 +78,7 @@ module:
   oe_webtools_media: 0
   options: 0
   page_cache: 0
+  paragraph_blocks: 0
   path: 0
   path_alias: 0
   rdf_entity: 0
