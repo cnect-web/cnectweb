@@ -1,0 +1,27 @@
+layout_description_layout:
+  label: 'Description Page Layout'
+  path: layouts
+  template: layout--description-page
+  class: '\Drupal\Core\Layout\LayoutDefault'
+  category: 'Base Layout'
+  default_region: main
+  icon_map:
+    - [top]
+    - [intro_left, intro_left, intro_left, intro_left, intro_left, intro_left, intro_left, intro_right, intro_right, intro_right, intro_right, intro_right]
+    - [page_nav, main, main, main, aside, aside]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    intro_left:
+      label: Intro Left
+    intro_right:
+      label: Intro Right
+    page_nav:
+      label: Page navigation
+    main:
+      label: Main
+    aside:
+      label: Aside
+    bottom:
+      label: Bottom

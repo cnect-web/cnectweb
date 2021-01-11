@@ -8,6 +8,6 @@ logo:
 favicon:
   use_default: 1
 component_library: ec
-branding: core
+branding: standardised
 _core:
   default_config_hash: EfmRHlEi92lyU7Tw6PTfpUi9JFbm-2LdOAnkX0nR02Q

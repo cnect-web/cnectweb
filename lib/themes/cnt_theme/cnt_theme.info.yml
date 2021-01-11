@@ -3,6 +3,8 @@ type: theme
 description: Custom sub-theme of OpenEuropa Drupal 8 theme
 package: CNECT
 core: 8.x
+core_version_requirement: ^8 || ^9
+php: 7.3
 
 # Libraries.
 libraries:
