@@ -1,0 +1,9 @@
+uuid: a80d5796-5d01-4f44-9e31-0925b57dd3d6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FDTdWCLpqjhzVB5Xx6CbNlYPwq_8qFcJfHr9C0U5d00
+id: about_us
+label: 'About us'
+weight: -9

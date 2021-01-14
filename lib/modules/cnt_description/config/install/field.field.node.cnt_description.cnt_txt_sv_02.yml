@@ -1,0 +1,19 @@
+uuid: f77d398c-263c-4269-93f4-b1519a0ce8ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_txt_sv_02
+    - node.type.cnt_description
+id: node.cnt_description.cnt_txt_sv_02
+field_name: cnt_txt_sv_02
+entity_type: node
+bundle: cnt_description
+label: 'Twitter Account'
+description: 'Add the Twitter account (including the "@") to display the aside social media block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

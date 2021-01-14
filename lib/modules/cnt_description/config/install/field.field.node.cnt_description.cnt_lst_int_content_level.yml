@@ -1,0 +1,23 @@
+uuid: b0fd54a0-011b-40e5-9d83-7038634b21e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_lst_int_content_level
+    - node.type.cnt_description
+  module:
+    - options
+id: node.cnt_description.cnt_lst_int_content_level
+field_name: cnt_lst_int_content_level
+entity_type: node
+bundle: cnt_description
+label: 'Content Level'
+description: 'Select the level of your content.'
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_float

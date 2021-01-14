@@ -1,0 +1,10 @@
+uuid: a6e9fa7b-2f6c-438c-a97a-e883fd6b45d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_corporate_blocks
+id: footer_link_section.token
+label: Token
+targetEntityType: footer_link_section
+cache: true

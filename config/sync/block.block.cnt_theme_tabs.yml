@@ -1,0 +1,22 @@
+uuid: 50a3a3ab-57fa-4e91-9844-40c03b7f5f79
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cnt_theme
+_core:
+  default_config_hash: dgNNqbFhD7pU6jLM1B6NaK4LV239C_c0hqx8aGiQE1Y
+id: cnt_theme_tabs
+theme: cnt_theme
+region: content
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

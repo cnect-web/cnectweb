@@ -1,0 +1,33 @@
+uuid: 6dec9112-5d06-4673-9232-798490303af0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_er_parent_content
+    - node.type.cnt_description
+  module:
+    - composite_reference
+third_party_settings:
+  composite_reference:
+    composite: false
+id: node.cnt_description.cnt_er_parent_content
+field_name: cnt_er_parent_content
+entity_type: node
+bundle: cnt_description
+label: 'Parent Content'
+description: 'Select the parent of your content typing the first characters of the title.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cnt_description: cnt_description
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

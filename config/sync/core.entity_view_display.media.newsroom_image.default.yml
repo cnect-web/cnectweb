@@ -11,6 +11,10 @@ dependencies:
     - media.type.newsroom_image
   module:
     - image
+    - oe_media_embed
+third_party_settings:
+  oe_media_embed:
+    embeddable: true
 _core:
   default_config_hash: aDNKX8r1wpK3qTxMijUuh3jimfNl05e_JVNRtBTcINc
 id: media.newsroom_image.default

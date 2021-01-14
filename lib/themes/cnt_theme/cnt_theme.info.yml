@@ -1,0 +1,26 @@
+name: 'CNECT Theme'
+type: theme
+description: Custom sub-theme of OpenEuropa Drupal 8 theme
+package: CNECT
+core: 8.x
+core_version_requirement: ^8 || ^9
+php: 7.3
+
+# Libraries.
+libraries:
+  - cnt_theme/global-styling
+  - oe_theme/component_library_ec
+  
+base theme: oe_theme
+
+component_library: ec
+
+# Regions.
+regions:
+  site_top_bar: "Site top bar"
+  site_header: "Site header"
+  site_header_secondary: "Site header secondary"
+  page_header: "Page header"
+  navigation: "Navigation"
+  content: "Content"
+  footer: "Footer"
