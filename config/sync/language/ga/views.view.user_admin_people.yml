@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      fields:
+        name:
+          label: 'Ainm úsáideora'
+        status:
+          label: Stádas
+        created:
+          label: 'Ball ar feadh'
+      filters:
+        status:
+          group_info:
+            label: Stádas
+      use_more_text: Tuilleadh

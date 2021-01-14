@@ -1,0 +1,37 @@
+label: Файлове
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Рестартирай
+      fields:
+        filename:
+          label: Име
+        filesize:
+          label: Размер
+        status:
+          label: Статус
+          settings:
+            format_custom_true: Постоянен
+        changed:
+          label: 'Дата на промяна'
+      filters:
+        filename:
+          expose:
+            label: 'Име на файла'
+        status:
+          expose:
+            label: Статус
+      title: Файлове
+  page_1:
+    display_options:
+      menu:
+        title: Файлове
+  page_2:
+    display_options:
+      arguments:
+        fid:
+          exception:
+            title: Всички

@@ -1,0 +1,72 @@
+contact_title: 'Obratite se EU-u'
+contact:
+  -
+    href: 'tel:0080067891011'
+    label: 'Nazovite nas na 00 800 6 7 8 9 10 11'
+  -
+    href: 'https://europa.eu/european-union/contact/call-us_hr'
+    label: 'Uspostavite telefonsku vezu na drugi način'
+  -
+    href: 'https://europa.eu/european-union/contact/write-to-us_hr'
+    label: 'Pišite nam služeći se našim obrascem za kontakt'
+  -
+    href: 'https://europa.eu/european-union/contact/meet-us_hr'
+    label: 'Upoznajte nas u lokalnom uredu EU-a'
+social_media_title: 'Društvene mreže'
+social_media:
+  -
+    label: 'Pronađite EU na društvenim mrežama'
+    href: 'https://europa.eu/european-union/contact/social-networks_hr'
+institution_links_title: 'Institucije EU-a'
+institution_links:
+  -
+    label: 'Europski parlament'
+    href: 'http://www.europarl.europa.eu/portal/hr'
+  -
+    label: 'Europsko vijeće'
+    href: 'http://www.consilium.europa.eu/hr/european-council/'
+  -
+    label: 'Vijeće Europske unije'
+    href: 'http://www.consilium.europa.eu/hr/home/'
+  -
+    label: 'Europska komisija'
+    href: 'https://ec.europa.eu/commission/index_hr'
+  -
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/hr/'
+  -
+    label: 'Europska središnja banka (ESB)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.hr.html'
+  -
+    label: 'Europski revizorski sud (ERS)'
+    href: 'http://www.eca.europa.eu/hr'
+  -
+    label: 'Europska služba za vanjsko djelovanje (ESVD)'
+    href: 'http://eeas.europa.eu/index_hr.htm'
+  -
+    label: 'Europski gospodarski i socijalni odbor (EGSO)'
+    href: 'http://www.eesc.europa.eu/?i=portal.hr.home'
+  -
+    label: 'Europski odbor regija (OR)'
+    href: 'http://cor.europa.eu/hr/'
+  -
+    label: 'Europska investicijska banka (EIB)'
+  -
+    label: 'Europski nadzornik za zaštitu podataka (EDPS)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=hr'
+legal_links_title: 'Pravne obavijesti'
+legal_links:
+  -
+    label: 'O ovoj stranici'
+    href: 'https://europa.eu/european-union/abouteuropa_hr'
+  -
+    label: 'Jezična politika'
+    href: 'https://europa.eu/european-union/abouteuropa/language-policy_hr'
+  -
+    label: 'Politika zaštite privatnosti'
+    href: 'https://europa.eu/european-union/abouteuropa/privacy-policy_hr'
+  -
+    label: 'Pravna obavijest'
+    href: 'https://europa.eu/european-union/abouteuropa/legal_notices_hr'
+  -
+    label: Kolačići
+    href: 'https://europa.eu/european-union/abouteuropa/cookies_hr'

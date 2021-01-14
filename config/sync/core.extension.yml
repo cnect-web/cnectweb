@@ -11,6 +11,7 @@ module:
   composite_reference: 0
   conditional_fields: 0
   config: 0
+  config_translation: 0
   content_moderation: 0
   contextual: 0
   ctools: 0
@@ -35,10 +36,12 @@ module:
   image: 0
   inline_entity_form: 0
   json_field: 0
+  language: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
   linkit: 0
+  locale: 0
   maxlength: 0
   media: 0
   media_avportal: 0
@@ -109,6 +112,7 @@ module:
   menu_link_content: 1
   oe_media: 1
   pathauto: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   oe_profile: 1000

@@ -1,0 +1,78 @@
+corporate_site_link:
+  href: 'https://ec.europa.eu/info/index_ga'
+  label: 'Suíomh gréasáin an Choimisiúin Eorpaigh'
+class_navigation:
+  -
+    href: 'https://ec.europa.eu/info/strategy_ga'
+    label: Straitéis
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission_ga'
+    label: 'Eolas faoin gCoimisiún Eorpach'
+  -
+    href: 'https://ec.europa.eu/info/business-economy-euro_ga'
+    label: 'Gnó, an geilleagar, an euro'
+  -
+    href: 'https://ec.europa.eu/info/live-work-travel-eu_ga'
+    label: 'Cúrsaí saoil, oibre agus taistil san Aontas Eorpach'
+  -
+    href: 'https://ec.europa.eu/info/law_ga'
+    label: 'An dlí'
+  -
+    href: 'https://ec.europa.eu/info/funding-tenders_ga'
+    label: 'Maoiniú, Glaonna ar Thairiscintí'
+  -
+    href: 'https://ec.europa.eu/info/research-and-innovation_ga'
+    label: 'Taighde agus nuálaíocht'
+  -
+    href: 'https://ec.europa.eu/info/energy-climate-change-environment_ga'
+    label: 'Fuinneamh, an t-athrú aeráide, an comhshaol'
+  -
+    href: 'https://ec.europa.eu/info/education_ga'
+    label: Oideachas
+  -
+    href: 'https://ec.europa.eu/info/aid-development-cooperation-fundamental-rights_ga'
+    label: 'Cabhair, comhar don fhorbairt, cearta bunúsacha'
+  -
+    href: 'https://ec.europa.eu/info/food-farming-fisheries_ga'
+    label: 'Bia, Feirmeoireacht, Iascaigh'
+  -
+    href: 'https://ec.europa.eu/info/eu-regional-and-urban-development_ga'
+    label: 'Infheistíocht réigiúnach agus uirbeach an Aontais'
+  -
+    href: 'https://ec.europa.eu/info/jobs-european-commission_ga'
+    label: 'Poist leis an gCoimisiún Eorpach'
+  -
+    href: 'https://ec.europa.eu/info/statistics_ga'
+    label: Statisticí
+  -
+    href: 'https://ec.europa.eu/commission/presscorner/home/ga'
+    label: Nuacht
+  -
+    href: 'https://ec.europa.eu/info/events_ga'
+    label: Imeachtaí
+  -
+    href: 'https://ec.europa.eu/info/publications_ga'
+    label: Foilseacháin
+service_navigation:
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission/contact_ga'
+    label: 'Teagmháil a dhéanamh leis an gCoimisiún Eorpach'
+  -
+    href: 'https://europa.eu/european-union/contact/social-networks_ga#n:+i:4+e:1+t:+s'
+    label: 'Lean an Coimisiún Eorpach ar na meáin shóisialta'
+  -
+    href: 'https://ec.europa.eu/info/resources-partners_ga'
+    label: 'Acmhainní le haghaidh comhpháirtithe'
+legal_navigation:
+  -
+    href: 'https://ec.europa.eu/info/language-policy_ga'
+    label: 'Beartas teanga'
+  -
+    href: 'https://ec.europa.eu/info/cookies_ga'
+    label: Fianáin
+  -
+    href: 'https://ec.europa.eu/info/privacy-policy_ga'
+    label: 'Beartas príobháideachais'
+  -
+    href: 'https://ec.europa.eu/info/legal-notice_ga'
+    label: 'Fógra dlíthiúil'

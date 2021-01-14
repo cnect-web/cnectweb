@@ -1,0 +1,21 @@
+uuid: ccf58812-3235-40e3-b695-1dce302f0daf
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.newsroom_image
+  enforced:
+    module:
+      - newsroom_connector_media
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: nE8N5nluPdrqS_SPU3EPsqubJ3dXnQbneZtQ2eUcEZU
+id: media.newsroom_image
+target_entity_type_id: media
+target_bundle: newsroom_image
+default_langcode: site_default
+language_alterable: true

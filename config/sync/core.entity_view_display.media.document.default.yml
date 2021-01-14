@@ -30,6 +30,7 @@ content:
     region: content
 hidden:
   created: true
+  langcode: true
   name: true
   oe_media_file_type: true
   oe_media_remote_file: true

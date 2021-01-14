@@ -1,0 +1,5 @@
+content:
+  field_oe_paragraphs:
+    settings:
+      title: Seitenabschnitt
+      title_plural: Seitenabschnitte
