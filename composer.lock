@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbaeeb5138af34e604b7f219c8058372",
+    "content-hash": "b44d243c35fcc9f17883bf7187aa7ef3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2809,6 +2809,7 @@
                     }
                 },
                 "patches_applied": {
+                    "Layout builder doesn't show new extra fields": "https://www.drupal.org/files/issues/2020-09-29/3069578--54.patch",
                     "https://www.drupal.org/project/drupal/issues/2943172": "https://www.drupal.org/files/issues/2018-07-05/2943172-kernel-test-base-3.patch"
                 }
             },
@@ -4467,6 +4468,60 @@
                 "source": "https://git.drupalcode.org/project/migrate_tools",
                 "issues": "https://www.drupal.org/project/issues/migrate_tools",
                 "slack": "#migrate"
+            }
+        },
+        {
+            "name": "drupal/paragraph_blocks",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraph_blocks.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraph_blocks-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "0863b0b325aa38f20dc49fb226872e6d7eb1fe8c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/ctools": "^3.0",
+                "drupal/paragraphs": "^1.8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1605938393",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "douggreen",
+                    "homepage": "https://www.drupal.org/user/29191"
+                },
+                {
+                    "name": "vaibhavjain",
+                    "homepage": "https://www.drupal.org/user/1159692"
+                }
+            ],
+            "description": "Drupal Paragraph Blocks module",
+            "homepage": "https://www.drupal.org/project/paragraph_blocks",
+            "keywords": [
+                "Drupal",
+                "Paragraphs"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraph_blocks"
             }
         },
         {
