@@ -1,12 +1,12 @@
-uuid: 9078a141-5078-4526-a8eb-49626e969bdb
+uuid: 6b24569c-15d2-4b2d-8e9d-4d78685723b3
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.ckeditor
+    - filter.format.simple_html_in_page_navigation
   module:
     - ckeditor
-format: ckeditor
+format: simple_html_in_page_navigation
 editor: ckeditor
 settings:
   toolbar:
@@ -43,16 +43,17 @@ settings:
           name: Tools
           items:
             - Source
+            - InPageNavigationItem
             - Format
             - Maximize
   plugins:
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
     drupallink:
       linkit_enabled: false
       linkit_profile: ''
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
 image_upload:
   status: false
   scheme: public
