@@ -22,6 +22,14 @@ targetEntityType: paragraph
 bundle: oe_list_item
 mode: thumbnail_primary
 content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_oe_image:
     weight: 2
     settings:
