@@ -1,0 +1,77 @@
+corporate_site_link:
+  href: 'https://ec.europa.eu/info/index_el'
+  label: 'Ιστότοπος της Ευρωπαϊκής Επιτροπής'
+class_navigation:
+  -
+    href: 'https://ec.europa.eu/info/strategy_el'
+    label: Στρατηγική
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission_el'
+    label: 'Λίγα λόγια για την Ευρωπαϊκή Επιτροπή'
+  -
+    href: 'https://ec.europa.eu/info/business-economy-euro_el'
+    label: 'Επιχειρήσεις, οικονομία, ευρώ'
+  -
+    href: 'https://ec.europa.eu/info/live-work-travel-eu_el'
+    label: 'Ζωή, εργασία, ταξίδια στην ΕΕ'
+  -
+    href: 'https://ec.europa.eu/info/law_el'
+    label: Δίκαιο
+  -
+    href: 'https://ec.europa.eu/info/funding-tenders_el'
+    label: 'Χρηματοδότηση, προσκλήσεις υποβολής προσφορών'
+  -
+    href: 'https://ec.europa.eu/info/research-and-innovation_el'
+    label: 'Έρευνα και καινοτομία'
+  -
+    href: 'https://ec.europa.eu/info/energy-climate-change-environment_el'
+    label: 'Ενέργεια, κλιματική αλλαγή, περιβάλλον'
+  -
+    href: 'https://ec.europa.eu/info/education_el'
+    label: Εκπαίδευση
+  -
+    href: 'https://ec.europa.eu/info/aid-development-cooperation-fundamental-rights_el'
+    label: 'Βοήθεια, αναπτυξιακή συνεργασία, θεμελιώδη δικαιώματα'
+  -
+    href: 'https://ec.europa.eu/info/food-farming-fisheries_el'
+    label: 'Τρόφιμα, γεωργία, αλιεία'
+  -
+    href: 'https://ec.europa.eu/info/eu-regional-and-urban-development_el'
+    label: 'Περιφερειακή και αστική ανάπτυξη στην ΕΕ'
+  -
+    href: 'https://ec.europa.eu/info/jobs-european-commission_el'
+    label: 'Θέσεις εργασίας στην Ευρωπαϊκή Επιτροπή'
+  -
+    href: 'https://ec.europa.eu/info/statistics_el'
+    label: Στατιστικά
+  -
+    href: 'https://ec.europa.eu/commission/presscorner/home/el'
+    label: Ειδήσεις
+  -
+    href: 'https://ec.europa.eu/info/events_el'
+    label: Εκδηλώσεις
+  -
+    href: 'https://ec.europa.eu/info/publications_el'
+    label: Εκδόσεις
+service_navigation:
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission/contact_el'
+    label: 'Επικοινωνία με την Ευρωπαϊκή Επιτροπή'
+  -
+    href: 'https://europa.eu/european-union/contact/social-networks_el#n:+i:4+e:1+t:+s'
+    label: 'Ακολουθήστε την Ευρωπαϊκή Επιτροπή στα μέσα κοινωνικής δικτύωσης'
+  -
+    href: 'https://ec.europa.eu/info/resources-partners_el'
+    label: 'Πόροι για εταίρους'
+legal_navigation:
+  -
+    href: 'https://ec.europa.eu/info/language-policy_el'
+    label: 'Γλωσσική πολιτική'
+  -
+    href: 'https://ec.europa.eu/info/cookies_el'
+  -
+    href: 'https://ec.europa.eu/info/privacy-policy_el'
+    label: 'Πολιτική απορρήτου'
+  -
+    href: 'https://ec.europa.eu/info/legal-notice_el'
+    label: 'Νομική ανακοίνωση'

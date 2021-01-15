@@ -1,0 +1,14 @@
+settings:
+  allowed_values:
+    4:
+      label: Leabhar
+    18:
+      label: 'Cuir in eagar'
+    25:
+      label: Comhad
+    34:
+      label: Teanga
+    38:
+      label: Áit
+    46:
+      label: Cuardaigh

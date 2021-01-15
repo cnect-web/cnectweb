@@ -36,3 +36,4 @@ content:
     region: content
 hidden:
   field_newsroom_topic_type: true
+  langcode: true

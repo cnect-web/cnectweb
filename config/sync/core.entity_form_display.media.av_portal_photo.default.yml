@@ -15,6 +15,13 @@ targetEntityType: media
 bundle: av_portal_photo
 mode: default
 content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   oe_media_avportal_photo:
     type: avportal_textfield
     weight: 0

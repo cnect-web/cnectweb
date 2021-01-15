@@ -1,0 +1,18 @@
+uuid: d3d9a34c-e807-4b40-8c06-0186448f5e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.newsroom_topic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: aiuWrsqAUz6rr7wTu0M9auxOD9IV6iibgktga-YYOUo
+id: taxonomy_term.newsroom_topic
+target_entity_type_id: taxonomy_term
+target_bundle: newsroom_topic
+default_langcode: site_default
+language_alterable: true

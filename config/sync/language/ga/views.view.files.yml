@@ -1,0 +1,18 @@
+label: Comhaid
+display:
+  default:
+    display_options:
+      fields:
+        status:
+          label: Stádas
+          settings:
+            format_custom_true: Buan
+      filters:
+        status:
+          expose:
+            label: Stádas
+      title: Comhaid
+  page_1:
+    display_options:
+      menu:
+        title: Comhaid

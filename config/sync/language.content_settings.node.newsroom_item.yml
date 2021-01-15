@@ -1,0 +1,18 @@
+uuid: 966b199a-5815-4a3b-84d7-dc0adb99657b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.newsroom_item
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: 2y5Vxlvg1kfhwRddGlwBlcZINd556gk-VQQAESotPCQ
+id: node.newsroom_item
+target_entity_type_id: node
+target_bundle: newsroom_item
+default_langcode: site_default
+language_alterable: true

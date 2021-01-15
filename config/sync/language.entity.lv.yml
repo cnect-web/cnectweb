@@ -1,0 +1,9 @@
+uuid: 3ddadff4-30d3-4030-bdc6-1fad5ef42c69
+langcode: en
+status: true
+dependencies: {  }
+id: lv
+label: Latvian
+direction: ltr
+weight: 16
+locked: false

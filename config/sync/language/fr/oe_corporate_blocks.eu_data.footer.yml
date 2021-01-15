@@ -1,0 +1,73 @@
+contact_title: 'Contacter l''UE'
+contact:
+  -
+    href: 'tel:0080067891011'
+    label: 'Appelez-nous au 00 800 6 7 8 9 10 11'
+  -
+    href: 'https://europa.eu/european-union/contact/call-us_fr'
+    label: 'Utilisez d''autres options téléphoniques'
+  -
+    href: 'https://europa.eu/european-union/contact/write-to-us_fr'
+    label: 'Écrivez-nous au moyen de notre formulaire de contact'
+  -
+    href: 'https://europa.eu/european-union/contact/meet-us_fr'
+    label: 'Rencontrez-nous dans un bureau local de l’UE'
+social_media_title: 'Réseaux sociaux'
+social_media:
+  -
+    label: 'Rechercher les comptes de l’UE sur les réseaux sociaux'
+    href: 'https://europa.eu/european-union/contact/social-networks_fr'
+institution_links_title: 'Institutions de l’UE'
+institution_links:
+  -
+    label: 'Parlement européen'
+    href: 'http://www.europarl.europa.eu/portal/fr'
+  -
+    label: 'Conseil européen'
+    href: 'http://www.consilium.europa.eu/fr/european-council/'
+  -
+    label: 'Conseil de l''Union européenne'
+    href: 'http://www.consilium.europa.eu/fr/home/'
+  -
+    label: 'Commission européenne'
+    href: 'https://ec.europa.eu/commission/index_fr'
+  -
+    label: 'Cour de justice de l''Union européenne (CJUE)'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/fr/'
+  -
+    label: 'Banque centrale européenne (BCE)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.fr.html'
+  -
+    label: 'Cour des comptes européenne'
+    href: 'http://www.eca.europa.eu/fr'
+  -
+    label: 'Service européen pour l’action extérieure (SEAE)'
+    href: 'http://eeas.europa.eu/index_fr.htm'
+  -
+    label: 'Comité économique et social européen (CESE)'
+    href: 'http://www.eesc.europa.eu/?i=portal.fr.home'
+  -
+    label: 'Comité européen des régions (CdR)'
+    href: 'https://cor.europa.eu/fr'
+  -
+    label: 'Banque européenne d''investissement (BEI)'
+    href: 'https://www.eib.org/fr/index.htm'
+  -
+    label: 'Contrôleur européen de la protection des données'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=fr'
+legal_links_title: 'Avis juridique'
+legal_links:
+  -
+    label: 'À propos de ce site'
+    href: 'https://europa.eu/european-union/abouteuropa_fr'
+  -
+    label: 'Politique linguistique'
+    href: 'https://europa.eu/european-union/abouteuropa/language-policy_fr'
+  -
+    label: 'Protection de la vie privée'
+    href: 'https://europa.eu/european-union/abouteuropa/privacy-policy_fr'
+  -
+    label: 'Avis juridique'
+    href: 'https://europa.eu/european-union/abouteuropa/legal_notices_fr'
+  -
+    href: 'https://europa.eu/european-union/abouteuropa/cookies_fr'

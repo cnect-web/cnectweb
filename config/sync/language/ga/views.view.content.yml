@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      fields:
+        name:
+          label: Údar
+        status:
+          label: Stádas
+      filters:
+        status:
+          expose:
+            label: Stádas
+        langcode:
+          expose:
+            label: Teanga

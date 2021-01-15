@@ -1,0 +1,20 @@
+uuid: 3e2ee3e6-5233-4cd6-8afb-ce743f7d4fdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_content_entity_venue.oe_venue_type.oe_default
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: 9YZcleZqP9qbRa0__lSZlUwoUfhfrwh2XaHdRVfsCWQ
+id: oe_venue.oe_default
+target_entity_type_id: oe_venue
+target_bundle: oe_default
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,78 @@
+corporate_site_link:
+  href: 'https://ec.europa.eu/info/index_bg'
+  label: 'Уебсайт на Европейската комисия'
+class_navigation:
+  -
+    href: 'https://ec.europa.eu/info/strategy_bg'
+    label: Стратегия
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission_bg'
+    label: 'За Европейската комисия'
+  -
+    href: 'https://ec.europa.eu/info/business-economy-euro_bg'
+    label: 'Бизнес, икономика, евро'
+  -
+    href: 'https://ec.europa.eu/info/live-work-travel-eu_bg'
+    label: 'Живот, работа, пътуване в ЕС'
+  -
+    href: 'https://ec.europa.eu/info/law_bg'
+    label: Законодателство
+  -
+    href: 'https://ec.europa.eu/info/funding-tenders_bg'
+    label: 'Финансиране, обществени поръчки'
+  -
+    href: 'https://ec.europa.eu/info/research-and-innovation_bg'
+    label: 'Научни изследвания и иновации'
+  -
+    href: 'https://ec.europa.eu/info/energy-climate-change-environment_bg'
+    label: 'Енергетика, изменение на климата, околна среда'
+  -
+    href: 'https://ec.europa.eu/info/education_bg'
+    label: Образование
+  -
+    href: 'https://ec.europa.eu/info/aid-development-cooperation-fundamental-rights_bg'
+    label: 'Помощи, сътрудничество за развитие, основни права'
+  -
+    href: 'https://ec.europa.eu/info/food-farming-fisheries_bg'
+    label: 'Храни, земеделие, рибарство'
+  -
+    href: 'https://ec.europa.eu/info/eu-regional-and-urban-development_bg'
+    label: 'Регионална и селищна политика на ЕС'
+  -
+    href: 'https://ec.europa.eu/info/jobs-european-commission_bg'
+    label: 'Работни места в Европейската комисия'
+  -
+    href: 'https://ec.europa.eu/info/statistics_bg'
+    label: Статистики
+  -
+    href: 'https://ec.europa.eu/commission/presscorner/home/bg'
+    label: Новини
+  -
+    href: 'https://ec.europa.eu/info/events_bg'
+    label: Прояви
+  -
+    href: 'https://ec.europa.eu/info/publications_bg'
+    label: Публикации
+service_navigation:
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission/contact_bg'
+    label: 'За контакти с Европейската комисия'
+  -
+    href: 'https://europa.eu/european-union/contact/social-networks_bg#n:+i:4+e:1+t:+s'
+    label: 'Следвайте Европейската комисия в социалните медии'
+  -
+    href: 'https://ec.europa.eu/info/resources-partners_bg'
+    label: 'Ресурси за партньори'
+legal_navigation:
+  -
+    href: 'https://ec.europa.eu/info/language-policy_bg'
+    label: 'Езикова политика'
+  -
+    href: 'https://ec.europa.eu/info/cookies_bg'
+    label: Бисквитки
+  -
+    href: 'https://ec.europa.eu/info/privacy-policy_bg'
+    label: 'Политика за поверителност'
+  -
+    href: 'https://ec.europa.eu/info/legal-notice_bg'
+    label: 'Правна информация'

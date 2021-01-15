@@ -1,0 +1,20 @@
+uuid: 976d6388-8938-4877-8c93-d81ffc0a9474
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_quote
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: bzlnI2gMuU0IM9REZGWZCxky_1SO6mHrih3FmsPBOMY
+id: paragraph.oe_quote
+target_entity_type_id: paragraph
+target_bundle: oe_quote
+default_langcode: site_default
+language_alterable: true

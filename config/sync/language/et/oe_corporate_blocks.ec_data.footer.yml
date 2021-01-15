@@ -1,0 +1,78 @@
+corporate_site_link:
+  href: 'https://ec.europa.eu/info/index_et'
+  label: 'Euroopa Komisjoni veebisait'
+class_navigation:
+  -
+    href: 'https://ec.europa.eu/info/strategy_et'
+    label: Strateegia
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission_et'
+    label: 'Euroopa Komisjoni tutvustus'
+  -
+    href: 'https://ec.europa.eu/info/business-economy-euro_et'
+    label: 'Ettevõtlus, majandus, euro'
+  -
+    href: 'https://ec.europa.eu/info/live-work-travel-eu_et'
+    label: 'Elamine, töötamine ja reisimine ELis'
+  -
+    href: 'https://ec.europa.eu/info/law_et'
+    label: Õigusnormid
+  -
+    href: 'https://ec.europa.eu/info/funding-tenders_et'
+    label: 'Rahastamine, hanked'
+  -
+    href: 'https://ec.europa.eu/info/research-and-innovation_et'
+    label: 'Teadusuuringud ja innovatsioon'
+  -
+    href: 'https://ec.europa.eu/info/energy-climate-change-environment_et'
+    label: 'Energia, kliimamuutused, keskkond'
+  -
+    href: 'https://ec.europa.eu/info/education_et'
+    label: Haridus
+  -
+    href: 'https://ec.europa.eu/info/aid-development-cooperation-fundamental-rights_et'
+    label: 'Abi, arengukoostöö, põhiõigused'
+  -
+    href: 'https://ec.europa.eu/info/food-farming-fisheries_et'
+    label: 'Toit, põllumajandus, kalandus'
+  -
+    href: 'https://ec.europa.eu/info/eu-regional-and-urban-development_et'
+    label: 'ELi regionaal- ja linnapoliitika'
+  -
+    href: 'https://ec.europa.eu/info/jobs-european-commission_et'
+    label: 'Töökohad Euroopa Komisjonis'
+  -
+    href: 'https://ec.europa.eu/info/statistics_et'
+    label: Statistika
+  -
+    href: 'https://ec.europa.eu/commission/presscorner/home/et'
+    label: Uudised
+  -
+    href: 'https://ec.europa.eu/info/events_et'
+    label: Üritused
+  -
+    href: 'https://ec.europa.eu/info/publications_et'
+    label: Väljaanded
+service_navigation:
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission/contact_et'
+    label: 'Võtke ühendust Euroopa Komisjoniga'
+  -
+    href: 'https://europa.eu/european-union/contact/social-networks_et#n:+i:4+e:1+t:+s'
+    label: 'Euroopa Komisjon sotsiaalmeedias'
+  -
+    href: 'https://ec.europa.eu/info/resources-partners_et'
+    label: 'Materjalid partneritele'
+legal_navigation:
+  -
+    href: 'https://ec.europa.eu/info/language-policy_et'
+    label: Keelepoliitika
+  -
+    href: 'https://ec.europa.eu/info/cookies_et'
+    label: Küpsised
+  -
+    href: 'https://ec.europa.eu/info/privacy-policy_et'
+    label: 'Isikuandmete kaitse'
+  -
+    href: 'https://ec.europa.eu/info/legal-notice_et'
+    label: Õigusteave

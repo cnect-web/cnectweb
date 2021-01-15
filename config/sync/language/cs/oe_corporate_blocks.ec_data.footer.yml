@@ -1,0 +1,77 @@
+corporate_site_link:
+  href: 'https://ec.europa.eu/info/index_cs'
+  label: 'Internetové stránky Evropské komise'
+class_navigation:
+  -
+    href: 'https://ec.europa.eu/info/strategy_cs'
+    label: 'Politická strategie EU'
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission_cs'
+    label: 'O Evropské komisi'
+  -
+    href: 'https://ec.europa.eu/info/business-economy-euro_cs'
+    label: 'Podnikání, ekonomika, euro'
+  -
+    href: 'https://ec.europa.eu/info/live-work-travel-eu_cs'
+    label: 'Pobyt, práce a cestování v EU'
+  -
+    href: 'https://ec.europa.eu/info/law_cs'
+    label: 'Právní předpisy'
+  -
+    href: 'https://ec.europa.eu/info/funding-tenders_cs'
+    label: 'Financování, tendry, výběrová řízení'
+  -
+    href: 'https://ec.europa.eu/info/research-and-innovation_cs'
+    label: 'Výzkum a inovace'
+  -
+    href: 'https://ec.europa.eu/info/energy-climate-change-environment_cs'
+    label: 'Energetika, změna klimatu, životní prostředí'
+  -
+    href: 'https://ec.europa.eu/info/education_cs'
+    label: Vzdělávání
+  -
+    href: 'https://ec.europa.eu/info/aid-development-cooperation-fundamental-rights_cs'
+    label: 'Pomoc, rozvojová spolupráce, základní práva'
+  -
+    href: 'https://ec.europa.eu/info/food-farming-fisheries_cs'
+    label: 'Potraviny, zemědělství, rybolov'
+  -
+    href: 'https://ec.europa.eu/info/eu-regional-and-urban-development_cs'
+    label: 'Regionální a městský rozvoj'
+  -
+    href: 'https://ec.europa.eu/info/jobs-european-commission_cs'
+    label: 'Kariéra v Evropské komisi'
+  -
+    href: 'https://ec.europa.eu/info/statistics_cs'
+    label: Statistiky
+  -
+    href: 'https://ec.europa.eu/commission/presscorner/home/cs'
+    label: Aktuality
+  -
+    href: 'https://ec.europa.eu/info/events_cs'
+    label: 'Akce '
+  -
+    href: 'https://ec.europa.eu/info/publications_cs'
+    label: Publikace
+service_navigation:
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission/contact_cs'
+    label: 'Kontakt na Evropskou komisi'
+  -
+    href: 'https://europa.eu/european-union/contact/social-networks_cs#n:+i:4+e:1+t:+s'
+    label: "Evropská komise na\_sociálních médiích"
+  -
+    href: 'https://ec.europa.eu/info/resources-partners_cs'
+    label: 'Zdroje a pokyny pro naše partnery'
+legal_navigation:
+  -
+    href: 'https://ec.europa.eu/info/language-policy_cs'
+    label: 'Jazyková politika'
+  -
+    href: 'https://ec.europa.eu/info/cookies_cs'
+  -
+    href: 'https://ec.europa.eu/info/privacy-policy_cs'
+    label: 'Politika ochrany soukromí'
+  -
+    href: 'https://ec.europa.eu/info/legal-notice_cs'
+    label: 'Právní upozornění'

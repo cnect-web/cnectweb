@@ -1,0 +1,18 @@
+uuid: 0e2263f3-7039-41b2-8b8a-6799b68db3cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.newsroom_type
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: H2Wsb3PJCmRdBXeSOeGiQoi80-dETHtvx26COLh6o9k
+id: taxonomy_term.newsroom_type
+target_entity_type_id: taxonomy_term
+target_bundle: newsroom_type
+default_langcode: site_default
+language_alterable: true

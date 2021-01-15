@@ -1,0 +1,77 @@
+corporate_site_link:
+  href: 'https://ec.europa.eu/info/index_de'
+  label: 'Website der Europäischen Kommission'
+class_navigation:
+  -
+    href: 'https://ec.europa.eu/info/strategy_de'
+    label: Strategie
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission_de'
+    label: 'Informationen über die Europäische Kommission'
+  -
+    href: 'https://ec.europa.eu/info/business-economy-euro_de'
+    label: 'Geschäftswelt, Wirtschaft, Euro'
+  -
+    href: 'https://ec.europa.eu/info/live-work-travel-eu_de'
+    label: 'Leben, Arbeiten und Reisen in der EU'
+  -
+    href: 'https://ec.europa.eu/info/law_de'
+    label: Rechtsakt
+  -
+    href: 'https://ec.europa.eu/info/funding-tenders_de'
+    label: 'Finanzierung, Ausschreibungen'
+  -
+    href: 'https://ec.europa.eu/info/research-and-innovation_de'
+    label: 'Forschung und Innovation'
+  -
+    href: 'https://ec.europa.eu/info/energy-climate-change-environment_de'
+    label: 'Energie, Klimawandel, Umwelt'
+  -
+    href: 'https://ec.europa.eu/info/education_de'
+    label: Bildung
+  -
+    href: 'https://ec.europa.eu/info/aid-development-cooperation-fundamental-rights_de'
+    label: 'Hilfe, Entwicklungszusammenarbeit, Grundrechte'
+  -
+    href: 'https://ec.europa.eu/info/food-farming-fisheries_de'
+    label: 'Lebens- und Nahrungsmittel, Landwirtschaft, Fischerei'
+  -
+    href: 'https://ec.europa.eu/info/eu-regional-and-urban-development_de'
+    label: 'EU-Investitionen in Regionen und Städte'
+  -
+    href: 'https://ec.europa.eu/info/jobs-european-commission_de'
+    label: 'Stellen bei der Europäischen Kommission'
+  -
+    href: 'https://ec.europa.eu/info/statistics_de'
+    label: Statistiken
+  -
+    href: 'https://ec.europa.eu/commission/presscorner/home/de'
+    label: Nachrichten
+  -
+    href: 'https://ec.europa.eu/info/events_de'
+    label: Veranstaltungen
+  -
+    href: 'https://ec.europa.eu/info/publications_de'
+    label: Veröffentlichungen
+service_navigation:
+  -
+    href: 'https://ec.europa.eu/info/about-european-commission/contact_de'
+    label: 'Kontakt zur Europäischen Kommission'
+  -
+    href: 'https://europa.eu/european-union/contact/social-networks_de#n:+i:4+e:1+t:+s'
+    label: 'Folgen Sie der Europäischen Kommission in den sozialen Medien'
+  -
+    href: 'https://ec.europa.eu/info/resources-partners_de'
+    label: 'Ressourcen für Partner'
+legal_navigation:
+  -
+    href: 'https://ec.europa.eu/info/language-policy_de'
+    label: Sprachenpolitik
+  -
+    href: 'https://ec.europa.eu/info/cookies_de'
+  -
+    href: 'https://ec.europa.eu/info/privacy-policy_de'
+    label: 'Schutz der Privatsphäre'
+  -
+    href: 'https://ec.europa.eu/info/legal-notice_de'
+    label: 'Rechtlicher Hinweis'

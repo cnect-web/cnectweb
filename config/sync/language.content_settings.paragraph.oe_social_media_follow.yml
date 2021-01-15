@@ -1,0 +1,20 @@
+uuid: 1712a075-ffda-4ebb-b489-f7144b4f4aed
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_social_media_follow
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: 3eiOU4v48zaAhnDICOLtmZm-JIS4pJsxdUmxdgU5HzA
+id: paragraph.oe_social_media_follow
+target_entity_type_id: paragraph
+target_bundle: oe_social_media_follow
+default_langcode: site_default
+language_alterable: true

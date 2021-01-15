@@ -53,6 +53,8 @@ hidden:
   cnt_txt_sv_03: true
   cnt_txt_sv_04: true
   extra_field_in_page_navigation: true
+  extra_field_oe_theme_helper_short_title_with_fallback: true
+  langcode: true
   oe_content_content_owner: true
   oe_content_legacy_link: true
   oe_content_navigation_title: true

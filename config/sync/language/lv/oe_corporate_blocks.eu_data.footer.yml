@@ -1,0 +1,73 @@
+contact_title: 'Kā sazināties ar ES'
+contact:
+  -
+    href: 'tel:0080067891011'
+    label: 'Zvaniet mums 00 800 6 7 8 9 10 11'
+  -
+    href: 'https://europa.eu/european-union/contact/call-us_lv'
+    label: 'Izmantojiet citas tālruņa līnijas'
+  -
+    href: 'https://europa.eu/european-union/contact/write-to-us_lv'
+    label: 'Rakstiet, izmantojot saziņas veidlapu'
+  -
+    href: 'https://europa.eu/european-union/contact/meet-us_lv'
+    label: 'Nāciet uz vietējo ES biroju'
+social_media_title: 'Sociālie plašsaziņas līdzekļi'
+social_media:
+  -
+    label: 'ES sociālajos tīklos'
+    href: 'https://europa.eu/european-union/contact/social-networks_lv'
+institution_links_title: 'ES iestādes'
+institution_links:
+  -
+    label: 'Eiropas Parlaments'
+    href: 'http://www.europarl.europa.eu/portal/lv'
+  -
+    label: Eiropadome
+    href: 'http://www.consilium.europa.eu/lv/european-council/'
+  -
+    label: 'Eiropas Savienības Padome'
+    href: 'http://www.consilium.europa.eu/lv/home/'
+  -
+    label: 'Eiropas Komisija'
+    href: 'http://ec.europa.eu/index_lv.htm'
+  -
+    label: 'Eiropas Savienības Tiesa'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/lv/'
+  -
+    label: 'Eiropas Centrālā banka (ECB)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.lv.html'
+  -
+    label: 'Eiropas Revīzijas palāta'
+    href: 'http://www.eca.europa.eu/lv'
+  -
+    label: 'Eiropas Ārējās darbības dienests (EĀDD)'
+    href: 'http://eeas.europa.eu/index_lv.htm'
+  -
+    label: 'Eiropas Ekonomikas un sociālo lietu komiteja (EESK)'
+    href: 'http://www.eesc.europa.eu/?i=portal.lv.home'
+  -
+    label: 'Eiropas Reģionu komiteja (RK)'
+    href: 'http://cor.europa.eu/lv/'
+  -
+    label: 'Eiropas Investīciju banka (EIB)'
+  -
+    label: 'Eiropas Datu aizsardzības uzraudzītājs (EDAU)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=lv'
+legal_links_title: 'Juridiski paziņojumi'
+legal_links:
+  -
+    label: 'Par šo vietni'
+    href: 'https://europa.eu/european-union/abouteuropa_lv'
+  -
+    label: 'Valodu politika'
+    href: 'https://europa.eu/european-union/abouteuropa/language-policy_lv'
+  -
+    label: 'Privātuma aizsardzība'
+    href: 'https://europa.eu/european-union/abouteuropa/privacy-policy_lv'
+  -
+    label: 'Juridisks paziņojums'
+    href: 'https://europa.eu/european-union/abouteuropa/legal_notices_lv'
+  -
+    label: Sīkdatnes
+    href: 'https://europa.eu/european-union/abouteuropa/cookies_lv'

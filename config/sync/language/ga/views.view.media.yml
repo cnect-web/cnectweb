@@ -1,0 +1,12 @@
+display:
+  default:
+    display_options:
+      fields:
+        uid:
+          label: Údar
+        status:
+          label: Stádas
+      filters:
+        langcode:
+          expose:
+            label: Teanga
