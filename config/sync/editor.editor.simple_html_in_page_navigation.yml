@@ -1,14 +1,12 @@
-uuid: 2059b882-4c52-4134-a483-508334f8839b
+uuid: 6b24569c-15d2-4b2d-8e9d-4d78685723b3
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.newsroom_basic_html
+    - filter.format.simple_html_in_page_navigation
   module:
     - ckeditor
-_core:
-  default_config_hash: 7DBjH30oRvsaoYv3aG6TRfkTZvcutw1Xo7lGvaQTJQI
-format: newsroom_basic_html
+format: simple_html_in_page_navigation
 editor: ckeditor
 settings:
   toolbar:
@@ -19,8 +17,14 @@ settings:
           items:
             - Bold
             - Italic
+            - JustifyLeft
+            - Indent
+            - Outdent
+            - Paste
+            - PasteText
+            - PasteFromWord
         -
-          name: Linking
+          name: Links
           items:
             - DrupalLink
             - DrupalUnlink
@@ -32,24 +36,29 @@ settings:
         -
           name: Media
           items:
+            - media
             - Blockquote
             - DrupalImage
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
         -
           name: Tools
           items:
             - Source
+            - InPageNavigationItem
+            - Format
+            - Maximize
   plugins:
+    drupallink:
+      linkit_enabled: false
+      linkit_profile: ''
     stylescombo:
       styles: ''
+    language:
+      language_list: un
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

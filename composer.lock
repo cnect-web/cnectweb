@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64be6bad5f100cc85f740f6ce11aa5fd",
+    "content-hash": "cb5e25e5bf68b8eb6c7ffa5d887f7d95",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6246,11 +6246,11 @@
         },
         {
             "name": "lobsterr/newsroom_connector",
-            "version": "1.0.0-alpha1",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LOBsTerr/newsroom_connector.git",
-                "reference": "ceda44e0d2f846483e372fa2352eadc47f9dba24"
+                "reference": "2f913a96b7becd0eb66298cbb1347a9a7d57c256"
             },
             "require": {
                 "drupal/geofield": "^1.16",
@@ -6274,7 +6274,7 @@
                 "issues": "https://github.com/LOBsTerr/newsroom_connector/issues",
                 "source": "https://github.com/LOBsTerr/newsroom_connector"
             },
-            "time": "2021-01-14T22:17:56+00:00"
+            "time": "2021-01-15T12:58:51+00:00"
         },
         {
             "name": "lobsterr/oe_newsroom_connector",
