@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.cnt_landing.body
     - field.field.node.cnt_landing.field_cnt_content_blocks
+    - field.field.node.cnt_landing.layout_builder__layout
     - node.type.cnt_landing
   module:
     - link
@@ -131,4 +132,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  layout_builder__layout: true
