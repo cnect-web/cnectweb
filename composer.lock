@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b44d243c35fcc9f17883bf7187aa7ef3",
+    "content-hash": "64be6bad5f100cc85f740f6ce11aa5fd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6246,14 +6246,13 @@
         },
         {
             "name": "lobsterr/newsroom_connector",
-            "version": "dev-master",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LOBsTerr/newsroom_connector.git",
-                "reference": "6a46832db1778110286fec1d4d8ada0d924b068e"
+                "reference": "ceda44e0d2f846483e372fa2352eadc47f9dba24"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
                 "drupal/geofield": "^1.16",
                 "drupal/migrate_plus": "^5.1",
                 "drupal/migrate_tools": "^5.0"
@@ -6275,7 +6274,7 @@
                 "issues": "https://github.com/LOBsTerr/newsroom_connector/issues",
                 "source": "https://github.com/LOBsTerr/newsroom_connector"
             },
-            "time": "2020-11-30T16:41:35+00:00"
+            "time": "2021-01-14T22:17:56+00:00"
         },
         {
             "name": "lobsterr/oe_newsroom_connector",
@@ -14078,7 +14077,6 @@
         "drupal/entity_version_workflows": 10,
         "drupal/inline_entity_form": 15,
         "drupal/json_field": 5,
-        "lobsterr/newsroom_connector": 20,
         "lobsterr/oe_newsroom_connector": 20,
         "openeuropa/oe_corporate_countries": 10,
         "drupal/maillog": 20

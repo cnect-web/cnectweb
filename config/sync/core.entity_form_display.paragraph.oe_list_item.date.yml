@@ -23,6 +23,14 @@ targetEntityType: paragraph
 bundle: oe_list_item
 mode: date
 content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_oe_date:
     weight: 3
     settings:

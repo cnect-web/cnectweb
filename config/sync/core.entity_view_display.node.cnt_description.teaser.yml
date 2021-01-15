@@ -52,6 +52,7 @@ hidden:
   cnt_txt_sv_02: true
   cnt_txt_sv_03: true
   cnt_txt_sv_04: true
+  extra_field_in_page_navigation: true
   oe_content_content_owner: true
   oe_content_legacy_link: true
   oe_content_navigation_title: true

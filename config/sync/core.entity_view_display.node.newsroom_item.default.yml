@@ -1,4 +1,4 @@
-uuid: 9d465e1f-f1b2-405f-bc36-893ca7d79204
+uuid: c7d82666-857b-4fec-ad0c-8b457721b420
 langcode: en
 status: true
 dependencies:
@@ -298,6 +298,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  extra_field_oe_theme_helper_short_title_with_fallback: true
   oe_content_content_owner: true
   oe_content_legacy_link: true
   oe_content_navigation_title: true

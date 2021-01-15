@@ -15,6 +15,14 @@ targetEntityType: paragraph
 bundle: oe_quote
 mode: default
 content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_oe_plain_text_long:
     weight: 0
     settings:

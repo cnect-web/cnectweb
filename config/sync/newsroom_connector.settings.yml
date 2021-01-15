@@ -10,3 +10,7 @@ dependencies:
       - newsroom_connector
 _core:
   default_config_hash: _jkZc9DwH1ob9e_Z9Sijw03yDvJU6_kMRU36WsYjUNM
+app: ''
+app_key: ''
+subsite: ''
+docsroom_url: ''
