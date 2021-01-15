@@ -1,4 +1,3 @@
-uuid: 94d6b6d4-074a-46b1-9f28-a5d0f9fe6351
 langcode: en
 status: true
 dependencies:
@@ -10,7 +9,8 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    ckeditor: ckeditor
+    simple_html_in_page_navigation: simple_html_in_page_navigation
+    ckeditor: '0'
     plain_text: '0'
 id: node.cnt_description.cnt_txt_fmt_01
 field_name: cnt_txt_fmt_01

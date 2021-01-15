@@ -1,0 +1,64 @@
+uuid: 6b24569c-15d2-4b2d-8e9d-4d78685723b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.simple_html_in_page_navigation
+  module:
+    - ckeditor
+format: simple_html_in_page_navigation
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - JustifyLeft
+            - Indent
+            - Outdent
+            - Paste
+            - PasteText
+            - PasteFromWord
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - media
+            - Blockquote
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Source
+            - InPageNavigationItem
+            - Format
+            - Maximize
+  plugins:
+    drupallink:
+      linkit_enabled: false
+      linkit_profile: ''
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null
