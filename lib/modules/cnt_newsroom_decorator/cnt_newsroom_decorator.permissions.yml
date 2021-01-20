@@ -1,0 +1,4 @@
+administer cnt_newsroom_decorator configuration:
+  title: 'Administer cnt_newsroom_decorator configuration'
+  description: 'Optional description.'
+  restrict access: true

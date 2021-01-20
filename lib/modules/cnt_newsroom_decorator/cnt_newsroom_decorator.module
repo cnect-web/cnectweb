@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * This file is responsible for hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function cnt_newsroom_decorator_theme() {
+  return [
+    'page__news' => [
+      'template' => 'page--news',
+      'base hook' => 'page',
+    ],
+  ];
+}
