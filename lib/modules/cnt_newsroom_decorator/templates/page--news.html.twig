@@ -1,0 +1,262 @@
+{#
+/**
+ * @file
+ * Theme override to display a single page.
+ *
+ * @see ./core/themes/stable/templates/layout/page.html.twig
+ */
+#}
+
+{% extends "page.html.twig" %}
+{% block content %}
+  <main{{ main_attributes }}>
+    <div class="ecl-container">
+      <div class="ecl-row">
+        <div class="ecl-col-sm-12">
+          <div class="ecl-row">
+            <div class="ecl-col-md-3">
+              <!-- facets start -->
+              <h3>Search Options</h3>
+
+              <fieldset aria-describedby="checkbox-default-helper" class="ecl-form-group">
+                <legend class="ecl-form-label" id="checkbox-default-label">Content types</legend>
+
+                <div class="ecl-form-group">
+                  <label class="ecl-form-label" for="select-id-1">News & Views</label>
+                  <div class="ecl-select__container ecl-select__container--m">
+                    <select id="select-id-2" name="select-name" class="ecl-select" multiple="" data-ecl-select-multiple="true" data-ecl-select-default=""  data-ecl-select-search="Search" data-ecl-select-all="Select all">
+                      <option value="1">News articles</option>
+                      <option value="2">Opinions</option>
+                      <option value="3">Stories</option>
+                      <option value="4">Speeches</option>
+                      <option value="5">Press releases</option>
+                      <option value="6">Digibytes</option>
+                    </select>
+                    <div class="ecl-select__icon"><svg focusable="false" aria-hidden="true"
+                                                       class="ecl-select__icon-shape ecl-icon ecl-icon--s ecl-icon--rotate-180">
+                        <use xlink:href="/component-library/dist/media/icons.3cf410f9.svg#ui--corner-arrow"></use>
+                      </svg></div>
+                  </div>
+                </div>
+
+                <div class="ecl-form-group">
+                  <label class="ecl-form-label" for="select-id-1">Library</label>
+                  <div class="ecl-select__container ecl-select__container--m">
+                    <select id="select-id-2" name="select-name" class="ecl-select" multiple="" data-ecl-select-multiple="true" data-ecl-select-default=""  data-ecl-select-search="Search" data-ecl-select-all="Select all">
+                      <option value="1">Brochures</option>
+                      <option value="2">Factsheets</option>
+                      <option value="3">Reports/Studies</option>
+                      <option value="4">Event reports</option>
+                      <option value="5">Laws</option>
+                      <option value="6">Audiovisuals</option>
+                      <option value="7">Speeches</option>
+                    </select>
+                    <div class="ecl-select__icon"><svg focusable="false" aria-hidden="true"
+                                                       class="ecl-select__icon-shape ecl-icon ecl-icon--s ecl-icon--rotate-180">
+                        <use xlink:href="/component-library/dist/media/icons.3cf410f9.svg#ui--corner-arrow"></use>
+                      </svg></div>
+                  </div>
+                </div>
+
+                <div class="ecl-form-group">
+                  <label class="ecl-form-label" for="select-id-1">Funding</label>
+                  <div class="ecl-select__container ecl-select__container--m">
+                    <select id="select-id-2" name="select-name" class="ecl-select" multiple="" data-ecl-select-multiple="true" data-ecl-select-default=""  data-ecl-select-search="Search" data-ecl-select-all="Select all">
+                      <option value="1">Calls for Tender</option>
+                      <option value="2">Calls for Proposal</option>
+                    </select>
+                    <div class="ecl-select__icon"><svg focusable="false" aria-hidden="true"
+                                                       class="ecl-select__icon-shape ecl-icon ecl-icon--s ecl-icon--rotate-180">
+                        <use xlink:href="/component-library/dist/media/icons.3cf410f9.svg#ui--corner-arrow"></use>
+                      </svg></div>
+                  </div>
+                </div>
+
+                <div class="ecl-checkbox"><input type="checkbox" class="ecl-checkbox__input" id="checkbox-default-1"
+                                                 name="checkbox-default" value="es" checked="" /><label class="ecl-checkbox__label" for="checkbox-default-1"><span
+                      class="ecl-checkbox__box"><svg focusable="false" aria-hidden="true"
+                                                     class="ecl-checkbox__icon ecl-icon ecl-icon--s">
+                                    <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--check"></use>
+                                    </svg></span>Consultations</label>
+                </div>
+
+                <div class="ecl-checkbox"><input type="checkbox" class="ecl-checkbox__input" id="checkbox-default-1"
+                                                 name="checkbox-default" value="es" checked="" /><label class="ecl-checkbox__label" for="checkbox-default-1"><span
+                      class="ecl-checkbox__box"><svg focusable="false" aria-hidden="true"
+                                                     class="ecl-checkbox__icon ecl-icon ecl-icon--s">
+                                  <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--check"></use>
+                                  </svg></span>Events</label>
+                </div>
+              </fieldset>
+
+              <div class="ecl-u-mt-l">
+                <div class="ecl-form-group"><label class="ecl-form-label" for="text-input-id">Topics</label>
+                  <input type="text" id="text-input-id" name="text-input-name" class="ecl-text-input ecl-text-input--m" />
+                </div>
+              </div>
+
+              <div class="ecl-u-mt-l">
+                <button type="submit" class="ecl-u-mt-l ecl-button ecl-button--primary">Refine results</button><br>
+                <button type="submit" class="ecl-u-mt-m ecl-u-mt-lg-l ecl-button ecl-button--secondary">Clear all</button>
+              </div>
+
+
+              <!-- facets end -->
+            </div>
+            <div class="ecl-col-md-9">
+              <!-- tags start -->
+              <p>
+                <span>CONTENT TYPES </span>
+                <span class="ecl-tag ecl-tag--removable">News<button type="button" aria-label="Dismiss"
+                                                                     class="ecl-tag__icon"><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close"></use>
+                        </svg><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close-filled ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close-filled"></use>
+                        </svg></button></span>
+                <span class="ecl-tag ecl-tag--removable">Opinions<button type="button" aria-label="Dismiss"
+                                                                         class="ecl-tag__icon"><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close"></use>
+                        </svg><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close-filled ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close-filled"></use>
+                        </svg></button></span>
+                <span class="ecl-tag ecl-tag--removable">Stories<button type="button" aria-label="Dismiss"
+                                                                        class="ecl-tag__icon"><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close"></use>
+                        </svg><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close-filled ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close-filled"></use>
+                        </svg></button></span>
+                <span class="ecl-tag ecl-tag--removable">Speeches<button type="button" aria-label="Dismiss"
+                                                                         class="ecl-tag__icon"><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close"></use>
+                        </svg><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close-filled ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close-filled"></use>
+                        </svg></button></span>
+              </p>
+              <p>
+                <span>TOPICS</span>
+                <span class="ecl-tag ecl-tag--removable">Public Procurement of Innovative Solutions<button type="button" aria-label="Dismiss"
+                                                                                                           class="ecl-tag__icon"><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close"></use>
+                        </svg><svg focusable="false" aria-hidden="true" class="ecl-tag__icon-close-filled ecl-icon ecl-icon--xs">
+                        <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--close-filled"></use>
+                        </svg></button></span>
+              </p>
+              <!-- tags end -->
+
+              <!-- search box start -->
+              <form class="ecl-search-form cnt-fullwidth" role="search">
+                <div class="ecl-form-group">
+                  <input type="search" id="search-input"
+                         class="ecl-search-form__text-input ecl-text-input" /></div><button aria-label="Search" type="submit"
+                                                                                            class="ecl-search-form__button ecl-button ecl-button--search"><span class="ecl-button__container"><span
+                      class="ecl-button__label" data-ecl-label="true">Search</span><svg focusable="false" aria-hidden="true"
+                                                                                        data-ecl-icon="true" class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs">
+                                <use xlink:href="/component-library/dist/media/icons.3cf410f9.svg#general--search"></use>
+                            </svg></span></button>
+              </form>
+              <!-- search box end -->
+
+              <!-- highlight start -->
+              <div>
+                <h2>Highlight</h2>
+                <div class="ecl-row">
+                  <div class="ecl-col-md-4">
+                    <article>
+                      <div role="img" aria-label="Example image"
+                           class="ecl-u-mb-m ecl-u-media-ratio-3-2 ecl-u-media-bg-size-contain ecl-u-media-bg-repeat-none"
+                           style="background-image:url(&quot;https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg&quot;);width:auto">
+                      </div>
+                      <div class="ecl-u-type-s ecl-u-type-color-grey-75 ecl-u-type-family-alt">NEWS ARTICLE | 24 March 2020</div>
+                      <a href="/example"
+                         class="ecl-u-d-inline-block ecl-u-type-prolonged-m ecl-u-type-bold ecl-u-type-family-alt ecl-u-mt-xs ecl-link ecl-link--standalone">
+                        Digital Decade: Commission launches Action Plan to support recovery and transformation of the media and audiovisual sectors
+                      </a>
+                    </article>
+                  </div>
+                  <div class="ecl-col-md-4">
+                    <article>
+                      <div role="img" aria-label="Example image"
+                           class="ecl-u-mb-m ecl-u-media-ratio-3-2 ecl-u-media-bg-size-contain ecl-u-media-bg-repeat-none"
+                           style="background-image:url(&quot;https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg&quot;);width:auto">
+                      </div>
+                      <div class="ecl-u-type-s ecl-u-type-color-grey-75 ecl-u-type-family-alt">NEWS ARTICLE | 24 March 2020</div>
+                      <a href="/example"
+                         class="ecl-u-d-inline-block ecl-u-type-prolonged-m ecl-u-type-bold ecl-u-type-family-alt ecl-u-mt-xs ecl-link ecl-link--standalone">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit</a>
+                    </article>
+                  </div>
+                  <div class="ecl-col-md-4">
+                    <article>
+                      <div role="img" aria-label="Example image"
+                           class="ecl-u-mb-m ecl-u-media-ratio-3-2 ecl-u-media-bg-size-contain ecl-u-media-bg-repeat-none"
+                           style="background-image:url(&quot;https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg&quot;);width:auto">
+                      </div>
+                      <div class="ecl-u-type-s ecl-u-type-color-grey-75 ecl-u-type-family-alt">NEWS ARTICLE | 24 March 2020</div>
+                      <a href="/example"
+                         class="ecl-u-d-inline-block ecl-u-type-prolonged-m ecl-u-type-bold ecl-u-type-family-alt ecl-u-mt-xs ecl-link ecl-link--standalone">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit</a>
+                    </article>
+                  </div>
+                </div>
+
+                <div class=" ecl-expandable" data-ecl-expandable="true"><button data-ecl-expandable-toggle="true"
+                                                                                data-ecl-label-expanded="Expanded button" data-ecl-label-collapsed="Collapsed button"
+                                                                                aria-controls="expandable-example-content" aria-expanded="false" type="button"
+                                                                                class="ecl-u-mv-xl ecl-expandable__toggle ecl-button ecl-button--secondary"><span class="ecl-button__container"><span
+                        class="ecl-button__label" data-ecl-label="true">Show more (3)</span><svg focusable="false" aria-hidden="true"
+                                                                                                 data-ecl-icon="true"
+                                                                                                 class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--fluid ecl-icon--rotate-180">
+                                <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--corner-arrow"></use>
+                            </svg></span></button>
+                  <div class="ecl-expandable__content" id="expandable-example-content" hidden="">
+                    <div class="ecl-row">
+                      <div class="ecl-col-md-4">
+                        <article>
+                          <div role="img" aria-label="Example image"
+                               class="ecl-u-mb-m ecl-u-media-ratio-3-2 ecl-u-media-bg-size-contain ecl-u-media-bg-repeat-none"
+                               style="background-image:url(&quot;https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg&quot;);width:auto">
+                          </div>
+                          <div class="ecl-u-type-s ecl-u-type-color-grey-75 ecl-u-type-family-alt">NEWS ARTICLE | 24 March 2020</div>
+                          <a href="/example"
+                             class="ecl-u-d-inline-block ecl-u-type-prolonged-m ecl-u-type-bold ecl-u-type-family-alt ecl-u-mt-xs ecl-link ecl-link--standalone">
+                            Digital Decade: Commission launches Action Plan to support recovery and transformation of the media and audiovisual sectors
+                          </a>
+                        </article>
+                      </div>
+                      <div class="ecl-col-md-4">
+                        <article>
+                          <div role="img" aria-label="Example image"
+                               class="ecl-u-mb-m ecl-u-media-ratio-3-2 ecl-u-media-bg-size-contain ecl-u-media-bg-repeat-none"
+                               style="background-image:url(&quot;https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg&quot;);width:auto">
+                          </div>
+                          <div class="ecl-u-type-s ecl-u-type-color-grey-75 ecl-u-type-family-alt">NEWS ARTICLE | 24 March 2020</div>
+                          <a href="/example"
+                             class="ecl-u-d-inline-block ecl-u-type-prolonged-m ecl-u-type-bold ecl-u-type-family-alt ecl-u-mt-xs ecl-link ecl-link--standalone">Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit</a>
+                        </article>
+                      </div>
+                      <div class="ecl-col-md-4">
+                        <article>
+                          <div role="img" aria-label="Example image"
+                               class="ecl-u-mb-m ecl-u-media-ratio-3-2 ecl-u-media-bg-size-contain ecl-u-media-bg-repeat-none"
+                               style="background-image:url(&quot;https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg&quot;);width:auto">
+                          </div>
+                          <div class="ecl-u-type-s ecl-u-type-color-grey-75 ecl-u-type-family-alt">NEWS ARTICLE | 24 March 2020</div>
+                          <a href="/example"
+                             class="ecl-u-d-inline-block ecl-u-type-prolonged-m ecl-u-type-bold ecl-u-type-family-alt ecl-u-mt-xs ecl-link ecl-link--standalone">Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit</a>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- highlight end -->
+              {{ page.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}

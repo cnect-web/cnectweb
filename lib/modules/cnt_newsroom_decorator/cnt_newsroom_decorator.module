@@ -2,9 +2,17 @@
 
 /**
  * @file
- * Primary module hooks for Newsroom Decorator module.
- *
- * @DCG
- * This file is no longer required in Drupal 8.
- * @see https://www.drupal.org/node/2217931
+ * This file is responsible for hooks.
  */
+
+/**
+ * Implements hook_theme().
+ */
+function cnt_newsroom_decorator_theme() {
+  return [
+    'page__news' => [
+      'template' => 'page--news',
+      'base hook' => 'page',
+    ],
+  ];
+}
