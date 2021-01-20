@@ -8,6 +8,7 @@ module:
   ckeditor: 0
   cnt_description: 0
   cnt_landing: 0
+  cnt_newsroom_decorator: 0
   composite_reference: 0
   conditional_fields: 0
   config: 0
