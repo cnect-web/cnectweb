@@ -35,7 +35,6 @@ dependencies:
     - image.style.newsroom_thumbnail
     - node.type.newsroom_item
   module:
-    - field_group
     - layout_builder
     - media
     - user
@@ -43,25 +42,6 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-  field_group:
-    group_title_and_teaser_block:
-      children:
-        - field_newsroom_teaser
-      parent_name: ''
-      weight: 0
-      format_type: html_element
-      region: content
-      format_settings:
-        id: ''
-        classes: ecl-u-flex-grow-1
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-      label: 'Title And Teaser Block'
 _core:
   default_config_hash: HGjENG3cN2akrxI-MbsxZMYnpN-1PJrgcOxKaRehfAU
 id: node.newsroom_item.teaser
@@ -71,7 +51,7 @@ mode: teaser
 content:
   field_newsroom_image:
     type: media_thumbnail
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       image_style: newsroom_thumbnail
@@ -79,7 +59,7 @@ content:
     third_party_settings: {  }
     region: content
   field_newsroom_teaser:
-    weight: 1
+    weight: -4
     label: hidden
     settings: {  }
     third_party_settings: {  }
