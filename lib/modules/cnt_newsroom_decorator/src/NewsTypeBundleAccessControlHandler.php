@@ -46,5 +46,4 @@ class NewsTypeBundleAccessControlHandler extends EntityAccessControlHandler {
     return AccessResult::allowedIfHasPermission($account, 'add news type bundles');
   }
 
-
 }
