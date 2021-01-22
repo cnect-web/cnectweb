@@ -1,0 +1,21 @@
+# News Type Bundles routing definition
+news_type_bundle.settings_tab:
+  route_name: news_type_bundle.settings
+  title: 'Settings'
+  base_route: news_type_bundle.settings
+
+entity.news_type_bundle.canonical:
+  route_name: entity.news_type_bundle.canonical
+  base_route: entity.news_type_bundle.canonical
+  title: 'View'
+
+entity.news_type_bundle.edit_form:
+  route_name: entity.news_type_bundle.edit_form
+  base_route: entity.news_type_bundle.canonical
+  title: 'Edit'
+
+entity.news_type_bundle.delete_form:
+  route_name:  entity.news_type_bundle.delete_form
+  base_route:  entity.news_type_bundle.canonical
+  title: Delete
+  weight: 10

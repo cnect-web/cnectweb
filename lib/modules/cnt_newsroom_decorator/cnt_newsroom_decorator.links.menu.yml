@@ -1,0 +1,14 @@
+
+# News Type Bundles menu items definition
+entity.news_type_bundle.collection:
+  title: 'News Type Bundles list'
+  route_name: entity.news_type_bundle.collection
+  description: 'List News Type Bundles entities'
+  parent: system.admin_structure
+  weight: 100
+
+news_type_bundle.admin.structure.settings:
+  title: 'News Type Bundles settings'
+  description: 'Configure News Type Bundles entities'
+  route_name: news_type_bundle.settings
+  parent: system.admin_structure
