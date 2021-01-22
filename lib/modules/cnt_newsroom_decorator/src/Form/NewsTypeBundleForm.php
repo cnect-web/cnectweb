@@ -50,13 +50,13 @@ class NewsTypeBundleForm extends ContentEntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        $this->messenger()->addMessage($this->t('Created the %label News Type Bundles.', [
+        $this->messenger()->addMessage($this->t('Created the %label News Type Bundle.', [
           '%label' => $entity->label(),
         ]));
         break;
 
       default:
-        $this->messenger()->addMessage($this->t('Saved the %label News Type Bundles.', [
+        $this->messenger()->addMessage($this->t('Saved the %label News Type Bundle.', [
           '%label' => $entity->label(),
         ]));
     }

@@ -15,7 +15,7 @@ use Drupal\Core\Entity\EntityTypeInterface;
  *
  * @ContentEntityType(
  *   id = "news_type_bundle",
- *   label = @Translation("News Type Bundles"),
+ *   label = @Translation("News Type Bundle"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\cnt_newsroom_decorator\NewsTypeBundleListBuilder",
@@ -36,13 +36,12 @@ use Drupal\Core\Entity\EntityTypeInterface;
  *   base_table = "news_type_bundle",
  *   data_table = "news_type_bundle_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer news type bundles entities",
+ *   admin_permission = "administer news type bundles",
  *   entity_keys = {
  *     "id" = "id",
  *     "label" = "name",
  *     "uuid" = "uuid",
  *     "langcode" = "langcode",
- *     "published" = "status",
  *   },
  *   links = {
  *     "canonical" = "/admin/structure/news_type_bundle/{news_type_bundle}",
@@ -77,21 +76,6 @@ class NewsTypeBundle extends ContentEntityBase implements NewsTypeBundleInterfac
   /**
    * {@inheritdoc}
    */
-  public function getCreatedTime() {
-    return $this->get('created')->value;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function setCreatedTime($timestamp) {
-    $this->set('created', $timestamp);
-    return $this;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
 
@@ -99,8 +83,8 @@ class NewsTypeBundle extends ContentEntityBase implements NewsTypeBundleInterfac
     $fields += static::publishedBaseFieldDefinitions($entity_type);
 
     $fields['name'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Name'))
-      ->setDescription(t('The name of the News Type Bundles entity.'))
+      ->setLabel(t('Bundle name'))
+      ->setDescription(t('The name of the News Type Bundle.'))
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
@@ -118,20 +102,6 @@ class NewsTypeBundle extends ContentEntityBase implements NewsTypeBundleInterfac
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
-
-    $fields['status']->setDescription(t('A boolean indicating whether the News Type Bundles is published.'))
-      ->setDisplayOptions('form', [
-        'type' => 'boolean_checkbox',
-        'weight' => -3,
-      ]);
-
-    $fields['created'] = BaseFieldDefinition::create('created')
-      ->setLabel(t('Created'))
-      ->setDescription(t('The time that the entity was created.'));
-
-    $fields['changed'] = BaseFieldDefinition::create('changed')
-      ->setLabel(t('Changed'))
-      ->setDescription(t('The time that the entity was last edited.'));
 
     return $fields;
   }

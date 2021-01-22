@@ -1,5 +1,5 @@
 entity.news_type_bundle.add_form:
   route_name: entity.news_type_bundle.add_form
-  title: 'Add News Type Bundles'
+  title: 'Add News Type Bundle'
   appears_on:
     - entity.news_type_bundle.collection

@@ -1,4 +1,4 @@
-# News Type Bundles routing definition
+# News Type Bundle routing definition
 news_type_bundle.settings_tab:
   route_name: news_type_bundle.settings
   title: 'Settings'

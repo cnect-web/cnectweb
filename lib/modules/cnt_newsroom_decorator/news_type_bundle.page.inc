@@ -10,7 +10,7 @@
 use Drupal\Core\Render\Element;
 
 /**
- * Prepares variables for News Type Bundles templates.
+ * Prepares variables for News Type Bundle templates.
  *
  * Default template: news_type_bundle.html.twig.
  *
