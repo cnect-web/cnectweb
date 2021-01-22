@@ -14,5 +14,9 @@ function cnt_newsroom_decorator_theme() {
       'template' => 'page--news',
       'base hook' => 'page',
     ],
+    'node__newsroom_item__teaser' => [
+      'template' => 'node--newsroom-item--teaser',
+      'base hook' => 'node',
+    ],
   ];
 }
