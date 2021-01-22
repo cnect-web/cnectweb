@@ -1,0 +1,31 @@
+uuid: eb0ac43c-02eb-4e32-b479-5d997c538492
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newsroom_item_type_browser
+  module:
+    - views
+name: newsroom_item_type_browser
+label: 'Newsroom Item Type browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  fc1b1bf0-f480-4df0-81f9-a43bf1ceab31:
+    settings:
+      view: newsroom_item_type_browser
+      view_display: entity_browser_1
+      submit_text: 'Select newsroom item types'
+      auto_select: false
+    uuid: fc1b1bf0-f480-4df0-81f9-a43bf1ceab31
+    weight: 1
+    label: view
+    id: view
