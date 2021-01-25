@@ -42,6 +42,7 @@ use Drupal\Core\Entity\EntityTypeInterface;
  *     "label" = "name",
  *     "uuid" = "uuid",
  *     "langcode" = "langcode",
+ *     "published" = "status",
  *   },
  *   links = {
  *     "canonical" = "/admin/structure/news_type_bundle/{news_type_bundle}",
