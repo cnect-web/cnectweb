@@ -1,0 +1,20 @@
+uuid: 8513fde2-15dd-4a4e-b98f-c62f4a50ef68
+langcode: en
+status: true
+dependencies:
+  module:
+    - cnt_newsroom_decorator
+    - taxonomy
+id: news_type_bundle.cnt_newsroom_item_types
+field_name: cnt_newsroom_item_types
+entity_type: news_type_bundle
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

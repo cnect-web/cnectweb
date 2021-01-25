@@ -1,0 +1,34 @@
+uuid: 4bf64d36-d306-4c70-9466-cfb2a5e2a169
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.news_type_bundle.cnt_newsroom_item_types
+    - taxonomy.vocabulary.newsroom_type
+  module:
+    - cnt_newsroom_decorator
+    - composite_reference
+third_party_settings:
+  composite_reference:
+    composite: false
+id: news_type_bundle.news_type_bundle.cnt_newsroom_item_types
+field_name: cnt_newsroom_item_types
+entity_type: news_type_bundle
+bundle: news_type_bundle
+label: 'Newsroom Item Types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      newsroom_type: newsroom_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

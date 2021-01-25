@@ -2,3 +2,19 @@ administer cnt_newsroom_decorator configuration:
   title: 'Administer cnt_newsroom_decorator configuration'
   description: 'Optional description.'
   restrict access: true
+add news type bundles:
+  title: 'Create new News Type Bundles'
+
+administer news type bundles:
+  title: 'Administer News Type Bundles'
+  description: 'Allow to access the administration form to configure News Type Bundles.'
+  restrict access: true
+
+delete news type bundles:
+  title: 'Delete News Type Bundles'
+
+edit news type bundles:
+  title: 'Edit News Type Bundles'
+
+view news type bundles:
+  title: 'View News Type Bundles'
