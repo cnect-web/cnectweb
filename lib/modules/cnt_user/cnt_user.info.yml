@@ -1,0 +1,9 @@
+name: 'Cnect User'
+type: module
+description: 'Cnect user module contains changes and configurations relative to users.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Cnect'
+php: 7.1
+dependencies:
+  - oe_authentication:oe_authentication

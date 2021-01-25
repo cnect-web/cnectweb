@@ -39,6 +39,7 @@
         "lobsterr/newsroom_connector": "~1.0.0-alpha2",
         "lobsterr/oe_newsroom_connector": "dev-master",
         "openeuropa/composer-artifacts": "~0.1",
+        "openeuropa/oe_authentication": "^1.3",
         "openeuropa/oe_content": "^1.11",
         "openeuropa/oe_corporate_blocks": "~3.0.0-beta3",
         "openeuropa/oe_corporate_countries": "^1.0@beta",
