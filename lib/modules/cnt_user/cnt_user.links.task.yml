@@ -1,0 +1,4 @@
+cnt_user.task:
+  route_name: cnt_user.canonical
+  base_route: entity.user.canonical
+  title: View
