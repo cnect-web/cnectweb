@@ -1,0 +1,5 @@
+services:
+  cnt_user.route_subscriber:
+    class: Drupal\cnt_user\Routing\UserRouteSubscriber
+    tags:
+      - { name: event_subscriber }

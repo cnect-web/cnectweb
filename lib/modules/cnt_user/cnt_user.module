@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains cnt_user.module.
+ */
+
+/**
+ * Implements hook_link_alter().
+ */
+function cnt_user_link_alter(&$variables) {
+  if (!empty($variables['options']['query']['destination'])) {
+    return;
+  }
+
+  $routes = [
+    'cas.login',
+  ];
+
+  /** @var Drupal\Core\Url $url */
+  $url = $variables['url'];
+
+  if ($url->isExternal() || $url->isRouted() && !in_array($url->getRouteName(), $routes)) {
+    return;
+  }
+
+  // Get current path.
+  $current_path = \Drupal::service('path.current')->getPath();
+
+  // Add destination parameter to bring user back to the current page.
+  $variables['options']['query']['destination'] = $current_path;
+}
+
+/**
+ * Implements hook_local_tasks_alter().
+ */
+function cnt_user_local_tasks_alter(&$local_tasks) {
+  /*
+  Unset "View" link on user page tabs to avoid duplicated items.
+
+  In order to force redirection to user edit page under certain conditions,
+  for example:
+  "redirect permanently until the user doesn't approve privacy policy",
+  replace the the array key with 'cnt_user.canonical' and
+  change the logic into RedirectController::postLoginRedirect().
+   */
+  unset($local_tasks['entity.user.canonical']);
+}
