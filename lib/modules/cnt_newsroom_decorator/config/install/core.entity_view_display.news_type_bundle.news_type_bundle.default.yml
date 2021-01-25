@@ -3,14 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.news_type_bundle.news_type_bundle.cnt_internal_code
     - field.field.news_type_bundle.news_type_bundle.cnt_newsroom_item_types
   module:
     - cnt_newsroom_decorator
+_core:
+  default_config_hash: ytwuxvjh8UifPZ2yWk-EBTcO9dcQJQ0ogxzRvCyYqKk
 id: news_type_bundle.news_type_bundle.default
 targetEntityType: news_type_bundle
 bundle: news_type_bundle
 mode: default
 content:
+  cnt_internal_code:
+    weight: -2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   cnt_newsroom_item_types:
     weight: -3
     label: above

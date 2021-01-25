@@ -1,0 +1,20 @@
+uuid: ae501dd6-bcb0-44d7-81d4-a5adf6892428
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.news_type_bundle.cnt_internal_code
+  module:
+    - cnt_newsroom_decorator
+id: news_type_bundle.news_type_bundle.cnt_internal_code
+field_name: cnt_internal_code
+entity_type: news_type_bundle
+bundle: news_type_bundle
+label: 'Internal Code'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
