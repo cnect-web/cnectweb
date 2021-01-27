@@ -1,0 +1,25 @@
+uuid: 6b3ea259-923a-46c9-b4f6-beb9858e9b06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_links
+    - paragraphs.paragraphs_type.oe_links_block
+  module:
+    - link
+_core:
+  default_config_hash: FR9jQRYwpZ2gjLFiWHpP3DqHe2QNHLekDjHKvsLN0vk
+id: paragraph.oe_links_block.field_oe_links
+field_name: field_oe_links
+entity_type: paragraph
+bundle: oe_links_block
+label: Links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

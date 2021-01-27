@@ -1,0 +1,16 @@
+universe_id: dae
+base_url: 'http://ec.europa.eu/newsroom/'
+allowed_ips: '127.0.0.1,158.167.165.192,158.167.165.191,158.167.209.222,158.167.240.147,158.167.209.223,158.167.210.159,158.167.210.158'
+item_edit_script: item.cfm
+item_edit_segment: item_id
+proposal_script: propose-item.cfm
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector
+_core:
+  default_config_hash: _jkZc9DwH1ob9e_Z9Sijw03yDvJU6_kMRU36WsYjUNM
+app: ''
+app_key: ''
+subsite: ''
+docsroom_url: ''

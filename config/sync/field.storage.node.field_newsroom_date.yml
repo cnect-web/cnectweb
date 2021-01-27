@@ -1,0 +1,25 @@
+uuid: 72cbf979-b1ea-4b43-b27e-bc1811089df1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_item
+  module:
+    - datetime_range
+    - node
+_core:
+  default_config_hash: NAAYYxWXOrYJOh-BT7hy-W1d-Q1yXRrUM-ludwL3KxA
+id: node.field_newsroom_date
+field_name: field_newsroom_date
+entity_type: node
+type: daterange
+settings:
+  datetime_type: date
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

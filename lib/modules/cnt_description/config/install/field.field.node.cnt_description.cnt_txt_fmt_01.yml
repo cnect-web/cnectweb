@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cnt_txt_fmt_01
+    - node.type.cnt_description
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    simple_html_in_page_navigation: simple_html_in_page_navigation
+    ckeditor: '0'
+    plain_text: '0'
+id: node.cnt_description.cnt_txt_fmt_01
+field_name: cnt_txt_fmt_01
+entity_type: node
+bundle: cnt_description
+label: 'Main Body'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

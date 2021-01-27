@@ -1,0 +1,26 @@
+uuid: 773f81c8-c816-4574-a9a5-b4cf285b030a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_item
+  module:
+    - node
+_core:
+  default_config_hash: OehrS2T4Tu6temEpwf13fru9XIUuciymi92E6ojCevo
+id: node.field_newsroom_venue
+field_name: field_newsroom_venue
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

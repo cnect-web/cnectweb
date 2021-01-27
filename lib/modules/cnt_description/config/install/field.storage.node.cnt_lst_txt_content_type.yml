@@ -1,0 +1,30 @@
+uuid: 789d4476-c9d0-4d6e-9c7b-e5b9a2d4f574
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.cnt_lst_txt_content_type
+field_name: cnt_lst_txt_content_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: activity
+      label: Activity
+    -
+      value: page
+      label: Page
+    -
+      value: policy
+      label: Policy
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

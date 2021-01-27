@@ -1,0 +1,13 @@
+uuid: 7912184d-3fde-4c9d-a48a-5a5a4c7ffdcb
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_type
+_core:
+  default_config_hash: b92nNyfn3FnBFybccPyAdMF4nK06D-jJE5ez8ePBs4k
+name: 'Newsroom Type'
+vid: newsroom_type
+description: 'Newsroom types'
+weight: 0

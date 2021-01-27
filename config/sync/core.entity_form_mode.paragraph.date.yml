@@ -1,0 +1,12 @@
+uuid: 1657457d-5eeb-4baf-8de2-e8dbaede3c6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: l-pUgGzR5fdOJwPNUhx5-5Wy3-iS-KsElu8Bdv3A6Lo
+id: paragraph.date
+label: Date
+targetEntityType: paragraph
+cache: true

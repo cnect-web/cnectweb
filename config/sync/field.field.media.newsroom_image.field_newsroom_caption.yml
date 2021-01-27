@@ -1,0 +1,21 @@
+uuid: 17aa113f-b491-43f0-a40c-0fbcc3b94a49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_newsroom_caption
+    - media.type.newsroom_image
+_core:
+  default_config_hash: Ona58TkXVAoSp7JH5FlGxJEq7NdPFjf_WxKWXtD8hSQ
+id: media.newsroom_image.field_newsroom_caption
+field_name: field_newsroom_caption
+entity_type: media
+bundle: newsroom_image
+label: Caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

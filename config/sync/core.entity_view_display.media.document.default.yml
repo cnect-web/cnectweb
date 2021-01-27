@@ -4,9 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.media.document.oe_media_file
+    - field.field.media.document.oe_media_file_type
+    - field.field.media.document.oe_media_remote_file
     - media.type.document
   module:
     - file
+    - oe_media_embed
+third_party_settings:
+  oe_media_embed:
+    embeddable: true
 _core:
   default_config_hash: n4V0ZWJfdgQ6WU6hDuy4uDYqVN_nsboMtlhzZxqtIIo
 id: media.document.default
@@ -25,5 +31,7 @@ content:
 hidden:
   created: true
   name: true
+  oe_media_file_type: true
+  oe_media_remote_file: true
   thumbnail: true
   uid: true

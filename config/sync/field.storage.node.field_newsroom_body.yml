@@ -1,0 +1,24 @@
+uuid: 44435827-d535-43d2-b2c4-d79c89b5be1a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_item
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: AxJKgA4HEm_BY0-l8N-rcjtbAAxnUH5C4cI-W-CyhL0
+id: node.field_newsroom_body
+field_name: field_newsroom_body
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

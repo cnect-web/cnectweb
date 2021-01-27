@@ -1,0 +1,18 @@
+uuid: 39f04200-6682-4738-8d95-212f88e46bee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cnt_description
+id: node.cnt_description.title
+field_name: title
+entity_type: node
+bundle: cnt_description
+label: 'Page Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

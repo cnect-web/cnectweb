@@ -1,0 +1,20 @@
+uuid: 5f4c9beb-40d3-4d7c-a21f-c214efdc130e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_media
+_core:
+  default_config_hash: NXjEWvSJ1oy9V3MuRhS8ijWYhj2G5BXt45xzvj55Fvw
+name: newsroom_large
+label: 'Newsroom Large (480×480)'
+effects:
+  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
+    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
+    id: image_scale
+    weight: 0
+    data:
+      width: 480
+      height: 480
+      upscale: false

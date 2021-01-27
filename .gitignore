@@ -18,3 +18,4 @@
 #UNCOMMENT IT AFTER DSM prototyping is done.
 #/runner.yml
 /docker-compose.*.yml
+/.gitattributes

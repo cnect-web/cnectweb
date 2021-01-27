@@ -1,0 +1,49 @@
+uuid: 842db7d5-bfbf-4cd5-ab97-b644a0001fcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.newsroom_item_type_browser
+    - field.field.news_type_bundle.news_type_bundle.cnt_internal_code
+    - field.field.news_type_bundle.news_type_bundle.cnt_newsroom_item_types
+  module:
+    - cnt_newsroom_decorator
+    - entity_browser
+_core:
+  default_config_hash: nF9QdsuqNAsWGGldDbaroPccd_WJ7pYerk0wwy7T44A
+id: news_type_bundle.news_type_bundle.default
+targetEntityType: news_type_bundle
+bundle: news_type_bundle
+mode: default
+content:
+  cnt_internal_code:
+    weight: -98
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  cnt_newsroom_item_types:
+    type: entity_browser_entity_reference
+    weight: -99
+    region: content
+    settings:
+      entity_browser: newsroom_item_type_browser
+      field_widget_display: label
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_replace: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -100
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,13 @@
+uuid: 46f24403-c1a1-416c-9618-f59ffb8e5096
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_topic
+_core:
+  default_config_hash: IiJkuJVQw7HthPsI4bneaoTtz8BvDv9aJJiTUSuOvIQ
+name: 'Newsroom topic'
+vid: newsroom_topic
+description: 'Newsroom topics'
+weight: 0

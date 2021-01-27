@@ -1,0 +1,31 @@
+uuid: 530ca184-7d9b-4f6f-b65f-ce69d79f735a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsroom_type
+    - node.type.newsroom_item
+    - taxonomy.vocabulary.newsroom_type
+_core:
+  default_config_hash: 8PY70_QKwtAgLWdD39QlWWMDeZHGieBhxkJA_EIIQwc
+id: node.newsroom_item.field_newsroom_type
+field_name: field_newsroom_type
+entity_type: node
+bundle: newsroom_item
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      newsroom_type: newsroom_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

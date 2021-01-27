@@ -63,7 +63,12 @@ commands:
       ahoy runphp bash
 
   install:
-    usage: Install site.
+    usage: Istall site.
+    cmd: |
+      ahoy composer install
+      ahoy runner toolkit:install-clean
+  forceinstall:
+    usage: Install site using all commands separately.
     cmd: |
       ahoy composer install
       ahoy runner toolkit:build-dev
@@ -126,3 +131,14 @@ commands:
     usage: Runs drush cache rebuild.
     cmd: |
       ahoy drush cr
+
+  # temp fix -> check outcome of tookit issue -> https://github.com/ec-europa/toolkit/issues/304
+  phpcs-temp:
+    usage: temp fix to run phpcs on our custom code.
+    cmd: |
+      ahoy runphp vendor/bin/phpcs --standard=./vendor/drupal/coder/coder_sniffer/Drupal,./vendor/drupal/coder/coder_sniffer/DrupalPractice,./vendor/ec-europa/qa-automation/phpcs/QualityAssurance --report=full --exclude=Drupal.Commenting.Deprecated lib/
+  
+  phpcbf-temp:
+    usage: temp fix to run phpcbf on our custom code.
+    cmd: |
+      ahoy runphp vendor/bin/phpcbf --standard=./vendor/drupal/coder/coder_sniffer/Drupal,./vendor/drupal/coder/coder_sniffer/DrupalPractice,./vendor/ec-europa/qa-automation/phpcs/QualityAssurance --report=full --exclude=Drupal.Commenting.Deprecated lib/

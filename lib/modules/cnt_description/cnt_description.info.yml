@@ -1,0 +1,9 @@
+name: Description Content Type
+type: module
+description: The description content type is used to create pages for policies, activities or any generic page.
+package: Cnect
+core: 8.x
+core_version_requirement: ^8 || ^9
+php: 7.3
+dependencies:
+  - drupal:ckeditor

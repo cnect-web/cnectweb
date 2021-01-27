@@ -9,7 +9,11 @@ dependencies:
   module:
     - image
     - media_avportal
+    - oe_media_embed
     - user
+third_party_settings:
+  oe_media_embed:
+    embeddable: true
 _core:
   default_config_hash: RHDrMsUazV-WBQpSBcWD6X2aj-6DJ83-0kuAOkeqL-8
 id: media.av_portal_video.default

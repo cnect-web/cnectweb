@@ -1,0 +1,25 @@
+uuid: 9208223c-3bc4-4532-8028-d5366965952c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - newsroom_connector_item
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: Uwuh_fT7idJqstNelEe39sj8JVK415NsgLlBo-15C8U
+id: node.field_newsroom_type
+field_name: field_newsroom_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

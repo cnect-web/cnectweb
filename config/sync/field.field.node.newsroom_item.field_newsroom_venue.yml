@@ -1,0 +1,21 @@
+uuid: ea830a72-4ccb-4c1e-9c49-22c47dd18318
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsroom_venue
+    - node.type.newsroom_item
+_core:
+  default_config_hash: iQy6yIblB9QmyehOnOCsZI7tp23UeeNhWASOFuQblW4
+id: node.newsroom_item.field_newsroom_venue
+field_name: field_newsroom_venue
+entity_type: node
+bundle: newsroom_item
+label: Venue
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
