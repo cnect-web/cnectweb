@@ -14,13 +14,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * @ViewsFilter("news_type_bundle_views_filter")
  */
-class NewsTypeBundleFilter extends InOperator {
+final class NewsTypeBundleFilter extends InOperator {
   /**
    * The entity type manager.
    *
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
-   *
-   * phpcs:enable Drupal.NamingConventions.ValidVariableName.LowerCamelName
    */
   protected $entityTypeManager;
 
@@ -70,22 +68,33 @@ class NewsTypeBundleFilter extends InOperator {
       '#type' => 'hidden',
       '#value' => 1,
     ];
-    $this->buildBundleSelects($form, $identifier);
-    $this->operator == 'empty';
+    $this->buildBundleFacets($form, $identifier);
     $this->joinValuesToOne($form_state);
+
+    if (count($this->userSelectedIds) <= 1) {
+      $this->userSelectedIds = $this->allIds;
+    }
   }
 
   /**
-   * Keeps joined ids from all filters.
+   * Keeps joined ids from user input.
    *
    * @var array
    */
-  private $joinedIds = [];
+  private $userSelectedIds = [];
+
+
+  /**
+   * Keeps all ids from all filters.
+   *
+   * @var array
+   */
+  private $allIds = [];
 
   /**
    * {@inheritdoc}
    */
-  private function buildBundleSelects(array &$form, string $identificator) {
+  private function buildBundleFacets(array &$form, string $identificator) {
     $records = $this->entityTypeManager->getStorage('news_type_bundle')->loadByProperties(['status' => 1]);
     $idx = 1;
     foreach ($records as $record) {
@@ -93,6 +102,7 @@ class NewsTypeBundleFilter extends InOperator {
       $opts = [];
 
       foreach ($news_types as $type) {
+        $this->allIds[] = $type->tid->value;
         $opts[$type->tid->value] = $type->get('name')->value;
       }
 
@@ -133,7 +143,7 @@ class NewsTypeBundleFilter extends InOperator {
         $mergedValues[] = $array;
       }
     }
-    $this->joinedIds = $mergedValues;
+    $this->userSelectedIds = $mergedValues;
   }
 
   /**
@@ -143,8 +153,8 @@ class NewsTypeBundleFilter extends InOperator {
     $this->ensureMyTable();
     // We have to replace joined ids here,
     // To make sure that all selected values are considered in the query.
-    if (!empty($this->joinedIds)) {
-      $this->value = $this->joinedIds;
+    if (!empty($this->userSelectedIds)) {
+      $this->value = $this->userSelectedIds;
     }
     $this->query->addWhere($this->options['group'], "$this->tableAlias.$this->realField", $this->value, $this->operator);
   }
