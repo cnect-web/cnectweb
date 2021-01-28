@@ -8,12 +8,15 @@ dependencies:
     - field.storage.node.field_newsroom_teaser
     - image.style.newsroom_thumbnail
     - node.type.newsroom_item
+    - taxonomy.vocabulary.newsroom_topic
   module:
+    - cnt_newsroom_decorator
     - media
     - node
+    - taxonomy
     - user
 _core:
-  default_config_hash: 9_bxZZGo3JpAqzJ_vwBg8Ed5OZS6cue4pZIlrgjOjkc
+  default_config_hash: lb-bD9QRwxj1PPekn8LzU21PETDFZnXoP4aiyotj1aQ
 id: news_listing
 label: 'News listing'
 module: views
@@ -33,7 +36,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       query:
         type: views_query
@@ -291,14 +294,133 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
             newsroom_item: newsroom_item
+          group: 1
+          exposed: false
+          expose:
+            operator_id: type_op
+            label: 'Content type'
+            description: null
+            use_operator: false
+            operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: 'Content type'
+            description: null
+            identifier: type
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        news_type_bundle_filter:
+          id: news_type_bundle_filter
+          table: node__field_newsroom_type
+          field: news_type_bundle_filter
+          relationship: none
+          group_type: 'Newsroom Type group'
+          admin_label: 'Newsroom Type'
+          operator: in
+          value: null
+          group: 1
+          exposed: true
           expose:
+            operator_id: ''
+            label: 'News Type Bundle filter'
+            description: ''
+            use_operator: false
+            operator: news_type_bundle_filter_op
             operator_limit_selection: false
             operator_list: {  }
+            identifier: news_filter
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: news_type_bundle_views_filter
+        field_newsroom_topics_target_id:
+          id: field_newsroom_topics_target_id
+          table: node__field_newsroom_topics
+          field: field_newsroom_topics_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_newsroom_topics_target_id_op
+            label: Topics
+            description: ''
+            use_operator: false
+            operator: field_newsroom_topics_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_newsroom_topics_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: newsroom_topic
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -315,19 +437,26 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'News listing'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -341,12 +470,15 @@ display:
     display_options:
       display_extenders: {  }
       path: news
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
