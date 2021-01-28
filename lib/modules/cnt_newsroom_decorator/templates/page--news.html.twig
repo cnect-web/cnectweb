@@ -17,94 +17,12 @@
             <div class="ecl-col-md-3">
 
               {# Content #}
-              {% set filter_form_block = drupal_block('views_exposed_filter_block:news_listing-page_1') %}
-              {{ filter_form_block }}
               <!-- facets start -->
               <h3>Search Options</h3>
-
               <fieldset aria-describedby="checkbox-default-helper" class="ecl-form-group">
-                <legend class="ecl-form-label" id="checkbox-default-label">Content types</legend>
-
-                <div class="ecl-form-group">
-                  <label class="ecl-form-label" for="select-id-1">News & Views</label>
-                  <div class="ecl-select__container ecl-select__container--m">
-                    <select id="select-id-2" name="select-name" class="ecl-select" multiple="" data-ecl-select-multiple="true" data-ecl-select-default=""  data-ecl-select-search="Search" data-ecl-select-all="Select all">
-                      <option value="1">News articles</option>
-                      <option value="2">Opinions</option>
-                      <option value="3">Stories</option>
-                      <option value="4">Speeches</option>
-                      <option value="5">Press releases</option>
-                      <option value="6">Digibytes</option>
-                    </select>
-                    <div class="ecl-select__icon"><svg focusable="false" aria-hidden="true"
-                                                       class="ecl-select__icon-shape ecl-icon ecl-icon--s ecl-icon--rotate-180">
-                        <use xlink:href="/component-library/dist/media/icons.3cf410f9.svg#ui--corner-arrow"></use>
-                      </svg></div>
-                  </div>
-                </div>
-
-                <div class="ecl-form-group">
-                  <label class="ecl-form-label" for="select-id-1">Library</label>
-                  <div class="ecl-select__container ecl-select__container--m">
-                    <select id="select-id-2" name="select-name" class="ecl-select" multiple="" data-ecl-select-multiple="true" data-ecl-select-default=""  data-ecl-select-search="Search" data-ecl-select-all="Select all">
-                      <option value="1">Brochures</option>
-                      <option value="2">Factsheets</option>
-                      <option value="3">Reports/Studies</option>
-                      <option value="4">Event reports</option>
-                      <option value="5">Laws</option>
-                      <option value="6">Audiovisuals</option>
-                      <option value="7">Speeches</option>
-                    </select>
-                    <div class="ecl-select__icon"><svg focusable="false" aria-hidden="true"
-                                                       class="ecl-select__icon-shape ecl-icon ecl-icon--s ecl-icon--rotate-180">
-                        <use xlink:href="/component-library/dist/media/icons.3cf410f9.svg#ui--corner-arrow"></use>
-                      </svg></div>
-                  </div>
-                </div>
-
-                <div class="ecl-form-group">
-                  <label class="ecl-form-label" for="select-id-1">Funding</label>
-                  <div class="ecl-select__container ecl-select__container--m">
-                    <select id="select-id-2" name="select-name" class="ecl-select" multiple="" data-ecl-select-multiple="true" data-ecl-select-default=""  data-ecl-select-search="Search" data-ecl-select-all="Select all">
-                      <option value="1">Calls for Tender</option>
-                      <option value="2">Calls for Proposal</option>
-                    </select>
-                    <div class="ecl-select__icon"><svg focusable="false" aria-hidden="true"
-                                                       class="ecl-select__icon-shape ecl-icon ecl-icon--s ecl-icon--rotate-180">
-                        <use xlink:href="/component-library/dist/media/icons.3cf410f9.svg#ui--corner-arrow"></use>
-                      </svg></div>
-                  </div>
-                </div>
-
-                <div class="ecl-checkbox"><input type="checkbox" class="ecl-checkbox__input" id="checkbox-default-1"
-                                                 name="checkbox-default" value="es" checked="" /><label class="ecl-checkbox__label" for="checkbox-default-1"><span
-                      class="ecl-checkbox__box"><svg focusable="false" aria-hidden="true"
-                                                     class="ecl-checkbox__icon ecl-icon ecl-icon--s">
-                                    <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--check"></use>
-                                    </svg></span>Consultations</label>
-                </div>
-
-                <div class="ecl-checkbox"><input type="checkbox" class="ecl-checkbox__input" id="checkbox-default-1"
-                                                 name="checkbox-default" value="es" checked="" /><label class="ecl-checkbox__label" for="checkbox-default-1"><span
-                      class="ecl-checkbox__box"><svg focusable="false" aria-hidden="true"
-                                                     class="ecl-checkbox__icon ecl-icon ecl-icon--s">
-                                  <use xlink:href="/ecl/component-library/dist/media/icons.3cf410f9.svg#ui--check"></use>
-                                  </svg></span>Events</label>
-                </div>
+                {% set filter_form_block = drupal_block('views_exposed_filter_block:news_listing-page_1') %}
+                {{ filter_form_block }}
               </fieldset>
-
-              <div class="ecl-u-mt-l">
-                <div class="ecl-form-group"><label class="ecl-form-label" for="text-input-id">Topics</label>
-                  <input type="text" id="text-input-id" name="text-input-name" class="ecl-text-input ecl-text-input--m" />
-                </div>
-              </div>
-
-              <div class="ecl-u-mt-l">
-                <button type="submit" class="ecl-u-mt-l ecl-button ecl-button--primary">Refine results</button><br>
-                <button type="submit" class="ecl-u-mt-m ecl-u-mt-lg-l ecl-button ecl-button--secondary">Clear all</button>
-              </div>
-
-
               <!-- facets end -->
             </div>
             <div class="ecl-col-md-9">
