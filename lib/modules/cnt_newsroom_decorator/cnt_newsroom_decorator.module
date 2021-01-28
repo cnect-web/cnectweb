@@ -20,3 +20,18 @@ function cnt_newsroom_decorator_theme() {
     ],
   ];
 }
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function cnt_newsroom_decorator_views_data_alter(array &$data) {
+  $data['node__field_newsroom_type']['news_type_bundle_filter'] = [
+    'title' => t('News Type Bundle filter'),
+    'filter' => [
+      'title' => t('News Type Bundle filter'),
+      'help' => t('Provides a custom filter for selecting newsroom types by bundles.'),
+      'field' => 'field_newsroom_type_target_id',
+      'id' => 'news_type_bundle_views_filter',
+    ],
+  ];
+}

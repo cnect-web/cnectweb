@@ -15,6 +15,10 @@
         <div class="ecl-col-sm-12">
           <div class="ecl-row">
             <div class="ecl-col-md-3">
+
+              {# Content #}
+              {% set filter_form_block = drupal_block('views_exposed_filter_block:news_listing-page_1') %}
+              {{ filter_form_block }}
               <!-- facets start -->
               <h3>Search Options</h3>
 
