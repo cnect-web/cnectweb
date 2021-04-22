@@ -2567,10 +2567,6 @@
                     "homepage": "https://www.adyax.com/"
                 },
                 {
-                    "name": "OlgaRabodzei",
-                    "homepage": "https://www.drupal.org/user/3389198"
-                },
-                {
                     "name": "colan",
                     "homepage": "https://www.drupal.org/user/58704"
                 },
@@ -2585,6 +2581,10 @@
                 {
                     "name": "itsekhmistro",
                     "homepage": "https://www.drupal.org/user/928152"
+                },
+                {
+                    "name": "mparker17",
+                    "homepage": "https://www.drupal.org/user/536298"
                 },
                 {
                     "name": "peterpoe",
@@ -3152,9 +3152,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.8",
                     "datestamp": "1583961846",
@@ -4012,13 +4009,10 @@
                 "shasum": "4f2ccd9ded9cf2fe88b1946c239de4505d4c18c2"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
                     "datestamp": "1551708484",
@@ -4691,7 +4685,7 @@
                 "shasum": "4b7a163e139594c74be04786d23a51ed60429c3b"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8",
                 "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.2",
                 "ml/json-ld": "^1.0",
                 "php": ">=7.1"
@@ -4995,24 +4989,16 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "chrisjlee",
-                    "homepage": "https://www.drupal.org/user/760600"
-                },
-                {
-                    "name": "drywall",
-                    "homepage": "https://www.drupal.org/user/192591"
-                },
-                {
-                    "name": "jsenich",
-                    "homepage": "https://www.drupal.org/user/58871"
-                },
-                {
-                    "name": "markie",
-                    "homepage": "https://www.drupal.org/user/206687"
-                },
-                {
                     "name": "newsignature",
                     "homepage": "https://www.drupal.org/user/765518"
+                },
+                {
+                    "name": "ultimike",
+                    "homepage": "https://www.drupal.org/user/51132"
+                },
+                {
+                    "name": "volkswagenchick",
+                    "homepage": "https://www.drupal.org/user/3332522"
                 }
             ],
             "description": "Provides a more robust alternative to 'summary or trimmed' textfield format.",
@@ -7664,16 +7650,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.11",
+            "version": "1.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d"
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/17d355cb7d3c4ff08e5729f29cd7660145208d9d",
-                "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/2b87b41178cc6d4ad3cba678a46a1cae49786011",
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011",
                 "shasum": ""
             },
             "require": {
@@ -7726,7 +7712,17 @@
                 "archive",
                 "tar"
             ],
-            "time": "2020-11-19T22:10:24+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/mrook",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/michielrook",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-02-16T10:50:50+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -7821,23 +7817,23 @@
         },
         {
             "name": "pear/pear_exception",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7"
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
-                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=4.4.0"
+                "php": ">=5.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": "<9"
             },
             "type": "class",
             "extra": {
@@ -7872,7 +7868,7 @@
             "keywords": [
                 "exception"
             ],
-            "time": "2019-12-10T10:24:42+00:00"
+            "time": "2021-03-21T15:43:46+00:00"
         },
         {
             "name": "phayes/geophp",
@@ -10776,12 +10772,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -12286,7 +12282,7 @@
             "extra": {
                 "drupal": {
                     "version": "4.0.1",
-                    "datestamp": "1600300079",
+                    "datestamp": "1609250413",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12393,7 +12389,7 @@
             "extra": {
                 "drupal": {
                     "version": "4.0.1",
-                    "datestamp": "1600300079",
+                    "datestamp": "1609250413",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12474,11 +12470,6 @@
                 "phpunit/phpunit": "~6.0 || ~7.0"
             },
             "type": "library",
-            "extra": {
-                "patches_applied": {
-                    "allow-date-only-date-fields": "https://patch-diff.githubusercontent.com/raw/jhedstrom/DrupalDriver/pull/201.patch"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Drupal\\Driver": "src/",
@@ -12502,7 +12493,12 @@
                 "test",
                 "web"
             ],
-            "time": "2020-06-01T18:03:58+00:00"
+            "time": "2020-06-01T18:03:58+00:00",
+            "extra": {
+                "patches_applied": {
+                    "allow-date-only-date-fields": "https://patch-diff.githubusercontent.com/raw/jhedstrom/DrupalDriver/pull/201.patch"
+                }
+            }
         },
         {
             "name": "drupal/drupal-extension",
@@ -12621,8 +12617,7 @@
             "homepage": "https://www.drupal.org/project/maillog",
             "support": {
                 "source": "https://git.drupalcode.org/project/maillog"
-            },
-            "time": "2020-09-22T18:37:31+00:00"
+            }
         },
         {
             "name": "drupal/stage_file_proxy",
